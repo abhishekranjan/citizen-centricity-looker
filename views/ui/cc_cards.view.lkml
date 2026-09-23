@@ -10,6 +10,7 @@
 # All card measures are hidden from the Explore field picker.
 # =====================================================================
 
+include: "/views/*.view.lkml"
 
 # ---------------------------------------------------------------------
 # rpt_pillar_score : headline band, pillar blocks, weights table
