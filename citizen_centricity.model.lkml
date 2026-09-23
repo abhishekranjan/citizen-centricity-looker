@@ -5,6 +5,7 @@
 connection: "prj-kb-prd-looker-gcp-1014"
 
 include: "/views/*.view.lkml"
+include: "/views/ui/*.view.lkml"
 include: "/dashboards/*.dashboard.lookml"
 
 label: "Citizen Centricity KRA"
@@ -86,4 +87,12 @@ explore: seed_data_gaps {
 
 explore: assessment_maturity {
   label: "CC – Assessment Maturity"
+}
+# ---------------------------------------------------------------------
+# UI helper (static HTML tiles: header, question bars, pills, footer).
+# Hidden from the Explore menu; used only by dashboard tiles.
+# ---------------------------------------------------------------------
+explore: cc_ui {
+  hidden: yes
+  label: "CC – UI helper"
 }
