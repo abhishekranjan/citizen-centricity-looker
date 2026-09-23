@@ -77,7 +77,7 @@
     row: 5
     col: 0
     width: 13
-    height: 20
+    height: 11
   - name: weights
     title: weights
     model: citizen_centricity
@@ -97,7 +97,7 @@
     row: 5
     col: 13
     width: 11
-    height: 20
+    height: 11
   - name: footer
     title: footer
     model: citizen_centricity
@@ -112,7 +112,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 25
+    row: 16
     col: 0
     width: 24
     height: 1

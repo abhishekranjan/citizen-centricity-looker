@@ -60,7 +60,7 @@
     row: 3
     col: 0
     width: 24
-    height: 5
+    height: 2
   - name: q_perf_demonstrating
     title: q_perf_demonstrating
     model: citizen_centricity
@@ -75,7 +75,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 8
+    row: 5
     col: 0
     width: 24
     height: 1
@@ -133,10 +133,10 @@
     totals_color: '#808080'
     x_axis_label_font_size: 12
     font_size: '12'
-    row: 9
+    row: 6
     col: 0
     width: 15
-    height: 9
+    height: 6
   - name: content_quality_signals
     title: content_quality_signals
     model: citizen_centricity
@@ -151,10 +151,10 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 9
+    row: 6
     col: 15
     width: 9
-    height: 9
+    height: 6
   - name: q_perf_competency
     title: q_perf_competency
     model: citizen_centricity
@@ -169,7 +169,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 18
+    row: 12
     col: 0
     width: 24
     height: 1
@@ -191,10 +191,10 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 19
+    row: 13
     col: 0
     width: 24
-    height: 5
+    height: 3
   - name: footer
     title: footer
     model: citizen_centricity
@@ -209,7 +209,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 24
+    row: 16
     col: 0
     width: 24
     height: 1

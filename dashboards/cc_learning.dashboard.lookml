@@ -124,7 +124,7 @@
     row: 3
     col: 0
     width: 12
-    height: 9
+    height: 6
   - name: functional_family
     title: functional_family
     model: citizen_centricity
@@ -142,7 +142,7 @@
     row: 3
     col: 12
     width: 12
-    height: 9
+    height: 6
   - name: pillar_group
     title: Pillar wise completion of Groups
     model: citizen_centricity
@@ -189,10 +189,10 @@
     totals_color: '#808080'
     x_axis_label_font_size: 12
     font_size: '12'
-    row: 12
+    row: 9
     col: 0
     width: 12
-    height: 11
+    height: 7
   - name: mdo_table
     title: Learning across MDOs and States – MDO
     model: citizen_centricity
@@ -227,10 +227,10 @@
     header_font_color: '#0B3A75'
     header_background_color: '#E3F2FD'
     show_row_totals: false
-    row: 12
+    row: 9
     col: 12
     width: 12
-    height: 11
+    height: 7
   - name: state_table
     title: Learning across MDOs and States – State (table)
     model: citizen_centricity
@@ -267,10 +267,10 @@
     header_font_color: '#0B3A75'
     header_background_color: '#E3F2FD'
     show_row_totals: false
-    row: 23
+    row: 16
     col: 0
     width: 12
-    height: 11
+    height: 7
   - name: state_map
     title: Learning across MDOs and States – State
     model: citizen_centricity
@@ -297,10 +297,10 @@
     map_zoom: 4
     listen:
       Date Range: fct_cbp_assignment.allocated_date
-    row: 23
+    row: 16
     col: 12
     width: 12
-    height: 11
+    height: 7
   - name: footer
     title: footer
     model: citizen_centricity
@@ -315,7 +315,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 34
+    row: 23
     col: 0
     width: 24
     height: 1

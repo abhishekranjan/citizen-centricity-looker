@@ -96,7 +96,7 @@
     row: 3
     col: 0
     width: 24
-    height: 16
+    height: 12
   - name: footer
     title: footer
     model: citizen_centricity
@@ -111,7 +111,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 19
+    row: 15
     col: 0
     width: 24
     height: 1

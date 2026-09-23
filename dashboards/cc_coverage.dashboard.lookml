@@ -65,7 +65,7 @@
     row: 3
     col: 0
     width: 8
-    height: 9
+    height: 6
   - name: pill_difficulty
     title: pill_difficulty
     model: citizen_centricity
@@ -80,7 +80,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 12
+    row: 9
     col: 0
     width: 8
     height: 1
@@ -140,7 +140,7 @@
     row: 3
     col: 8
     width: 8
-    height: 7
+    height: 5
   - name: data_gaps_bar
     title: Data Gaps in the System
     model: citizen_centricity
@@ -190,7 +190,7 @@
     row: 3
     col: 16
     width: 8
-    height: 6
+    height: 5
   - name: pill_data_gaps
     title: pill_data_gaps
     model: citizen_centricity
@@ -205,7 +205,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 9
+    row: 8
     col: 16
     width: 8
     height: 1
@@ -276,7 +276,7 @@
     row: 10
     col: 8
     width: 16
-    height: 12
+    height: 7
   - name: subtheme_cov
     title: Sub-Theme Coverage | By Pillars
     model: citizen_centricity
@@ -308,10 +308,10 @@
     header_font_color: '#0B3A75'
     header_background_color: '#E3F2FD'
     show_row_totals: false
-    row: 13
+    row: 10
     col: 0
     width: 8
-    height: 9
+    height: 7
   - name: footer
     title: footer
     model: citizen_centricity
@@ -326,7 +326,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 22
+    row: 17
     col: 0
     width: 24
     height: 1

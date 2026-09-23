@@ -41,7 +41,7 @@
     row: 2
     col: 0
     width: 24
-    height: 8
+    height: 4
   - name: pillar_service_knowledge
     title: pillar_service_knowledge
     model: citizen_centricity
@@ -64,10 +64,10 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 10
+    row: 6
     col: 0
     width: 6
-    height: 13
+    height: 6
   - name: pillar_responsiveness
     title: pillar_responsiveness
     model: citizen_centricity
@@ -90,10 +90,10 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 10
+    row: 6
     col: 6
     width: 6
-    height: 13
+    height: 6
   - name: pillar_transparency
     title: pillar_transparency
     model: citizen_centricity
@@ -116,10 +116,10 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 10
+    row: 6
     col: 12
     width: 6
-    height: 13
+    height: 6
   - name: pillar_participation
     title: pillar_participation
     model: citizen_centricity
@@ -142,10 +142,10 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 10
+    row: 6
     col: 18
     width: 6
-    height: 13
+    height: 6
   - name: q_reach
     title: q_reach
     model: citizen_centricity
@@ -160,7 +160,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 23
+    row: 12
     col: 0
     width: 24
     height: 1
@@ -178,10 +178,10 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 24
+    row: 13
     col: 0
     width: 5
-    height: 3
+    height: 2
   - name: reach_completions
     title: reach_completions
     model: citizen_centricity
@@ -196,10 +196,10 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 24
+    row: 13
     col: 5
     width: 5
-    height: 3
+    height: 2
   - name: reach_courses
     title: reach_courses
     model: citizen_centricity
@@ -214,10 +214,10 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 24
+    row: 13
     col: 10
     width: 4
-    height: 3
+    height: 2
   - name: reach_themes
     title: reach_themes
     model: citizen_centricity
@@ -233,10 +233,10 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 24
+    row: 13
     col: 14
     width: 5
-    height: 3
+    height: 2
   - name: reach_subthemes
     title: reach_subthemes
     model: citizen_centricity
@@ -252,10 +252,10 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 24
+    row: 13
     col: 19
     width: 5
-    height: 3
+    height: 2
   - name: footer
     title: footer
     model: citizen_centricity
@@ -270,7 +270,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 27
+    row: 15
     col: 0
     width: 24
     height: 1

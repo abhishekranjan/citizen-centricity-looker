@@ -60,7 +60,7 @@
     row: 3
     col: 0
     width: 7
-    height: 10
+    height: 5
   - name: pill_ministry
     title: pill_ministry
     model: citizen_centricity
@@ -128,7 +128,7 @@
     row: 4
     col: 7
     width: 17
-    height: 9
+    height: 4
   - name: q_adoption_pillars
     title: q_adoption_pillars
     model: citizen_centricity
@@ -143,7 +143,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 13
+    row: 8
     col: 0
     width: 24
     height: 1
@@ -199,10 +199,10 @@
     header_font_color: '#0B3A75'
     header_background_color: '#E3F2FD'
     show_row_totals: false
-    row: 14
+    row: 9
     col: 0
     width: 17
-    height: 11
+    height: 7
   - name: demand_signal
     title: demand_signal
     model: citizen_centricity
@@ -217,10 +217,10 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 14
+    row: 9
     col: 17
     width: 7
-    height: 11
+    height: 7
   - name: footer
     title: footer
     model: citizen_centricity
@@ -235,7 +235,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 25
+    row: 16
     col: 0
     width: 24
     height: 1
