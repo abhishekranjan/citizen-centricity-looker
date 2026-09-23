@@ -2,7 +2,7 @@
 # Levelled progression are aspirational (0%) until data exists.
 view: assessment_maturity {
   derived_table: {
-    datagroup_trigger: cc_daily
+    # datagroup_trigger: cc_daily
     sql:
       SELECT 1 AS sort_order, 'End of course assesment' AS stage,
              SAFE_DIVIDE(COUNTIF(has_end_of_course_assessment = 1), COUNT(*)) AS pct
