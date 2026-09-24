@@ -42,6 +42,24 @@
     col: 0
     width: 24
     height: 1
+  - name: strip_difficulty
+    title: strip_difficulty
+    model: citizen_centricity
+    explore: cc_ui
+    fields:
+    - cc_ui.strip_course_difficulty
+    type: single_value
+    title_hidden: true
+    show_single_value_title: false
+    show_comparison: false
+    custom_color_enabled: false
+    enable_conditional_formatting: false
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    row: 3
+    col: 0
+    width: 8
+    height: 1
   - name: difficulty_pie
     title: Course Difficulty Levels
     model: citizen_centricity
@@ -55,23 +73,28 @@
     sorts:
     - fct_course.difficulty_level
     limit: 10
-    value_labels: legend
-    label_type: val
+    value_labels: labels
+    label_type: key_val
     inner_radius: 0
+    start_angle: 0
+    end_angle: 360
+    label_density: 25
+    font_size: '13'
     series_colors:
       Beginner: '#2196F3'
       Intermediate: '#4CAF50'
       Advanced: '#B388FF'
-    row: 3
+    title_hidden: true
+    row: 4
     col: 0
     width: 8
     height: 6
-  - name: pill_difficulty
-    title: pill_difficulty
+  - name: strip_maturity
+    title: strip_maturity
     model: citizen_centricity
     explore: cc_ui
     fields:
-    - cc_ui.pill_difficulty
+    - cc_ui.strip_assessment_maturity
     type: single_value
     title_hidden: true
     show_single_value_title: false
@@ -80,8 +103,8 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 9
-    col: 0
+    row: 3
+    col: 8
     width: 8
     height: 1
   - name: assess_maturity
@@ -137,10 +160,29 @@
     totals_color: '#808080'
     x_axis_label_font_size: 12
     font_size: '12'
-    row: 3
+    title_hidden: true
+    row: 4
     col: 8
     width: 8
-    height: 5
+    height: 4
+  - name: strip_data_gaps
+    title: strip_data_gaps
+    model: citizen_centricity
+    explore: cc_ui
+    fields:
+    - cc_ui.strip_data_gaps
+    type: single_value
+    title_hidden: true
+    show_single_value_title: false
+    show_comparison: false
+    custom_color_enabled: false
+    enable_conditional_formatting: false
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    row: 3
+    col: 16
+    width: 8
+    height: 1
   - name: data_gaps_bar
     title: Data Gaps in the System
     model: citizen_centricity
@@ -187,16 +229,17 @@
     totals_color: '#808080'
     x_axis_label_font_size: 12
     font_size: '12'
-    row: 3
+    title_hidden: true
+    row: 4
     col: 16
     width: 8
-    height: 5
-  - name: pill_data_gaps
-    title: pill_data_gaps
+    height: 4
+  - name: strip_providers
+    title: strip_providers
     model: citizen_centricity
     explore: cc_ui
     fields:
-    - cc_ui.pill_data_gaps
+    - cc_ui.strip_provider_contribution
     type: single_value
     title_hidden: true
     show_single_value_title: false
@@ -206,8 +249,8 @@
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
     row: 8
-    col: 16
-    width: 8
+    col: 8
+    width: 16
     height: 1
   - name: provider_table
     title: Contribution of Course Providers
@@ -230,8 +273,11 @@
     hide_totals: false
     show_totals: true
     series_labels:
+      fct_course.content_provider_name: Course Provider
       fct_course.course_count: Number of Courses
       brg_course_subtheme.sub_theme_count: Sub-Themes
+      fct_course.avg_content_rating: Average Content Rating
+      fct_course.completion_rate: Completion Rate
       fct_course.enrolments_exact: Enrolments
       fct_course.completions_exact: Completions
     enable_conditional_formatting: true
@@ -273,10 +319,29 @@
     header_font_color: '#0B3A75'
     header_background_color: '#E3F2FD'
     show_row_totals: false
-    row: 10
+    title_hidden: true
+    row: 9
     col: 8
     width: 16
-    height: 7
+    height: 8
+  - name: strip_subtheme_cov
+    title: strip_subtheme_cov
+    model: citizen_centricity
+    explore: cc_ui
+    fields:
+    - cc_ui.strip_subtheme_coverage
+    type: single_value
+    title_hidden: true
+    show_single_value_title: false
+    show_comparison: false
+    custom_color_enabled: false
+    enable_conditional_formatting: false
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    row: 10
+    col: 0
+    width: 8
+    height: 1
   - name: subtheme_cov
     title: Sub-Theme Coverage | By Pillars
     model: citizen_centricity
@@ -295,6 +360,11 @@
     hide_totals: true
     show_totals: false
     enable_conditional_formatting: false
+    series_labels:
+      rpt_pillar_subtheme.covered_subtheme_list: Sub-theme list
+      rpt_pillar_subtheme.subthemes_covered: Sub-themes
+      rpt_pillar_subtheme.subthemes_total: Total Sub-themes
+      rpt_pillar_subtheme.subtheme_coverage_pct: Sub-themes Covered
     show_view_names: false
     transpose: false
     truncate_text: true
@@ -308,10 +378,11 @@
     header_font_color: '#0B3A75'
     header_background_color: '#E3F2FD'
     show_row_totals: false
-    row: 10
+    title_hidden: true
+    row: 11
     col: 0
     width: 8
-    height: 7
+    height: 6
   - name: footer
     title: footer
     model: citizen_centricity

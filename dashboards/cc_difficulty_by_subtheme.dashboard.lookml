@@ -56,6 +56,24 @@
     col: 0
     width: 6
     height: 1
+  - name: title
+    title: title
+    model: citizen_centricity
+    explore: cc_ui
+    fields:
+    - cc_ui.title_difficulty_subtheme
+    type: single_value
+    title_hidden: true
+    show_single_value_title: false
+    show_comparison: false
+    custom_color_enabled: false
+    enable_conditional_formatting: false
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    row: 3
+    col: 0
+    width: 24
+    height: 1
   - name: difficulty_subtheme
     title: Course Difficulty by Sub-Theme
     model: citizen_centricity
@@ -78,6 +96,12 @@
     hide_totals: true
     show_totals: false
     enable_conditional_formatting: false
+    series_labels:
+      rpt_pillar_subtheme.sub_theme: Sub-Theme
+      rpt_pillar_subtheme.total_courses: Total Courses*
+      rpt_pillar_subtheme.beginner_courses: Beginner
+      rpt_pillar_subtheme.intermediate_courses: Intermediate
+      rpt_pillar_subtheme.advanced_courses: Advance
     listen:
       Pillar: rpt_pillar_subtheme.pillar
     show_view_names: false
@@ -88,15 +112,16 @@
     table_theme: white
     limit_displayed_rows: false
     header_text_alignment: left
-    header_font_size: '13'
-    rows_font_size: '13'
+    header_font_size: '14'
+    rows_font_size: '14'
     header_font_color: '#0B3A75'
     header_background_color: '#E3F2FD'
     show_row_totals: false
-    row: 3
+    title_hidden: true
+    row: 4
     col: 0
     width: 24
-    height: 12
+    height: 11
   - name: footer
     title: footer
     model: citizen_centricity

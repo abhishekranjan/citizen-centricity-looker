@@ -84,6 +84,8 @@
     series_labels:
       rpt_pillar_subtheme.sub_theme: Sub_Theme
       rpt_pillar_subtheme.total_courses: Courses
+      rpt_pillar_subtheme.completion_rate: Completion Rate (%)
+      rpt_pillar_subtheme.assessment_passed_pct: Assessment Passed (%)
     series_cell_visualizations:
       rpt_pillar_subtheme.assessment_passed_pct:
         is_active: true
@@ -103,8 +105,8 @@
     table_theme: white
     limit_displayed_rows: false
     header_text_alignment: left
-    header_font_size: '13'
-    rows_font_size: '13'
+    header_font_size: '14'
+    rows_font_size: '14'
     header_font_color: '#0B3A75'
     header_background_color: '#E3F2FD'
     show_row_totals: false

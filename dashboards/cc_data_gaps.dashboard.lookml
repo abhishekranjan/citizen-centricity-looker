@@ -42,6 +42,24 @@
     col: 0
     width: 6
     height: 1
+  - name: title
+    title: title
+    model: citizen_centricity
+    explore: cc_ui
+    fields:
+    - cc_ui.title_data_gaps
+    type: single_value
+    title_hidden: true
+    show_single_value_title: false
+    show_comparison: false
+    custom_color_enabled: false
+    enable_conditional_formatting: false
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    row: 3
+    col: 0
+    width: 24
+    height: 1
   - name: data_gaps
     title: Data Gaps
     model: citizen_centricity
@@ -72,15 +90,16 @@
     table_theme: white
     limit_displayed_rows: false
     header_text_alignment: left
-    header_font_size: '15'
-    rows_font_size: '15'
+    header_font_size: '14'
+    rows_font_size: '14'
     header_font_color: '#0B3A75'
     header_background_color: '#E3F2FD'
     show_row_totals: false
-    row: 3
+    title_hidden: true
+    row: 4
     col: 0
     width: 24
-    height: 12
+    height: 11
   - name: footer
     title: footer
     model: citizen_centricity

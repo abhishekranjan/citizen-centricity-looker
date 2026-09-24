@@ -61,12 +61,12 @@
     col: 0
     width: 7
     height: 5
-  - name: pill_ministry
-    title: pill_ministry
+  - name: strip_cbp
+    title: strip_cbp
     model: citizen_centricity
     explore: cc_ui
     fields:
-    - cc_ui.pill_ministry
+    - cc_ui.strip_cbp_coverage
     type: single_value
     title_hidden: true
     show_single_value_title: false
@@ -125,6 +125,7 @@
     totals_color: '#808080'
     x_axis_label_font_size: 12
     font_size: '12'
+    title_hidden: true
     row: 4
     col: 7
     width: 17
@@ -146,6 +147,24 @@
     row: 8
     col: 0
     width: 24
+    height: 1
+  - name: strip_assigned
+    title: strip_assigned
+    model: citizen_centricity
+    explore: cc_ui
+    fields:
+    - cc_ui.strip_assigned_completion
+    type: single_value
+    title_hidden: true
+    show_single_value_title: false
+    show_comparison: false
+    custom_color_enabled: false
+    enable_conditional_formatting: false
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    row: 9
+    col: 0
+    width: 17
     height: 1
   - name: assigned_by_subtheme
     title: Assigned Completion | By Pillar, Theme, Sub-Theme
@@ -169,6 +188,12 @@
     hide_totals: true
     show_totals: false
     enable_conditional_formatting: false
+    series_labels:
+      rpt_pillar_subtheme.sub_theme: Sub-Theme
+      rpt_pillar_subtheme.state_cbps: State CBPs
+      rpt_pillar_subtheme.state_completion_pct: State CBP Completion %
+      rpt_pillar_subtheme.union_cbps: Union CBPs
+      rpt_pillar_subtheme.union_completion_pct: Union CBP Completion %
     series_cell_visualizations:
       rpt_pillar_subtheme.state_completion_pct:
         is_active: true
@@ -199,10 +224,29 @@
     header_font_color: '#0B3A75'
     header_background_color: '#E3F2FD'
     show_row_totals: false
-    row: 9
+    title_hidden: true
+    row: 10
     col: 0
     width: 17
     height: 7
+  - name: strip_demand
+    title: strip_demand
+    model: citizen_centricity
+    explore: cc_ui
+    fields:
+    - cc_ui.strip_asp_demand_signal
+    type: single_value
+    title_hidden: true
+    show_single_value_title: false
+    show_comparison: false
+    custom_color_enabled: false
+    enable_conditional_formatting: false
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    row: 9
+    col: 17
+    width: 7
+    height: 1
   - name: demand_signal
     title: demand_signal
     model: citizen_centricity
@@ -217,7 +261,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 9
+    row: 10
     col: 17
     width: 7
     height: 7
@@ -235,7 +279,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 16
+    row: 17
     col: 0
     width: 24
     height: 1

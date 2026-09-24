@@ -1,6 +1,6 @@
 ---
-- dashboard: cc_learning
-  title: Citizen Centricity – Learning
+- dashboard: cc_learning_state
+  title: Citizen Centricity – Learning (State)
   layout: newspaper
   preferred_viewer: dashboards-next
   crossfilter_enabled: false
@@ -255,7 +255,7 @@
     model: citizen_centricity
     explore: cc_ui
     fields:
-    - cc_ui.strip_learning_mdo
+    - cc_ui.strip_learning_state
     type: single_value
     title_hidden: true
     show_single_value_title: false
@@ -271,44 +271,37 @@
     listen:
       Date Range: cc_ui.date_range
       Group: cc_ui.group
-  - name: mdo_table
-    title: Learning across MDOs and States – MDO
+  - name: state_map
+    title: Learning across MDOs and States – State
     model: citizen_centricity
     explore: fct_cbp_assignment
-    type: looker_grid
+    type: looker_geo_choropleth
     fields:
-    - fct_cbp_assignment.ministry
-    - fct_cbp_assignment.allocations
+    - fct_cbp_assignment.state_name
     - fct_cbp_assignment.completions
     filters:
-      fct_cbp_assignment.cbp_scope: Union
+      fct_cbp_assignment.cbp_scope: State
     sorts:
     - fct_cbp_assignment.completions desc
     limit: 500
-    total: true
-    show_row_numbers: false
-    hide_totals: false
-    show_totals: true
-    enable_conditional_formatting: false
-    series_labels:
-      fct_cbp_assignment.ministry: Ministry
-      fct_cbp_assignment.allocations: Allocations
-      fct_cbp_assignment.completions: Completions
+    map: auto
+    map_projection: ''
+    show_view_names: false
+    quantize_colors: false
+    colors:
+    - '#90CAF9'
+    - '#4CAF50'
+    - '#1B5E20'
+    map_latitude: 22.5
+    map_longitude: 82.0
+    map_zoom: 4
+    map_scale_indicator: 'off'
+    map_pannable: true
+    map_zoomable: true
+    map_marker_type: circle
+    map_marker_icon_name: default
     listen:
       Date Range: fct_cbp_assignment.allocated_date
-    show_view_names: false
-    transpose: false
-    truncate_text: true
-    hide_row_totals: true
-    size_to_fit: true
-    table_theme: white
-    limit_displayed_rows: false
-    header_text_alignment: left
-    header_font_size: '13'
-    rows_font_size: '13'
-    header_font_color: '#0B3A75'
-    header_background_color: '#E3F2FD'
-    show_row_totals: false
     title_hidden: true
     row: 10
     col: 12

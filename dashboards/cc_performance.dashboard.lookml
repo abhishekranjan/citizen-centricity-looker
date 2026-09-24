@@ -79,6 +79,24 @@
     col: 0
     width: 24
     height: 1
+  - name: strip_pass_rate
+    title: strip_pass_rate
+    model: citizen_centricity
+    explore: cc_ui
+    fields:
+    - cc_ui.strip_pass_rate
+    type: single_value
+    title_hidden: true
+    show_single_value_title: false
+    show_comparison: false
+    custom_color_enabled: false
+    enable_conditional_formatting: false
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    row: 6
+    col: 0
+    width: 15
+    height: 1
   - name: pass_by_pillar
     title: End-of-Course Assessment Pass Rate
     model: citizen_centricity
@@ -133,10 +151,29 @@
     totals_color: '#808080'
     x_axis_label_font_size: 12
     font_size: '12'
-    row: 6
+    title_hidden: true
+    row: 7
     col: 0
     width: 15
-    height: 6
+    height: 5
+  - name: strip_quality
+    title: strip_quality
+    model: citizen_centricity
+    explore: cc_ui
+    fields:
+    - cc_ui.strip_asp_content_quality_signals
+    type: single_value
+    title_hidden: true
+    show_single_value_title: false
+    show_comparison: false
+    custom_color_enabled: false
+    enable_conditional_formatting: false
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    row: 6
+    col: 15
+    width: 9
+    height: 1
   - name: content_quality_signals
     title: content_quality_signals
     model: citizen_centricity
@@ -151,10 +188,10 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 6
+    row: 7
     col: 15
     width: 9
-    height: 6
+    height: 5
   - name: q_perf_competency
     title: q_perf_competency
     model: citizen_centricity
