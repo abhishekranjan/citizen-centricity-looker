@@ -164,34 +164,12 @@ view: cc_ui {
   }
 
   # ===================================================================
-  # "GET MORE DETAILS" PILLS (right-aligned)
-  # ===================================================================
-  measure: pill_difficulty {
-    type: max
-    sql: ${TABLE}.one ;;
-    html: <div style='@{pill_wrap}'><a href='/dashboards/citizen_centricity::cc_difficulty_by_subtheme' target='_self' style='@{pill}'>Get more details</a></div> ;;
-  }
-  measure: pill_data_gaps {
-    type: max
-    sql: ${TABLE}.one ;;
-    html: <div style='@{pill_wrap}'><a href='/dashboards/citizen_centricity::cc_data_gaps' target='_self' style='@{pill}'>Get more details</a></div> ;;
-  }
-  measure: pill_ministry {
-    type: max
-    sql: ${TABLE}.one ;;
-    html: <div style='@{pill_wrap}'><a href='/dashboards/citizen_centricity::cc_adoption_ministry' target='_self' style='@{pill}'>Get more details</a></div> ;;
-  }
-
-  # ===================================================================
   # ASPIRATIONAL PANELS
   # ===================================================================
   measure: asp_content_quality_signals {
     type: max
     sql: ${TABLE}.one ;;
     html: <div style='@{panel}'>
-      <table style='width:100%;border-collapse:collapse;background:#E3F2FD;'><tr>
-        <td style='@{strip_td}'>Content Quality Signals</td>
-        <td style='text-align:right;padding:5px 8px;'>@{badge_asp}</td></tr></table>
       <table style='width:100%;border-collapse:collapse;font-size:11px;color:#9E9E9E;'>
         <tr style='text-align:left;background:#F5F5F5;'><th style='padding:5px;'>Course</th><th>Pillar</th><th>Provider</th><th>Pass Rate</th><th>Health Score</th></tr>
         <tr><td style='padding:7px 5px;'><div style='@{sk_bar}width:80%;'></div></td><td><div style='@{sk_bar}width:60%;'></div></td><td><div style='@{sk_bar}width:70%;'></div></td><td><div style='@{sk_bar}width:40%;'></div></td><td><div style='@{sk_chip}'></div></td></tr>
@@ -212,9 +190,6 @@ view: cc_ui {
     type: max
     sql: ${TABLE}.one ;;
     html: <div style='@{panel}'>
-      <table style='width:100%;border-collapse:collapse;background:#E3F2FD;'><tr>
-        <td style='@{strip_td}'>Distribution by Functional Family and Gender</td>
-        <td style='text-align:right;padding:5px 8px;'>@{badge_asp}</td></tr></table>
       <div style='margin:12px 0 8px 20px;text-align:left;'>
         <span style='display:inline-block;background:#1565C0;color:#fff;border-radius:16px;padding:5px 18px;font-size:13px;font-weight:700;'>Functional Family</span>
         <span style='display:inline-block;border:1.5px solid #90CAF9;color:#1565C0;border-radius:16px;padding:4px 18px;font-size:13px;font-weight:700;margin-left:8px;'>Gender</span>
@@ -234,9 +209,6 @@ view: cc_ui {
     type: max
     sql: ${TABLE}.one ;;
     html: <div style='@{panel}'>
-      <table style='width:100%;border-collapse:collapse;background:#E3F2FD;'><tr>
-        <td style='@{strip_td}'>Demand Signal</td>
-        <td style='text-align:right;padding:5px 8px;'>@{badge_asp}</td></tr></table>
       <div style='margin:10px auto;width:88%;border:1px solid #E0E0E0;border-radius:6px;padding:10px;text-align:center;'>
         <img src='@{asset_base}/icon_ai_tool.svg' style='width:28px;height:28px;'>
         <div style='font-size:13px;font-weight:700;color:#0B3A75;margin-top:3px;'>iGOT AI CBP Tool</div>
@@ -275,6 +247,168 @@ view: cc_ui {
       <div style='font-style:italic;margin-bottom:10px;text-align:left;'>Are civil servants demonstrating they have understood what they learned?</div>
       <p>Completion alone does not confirm learning. The pass rate adds a quality filter, indicating whether engagement translated into measurable competency acquisition. This measures the percentage of assessment attempts that result in a pass.</p>
       </div> ;;
+  }
+
+  # ===================================================================
+  # CARD HEADER STRIPS
+  # Each sits directly above a native chart/table whose Looker title is
+  # hidden. Pills live INSIDE the strip so it is unambiguous which card
+  # they belong to.
+  # ===================================================================
+
+  # -- Coverage --
+  measure: strip_course_difficulty {
+    type: max
+    sql: ${TABLE}.one ;;
+    html: <table style='@{strip_table}'><tr>
+      <td style='@{strip_title}'>Course Difficulty Levels</td>
+      <td style='@{strip_right}'><a href='/dashboards/citizen_centricity::cc_difficulty_by_subtheme' target='_self' style='@{pill}'>Get more details</a></td>
+      </tr></table> ;;
+  }
+  measure: strip_assessment_maturity {
+    type: max
+    sql: ${TABLE}.one ;;
+    html: <table style='@{strip_table}'><tr>
+      <td style='@{strip_title}'>Maturity of Assessment Framework <i style='font-weight:500;'>(Courses with Assessments)</i></td>
+      </tr></table> ;;
+  }
+  measure: strip_data_gaps {
+    type: max
+    sql: ${TABLE}.one ;;
+    html: <table style='@{strip_table}'><tr>
+      <td style='@{strip_title}'>Data Gaps in the System</td>
+      <td style='@{strip_right}'><a href='/dashboards/citizen_centricity::cc_data_gaps' target='_self' style='@{pill}'>Get more details</a></td>
+      </tr></table> ;;
+  }
+  measure: strip_provider_contribution {
+    type: max
+    sql: ${TABLE}.one ;;
+    html: <table style='@{strip_table}'><tr>
+      <td style='@{strip_title}'>Contribution of Course Providers</td>
+      </tr></table> ;;
+  }
+  measure: strip_subtheme_coverage {
+    type: max
+    sql: ${TABLE}.one ;;
+    html: <table style='@{strip_table}'><tr>
+      <td style='@{strip_title}'>Sub-Theme Coverage | By Pillars</td>
+      </tr></table> ;;
+  }
+
+  # -- Adoption --
+  measure: strip_cbp_coverage {
+    type: max
+    sql: ${TABLE}.one ;;
+    html: <table style='@{strip_table}'><tr>
+      <td style='@{strip_title}'>CBP Coverage</td>
+      <td style='@{strip_right}'><a href='/dashboards/citizen_centricity::cc_adoption_ministry' target='_self' style='@{pill}'>Get more details</a></td>
+      </tr></table> ;;
+  }
+  measure: strip_assigned_completion {
+    type: max
+    sql: ${TABLE}.one ;;
+    html: <table style='@{strip_table}'><tr>
+      <td style='@{strip_title}'>Assigned Completion | By Pillar, Theme, Sub-Theme</td>
+      </tr></table> ;;
+  }
+
+  # -- Learning --
+  measure: strip_group_distribution {
+    type: max
+    sql: ${TABLE}.one ;;
+    html: <table style='@{strip_table}'><tr>
+      <td style='@{strip_title}'>Group-wise Distribution and Completions</td>
+      </tr></table> ;;
+  }
+  measure: strip_pillar_group {
+    type: max
+    sql: ${TABLE}.one ;;
+    html: <table style='@{strip_table}'><tr>
+      <td style='@{strip_title}'>Pillar wise completion of Groups</td>
+      </tr></table> ;;
+  }
+
+  # MDO / State toggle. The two Learning pages are separate dashboards;
+  # these links switch between them and carry the current Date Range and
+  # Group filter values across (tile must listen to both filters).
+  filter: date_range {
+    hidden: yes
+    type: date
+  }
+  filter: group {
+    hidden: yes
+    type: string
+  }
+
+  measure: strip_learning_mdo {
+    type: max
+    sql: ${TABLE}.one ;;
+    html: <table style='@{strip_table}'><tr>
+      <td style='@{strip_title}'>Learning across MDOs and States</td>
+      <td style='@{strip_right}'>
+        <a href='/dashboards/citizen_centricity::cc_learning?Date+Range={{ _filters["cc_ui.date_range"] | url_encode }}&Group={{ _filters["cc_ui.group"] | url_encode }}' target='_self' style='@{toggle_on}'>MDO</a><a href='/dashboards/citizen_centricity::cc_learning_state?Date+Range={{ _filters["cc_ui.date_range"] | url_encode }}&Group={{ _filters["cc_ui.group"] | url_encode }}' target='_self' style='@{toggle_off}'>State</a></td>
+      </tr></table> ;;
+  }
+  measure: strip_learning_state {
+    type: max
+    sql: ${TABLE}.one ;;
+    html: <table style='@{strip_table}'><tr>
+      <td style='@{strip_title}'>Learning across MDOs and States</td>
+      <td style='@{strip_right}'>
+        <a href='/dashboards/citizen_centricity::cc_learning?Date+Range={{ _filters["cc_ui.date_range"] | url_encode }}&Group={{ _filters["cc_ui.group"] | url_encode }}' target='_self' style='@{toggle_off}'>MDO</a><a href='/dashboards/citizen_centricity::cc_learning_state?Date+Range={{ _filters["cc_ui.date_range"] | url_encode }}&Group={{ _filters["cc_ui.group"] | url_encode }}' target='_self' style='@{toggle_on}'>State</a></td>
+      </tr></table> ;;
+  }
+
+  # -- Performance --
+  measure: strip_pass_rate {
+    type: max
+    sql: ${TABLE}.one ;;
+    html: <table style='@{strip_table}'><tr>
+      <td style='@{strip_title}'>End-of-Course Assessment Pass Rate</td>
+      </tr></table> ;;
+  }
+
+  # -- Aspirational panel headers --
+  measure: strip_asp_content_quality_signals {
+    type: max
+    sql: ${TABLE}.one ;;
+    html: <table style='@{strip_table}'><tr>
+      <td style='@{strip_title}'>Content Quality Signals</td>
+      <td style='@{strip_right}'>@{badge_asp}</td>
+      </tr></table> ;;
+  }
+  measure: strip_asp_functional_family {
+    type: max
+    sql: ${TABLE}.one ;;
+    html: <table style='@{strip_table}'><tr>
+      <td style='@{strip_title}'>Distribution by Functional Family and Gender</td>
+      <td style='@{strip_right}'>@{badge_asp}</td>
+      </tr></table> ;;
+  }
+  measure: strip_asp_demand_signal {
+    type: max
+    sql: ${TABLE}.one ;;
+    html: <table style='@{strip_table}'><tr>
+      <td style='@{strip_title}'>Demand Signal</td>
+      <td style='@{strip_right}'>@{badge_asp}</td>
+      </tr></table> ;;
+  }
+
+  # -- Drill-through page titles (centred, as in the original) --
+  measure: title_course_list {
+    type: max
+    sql: ${TABLE}.one ;;
+    html: <div style='@{page_title}'>Course List</div> ;;
+  }
+  measure: title_data_gaps {
+    type: max
+    sql: ${TABLE}.one ;;
+    html: <div style='@{page_title}'>Data Gaps</div> ;;
+  }
+  measure: title_difficulty_subtheme {
+    type: max
+    sql: ${TABLE}.one ;;
+    html: <div style='@{page_title}'>Course Difficulty by Sub-Theme</div> ;;
   }
 
   # ===================================================================
