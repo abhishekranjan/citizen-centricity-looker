@@ -12,13 +12,16 @@ constant: asset_base {
 }
 
 # ---- Typography --------------------------------------------------------
+# Roboto is already loaded by the Looker UI, so it renders for every viewer
+# without any web-font import (html: cannot load Google Fonts itself).
+# Type scale: 600 for titles/labels, 400 for values; one navy for headings.
 constant: font {
-  value: "font-family:Lato,Roboto,'Helvetica Neue',Arial,sans-serif;"
+  value: "font-family:Roboto,Google Sans,Segoe UI,Helvetica Neue,Arial,sans-serif;"
 }
 
 # ---- Orange header band + tab buttons ---------------------------------
 constant: hdr_table {
-  value: "width:100%;border-collapse:collapse;background:#F0961E;font-family:Lato,Roboto,Arial,sans-serif;table-layout:auto;"
+  value: "width:100%;border-collapse:collapse;background:#F0961E;font-family:Roboto,Google Sans,Segoe UI,Helvetica Neue,Arial,sans-serif;table-layout:auto;"
 }
 constant: hdr_logo_td {
   value: "width:170px;padding:5px 0 5px 10px;vertical-align:middle;"
@@ -27,7 +30,7 @@ constant: hdr_logo {
   value: "height:46px;background:#ffffff;padding:2px 4px;display:block;"
 }
 constant: hdr_title_td {
-  value: "padding-left:14px;vertical-align:middle;color:#ffffff;font-size:21px;font-weight:700;white-space:nowrap;text-align:left;"
+  value: "padding-left:14px;vertical-align:middle;color:#ffffff;font-size:21px;font-weight:600;letter-spacing:.2px;white-space:nowrap;text-align:left;"
 }
 constant: hdr_tabs_td {
   value: "text-align:right;vertical-align:middle;padding:4px 10px;white-space:nowrap;"
@@ -41,21 +44,18 @@ constant: tab_on {
 
 # ---- Navy question bar -------------------------------------------------
 constant: qbar {
-  value: "width:100%;box-sizing:border-box;background:#0B3A75;color:#ffffff;text-align:center;font-size:18px;font-weight:700;padding:7px 10px;border-radius:4px;font-family:Lato,Roboto,Arial,sans-serif;"
+  value: "width:100%;box-sizing:border-box;background:#0B3A75;color:#ffffff;text-align:center;font-size:17px;font-weight:600;letter-spacing:.2px;padding:8px 10px;border-radius:4px;font-family:Roboto,Google Sans,Segoe UI,Helvetica Neue,Arial,sans-serif;"
 }
 constant: qbar_table {
-  value: "width:100%;border-collapse:collapse;background:#0B3A75;border-radius:4px;font-family:Lato,Roboto,Arial,sans-serif;"
+  value: "width:100%;border-collapse:collapse;background:#0B3A75;border-radius:4px;font-family:Roboto,Google Sans,Segoe UI,Helvetica Neue,Arial,sans-serif;"
 }
 constant: qbar_td {
-  value: "text-align:center;color:#ffffff;font-size:18px;font-weight:700;padding:7px 10px;"
+  value: "text-align:center;color:#ffffff;font-size:17px;font-weight:600;letter-spacing:.2px;padding:8px 10px;"
 }
 
 # ---- Pills / links -----------------------------------------------------
 constant: pill {
   value: "display:inline-block;background:#64B5F6;color:#ffffff;padding:4px 18px;border-radius:14px;font-size:12px;text-decoration:none;box-shadow:0 1px 3px rgba(0,0,0,.25);"
-}
-constant: pill_wrap {
-  value: "width:100%;text-align:right;padding-right:10px;box-sizing:border-box;font-family:Lato,Roboto,Arial,sans-serif;"
 }
 constant: link_pill {
   value: "display:inline-block;background:#E3F2FD;color:#1565C0;border-radius:14px;padding:4px 10px;font-size:13px;text-decoration:none;"
@@ -63,7 +63,7 @@ constant: link_pill {
 
 # ---- Go Back -----------------------------------------------------------
 constant: go_back {
-  value: "width:100%;text-align:left;padding-left:30px;box-sizing:border-box;font-family:Lato,Roboto,Arial,sans-serif;"
+  value: "width:100%;text-align:left;padding-left:30px;box-sizing:border-box;font-family:Roboto,Google Sans,Segoe UI,Helvetica Neue,Arial,sans-serif;"
 }
 constant: go_back_a {
   value: "font-size:24px;color:#212121;text-decoration:none;"
@@ -92,7 +92,7 @@ constant: inner_white {
   value: "background:#ffffff;border-radius:12px;padding:6px 8px;margin-top:5px;"
 }
 constant: row_table {
-  value: "width:100%;border-collapse:separate;border-spacing:5px 0;table-layout:fixed;font-family:Lato,Roboto,Arial,sans-serif;"
+  value: "width:100%;border-collapse:separate;border-spacing:5px 0;table-layout:fixed;font-family:Roboto,Google Sans,Segoe UI,Helvetica Neue,Arial,sans-serif;"
 }
 constant: arrow_td {
   value: "width:2%;text-align:center;vertical-align:middle;font-size:22px;"
@@ -100,7 +100,7 @@ constant: arrow_td {
 
 # ---- KPI cards with icon ----------------------------------------------
 constant: kpi_table {
-  value: "width:100%;border-collapse:collapse;font-family:Lato,Roboto,Arial,sans-serif;"
+  value: "width:100%;border-collapse:collapse;font-family:Roboto,Google Sans,Segoe UI,Helvetica Neue,Arial,sans-serif;"
 }
 constant: kpi_icon_td {
   value: "width:50px;vertical-align:middle;"
@@ -112,7 +112,7 @@ constant: kpi_body_td {
   value: "vertical-align:middle;padding-left:6px;"
 }
 constant: kpi_strip {
-  value: "background:#E3F2FD;text-align:center;font-size:15px;font-weight:600;color:#212121;padding:5px;border-radius:3px;"
+  value: "background:#E3F2FD;text-align:center;font-size:14px;font-weight:500;color:#263238;padding:5px;border-radius:3px;"
 }
 constant: kpi_big {
   value: "text-align:center;font-size:26px;color:#0B3A75;padding:3px 0;"
@@ -129,19 +129,16 @@ constant: kpi_chip {
 
 # ---- Text styles -------------------------------------------------------
 constant: kpi_value {
-  value: "font-size:26px;color:#0B3A75;line-height:1.15;"
+  value: "font-size:26px;font-weight:400;color:#0B3A75;line-height:1.15;"
 }
 constant: kpi_label {
-  value: "font-size:12px;font-weight:700;color:#212121;margin-top:2px;"
+  value: "font-size:12px;font-weight:500;color:#455A64;margin-top:3px;"
 }
 constant: card_title {
-  value: "font-size:15px;font-weight:700;color:#0B3A75;line-height:1.2;"
-}
-constant: strip_td {
-  value: "color:#0B3A75;font-size:16px;font-weight:700;padding:5px 10px;text-align:left;"
+  value: "font-size:14px;font-weight:600;color:#0B3A75;line-height:1.25;"
 }
 constant: panel {
-  value: "width:100%;box-sizing:border-box;font-family:Lato,Roboto,Arial,sans-serif;"
+  value: "width:100%;box-sizing:border-box;font-family:Roboto,Google Sans,Segoe UI,Helvetica Neue,Arial,sans-serif;"
 }
 
 # ---- Skeleton placeholders (aspirational tables) -----------------------
@@ -158,4 +155,28 @@ constant: ff_bar {
 # ---- Aspirational badge (inline HTML snippet) --------------------------
 constant: badge_asp {
   value: "<span style='display:inline-block;border:1.5px solid #5C6BC0;background:#ECEFF1;color:#1565C0;border-radius:3px;padding:1px 5px;font-size:10px;font-weight:700;letter-spacing:.3px;'>&#9888; ASPIRATIONAL</span>"
+}
+
+# ---- Card header strip (sits directly above a native chart/table) ------
+# Every chart/table card = one strip tile (height 1) + the viz tile below
+# with its Looker title hidden. The strip carries the title and, where the
+# demo has one, the "Get more details" pill or MDO/State toggle - so the
+# pill always belongs visibly to the card underneath it.
+constant: strip_table {
+  value: "width:100%;border-collapse:collapse;background:#E3F2FD;border-radius:4px;border-bottom:2px solid #BBDEFB;font-family:Roboto,Google Sans,Segoe UI,Helvetica Neue,Arial,sans-serif;"
+}
+constant: strip_title {
+  value: "color:#0B3A75;font-size:15px;font-weight:600;padding:8px 12px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;"
+}
+constant: strip_right {
+  value: "text-align:right;padding:6px 10px;white-space:nowrap;width:1%;"
+}
+constant: toggle_on {
+  value: "display:inline-block;min-width:70px;text-align:center;background:#0B3A75;color:#ffffff;padding:4px 14px;border-radius:14px;font-size:13px;font-weight:500;text-decoration:none;margin-left:6px;"
+}
+constant: toggle_off {
+  value: "display:inline-block;min-width:70px;text-align:center;background:#ffffff;color:#0B3A75;border:1px solid #90CAF9;padding:3px 14px;border-radius:14px;font-size:13px;font-weight:500;text-decoration:none;margin-left:6px;"
+}
+constant: page_title {
+  value: "width:100%;text-align:center;color:#0B3A75;font-size:20px;font-weight:600;letter-spacing:.2px;font-family:Roboto,Google Sans,Segoe UI,Helvetica Neue,Arial,sans-serif;"
 }
