@@ -263,7 +263,11 @@ view: +rpt_taxonomy_coverage {
       </tr></table> ;;
   }
 
-  # Tile fields: [rpt_taxonomy_coverage.subthemes_card, rpt_taxonomy_coverage.subthemes_domain_label]
+  # Tile fields: [rpt_taxonomy_coverage.subthemes_card, rpt_taxonomy_coverage.subthemes_all_label]
+  # NOTE: the second value is subthemes_ALL (84/107), not Domain. The original
+  # dashboard labels this figure "Domain" but it counts every sub-theme, and
+  # the client has confirmed that is the intended figure. Keep the label and
+  # the all-subthemes measure together; do not "correct" one without the other.
   measure: subthemes_card {
     hidden: yes
     type: string
@@ -274,7 +278,7 @@ view: +rpt_taxonomy_coverage {
         <div style='@{kpi_strip}'>Sub-Themes Covered</div>
         <table style='width:100%;border-collapse:collapse;'><tr>
           <td style='text-align:center;'><div style='@{kpi_pair}'>{{ value }}</div><div style='@{kpi_sub}'>B&amp;F</div></td>
-          <td style='text-align:center;'><div style='@{kpi_pair}'>{{ rpt_taxonomy_coverage.subthemes_domain_label._value }}</div><div style='@{kpi_sub}'>Domain</div></td>
+          <td style='text-align:center;'><div style='@{kpi_pair}'>{{ rpt_taxonomy_coverage.subthemes_all_label._value }}</div><div style='@{kpi_sub}'>Domain</div></td>
         </tr></table></td>
       </tr></table> ;;
   }
