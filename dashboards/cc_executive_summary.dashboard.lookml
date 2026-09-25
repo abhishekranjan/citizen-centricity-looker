@@ -243,7 +243,7 @@
     explore: rpt_taxonomy_coverage
     fields:
     - rpt_taxonomy_coverage.subthemes_card
-    - rpt_taxonomy_coverage.subthemes_domain_label
+    - rpt_taxonomy_coverage.subthemes_all_label
     type: single_value
     title_hidden: true
     show_single_value_title: false
