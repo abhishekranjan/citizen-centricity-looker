@@ -38,7 +38,7 @@
 # Source vectors live in assets/icons/; assets/icons/rasterise.py regenerates
 # the PNGs. Never paste SVG markup into an html: block - it will not render.
 constant: asset_base {
-  value: "REPLACE_ME_WITH_YOUR_PUBLIC_HTTPS_URL"
+  value: "https://raw.githubusercontent.com/abhishekranjan/citizen-centricity-looker/refs/heads/dev-abhishek-ranjan-bvwv/assets/png"
 }
 
 # Diagnostic control only - a 64x64 data: URI, used by the Zz Render Test
