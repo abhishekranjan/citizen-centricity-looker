@@ -210,11 +210,11 @@ view: cc_ui {
     sql: ${TABLE}.one ;;
     html: <div style='@{panel}'>
       <div style='margin:10px auto;width:88%;border:1px solid #E0E0E0;border-radius:6px;padding:10px;text-align:center;'>
-        <span style='display:inline-block;box-sizing:border-box;width:28px;height:28px;'>@{svg_ai_tool}</span>
+        <span style='display:inline-block;box-sizing:border-box;width:28px;height:28px;'><img src='@{svg_ai_tool}' style='width:100%;height:100%;display:block;' alt=''></span>
         <div style='font-size:13px;font-weight:700;color:#0B3A75;margin-top:3px;'>iGOT AI CBP Tool</div>
         <div style='font-size:11px;color:#757575;'>Recommends sub-themes to officials<br>building their capacity plan</div>
         <div style='color:#BDBDBD;margin:6px 0;'>&#8595;</div>
-        <span style='display:inline-block;box-sizing:border-box;width:28px;height:28px;'>@{svg_flag_gap}</span>
+        <span style='display:inline-block;box-sizing:border-box;width:28px;height:28px;'><img src='@{svg_flag_gap}' style='width:100%;height:100%;display:block;' alt=''></span>
         <div style='font-size:13px;font-weight:700;color:#0B3A75;margin-top:3px;'>Flag Supply Gaps</div>
         <div style='font-size:11px;color:#757575;'>Sub-themes with high demand but fewer<br>than 5 courses flagged for action</div>
         <div style='font-size:10px;font-style:italic;color:#9E9E9E;margin-top:10px;text-align:left;'>&#128274; Available once iGOT AI CBP tool data is piped in.</div>

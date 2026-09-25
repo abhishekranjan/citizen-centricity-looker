@@ -41,7 +41,7 @@ view: +rpt_pillar_score {
       </div>
       <table style='width:100%;border-collapse:collapse;margin-top:4px;'><tr>
         <td style='width:33%;'></td>
-        <td style='width:34%;text-align:center;'><span style='display:inline-block;box-sizing:border-box;width:56px;height:56px;border-radius:50%;background:#ffffff;padding:3px;'>@{svg_composite}</span></td>
+        <td style='width:34%;text-align:center;'><span style='display:inline-block;box-sizing:border-box;width:56px;height:56px;border-radius:50%;background:#ffffff;padding:3px;'><img src='@{svg_composite}' style='width:100%;height:100%;display:block;' alt=''></span></td>
         <td style='width:33%;text-align:right;padding-right:6px;'><a href='/dashboards/citizen_centricity::cc_score_calculation' target='_self' style='@{link_pill}'>Click here to see Calculation for the Composite Score</a></td>
       </tr></table>
       <table style='width:100%;border-collapse:collapse;background:#BBDEFB;margin-top:-22px;'><tr>
@@ -52,7 +52,7 @@ view: +rpt_pillar_score {
         <td style='width:16%;text-align:right;padding-right:10px;white-space:nowrap;'>
           <a href='/dashboards/citizen_centricity::cc_subtheme_analysis' target='_self' style='text-decoration:none;'>
             <span style='font-size:12px;font-style:italic;color:#212121;vertical-align:middle;margin-right:6px;'>Go to Detailed<br>Sub-Theme Analysis</span>
-            <span style='display:inline-block;box-sizing:border-box;width:40px;height:40px;vertical-align:middle;'>@{svg_arrow_right}</span></a></td>
+            <span style='display:inline-block;box-sizing:border-box;width:40px;height:40px;vertical-align:middle;'><img src='@{svg_arrow_right}' style='width:100%;height:100%;display:block;' alt=''></span></a></td>
       </tr></table></div> ;;
   }
 
@@ -69,8 +69,9 @@ view: +rpt_pillar_score {
     html:
       <div style='width:100%;box-sizing:border-box;padding:0 4px;@{font}'>
         <table style='width:100%;border-collapse:collapse;background:#E3F2FD;border-radius:30px 0 0 30px;'><tr>
-          <td style='width:56px;'><span style='display:block;box-sizing:border-box;width:54px;height:54px;border-radius:50%;background:#ffffff;padding:2px;'>{% if value == 'Service Knowledge' %}@{svg_service_knowledge}{% elsif value == 'Responsiveness' %}@{svg_responsiveness}{% elsif value == 'Transparency' %}@{svg_transparency}{% else %}@{svg_participation}{% endif %}</span></td>
-          <td style='text-align:center;font-size:22px;font-weight:700;color:#0B3A75;padding-right:20px;'>{{ value }}</td>
+          <td style='width:56px;'><span style='display:block;box-sizing:border-box;width:54px;height:54px;border-radius:50%;background:#ffffff;padding:2px;'>{% if value == 'Service Knowledge' %}<img src='@{svg_service_knowledge}' style='width:100%;height:100%;display:block;' alt=''>{% elsif value == 'Responsiveness' %}<img src='@{svg_responsiveness}' style='width:100%;height:100%;display:block;' alt=''>{% elsif value == 'Transparency' %}<img src='@{svg_transparency}' style='width:100%;height:100%;display:block;' alt=''>{% else %}<img src='@{svg_participation}' style='width:100%;height:100%;display:block;' alt=''>{% endif %}</span></td>
+          <td style='text-align:center;font-size:22px;font-weight:700;color:#0B3A75;'>{{ value }}</td>
+          <td style='width:30px;padding-right:8px;line-height:0;vertical-align:middle;'>{% if value == 'Participation' %}<img src='@{svg_info}' style='width:22px;height:22px;display:block;' alt='About the composite score' title='Composite score = 30% proficiency-level coverage + 40% assigned completion + 30% assessment pass rate.'>{% endif %}</td>
         </tr></table>
         <table style='width:100%;border-collapse:separate;border-spacing:8px 8px;margin-top:2px;'>
           <tr>
@@ -138,7 +139,7 @@ view: +fct_course {
     sql: ${TABLE}.enrolments ;;
     value_format: "[>=1000000]0.0,,\"M\";[>=1000]0.0,\"K\";0"
     html: <table style='@{kpi_table}'><tr>
-      <td style='@{kpi_icon_td}'><span style='display:inline-block;box-sizing:border-box;@{kpi_icon}'>@{svg_enrolment}</span></td>
+      <td style='@{kpi_icon_td}'><span style='display:inline-block;box-sizing:border-box;@{kpi_icon}'><img src='@{svg_enrolment}' style='width:100%;height:100%;display:block;' alt=''></span></td>
       <td style='@{kpi_body_td}'>
         <div style='@{kpi_strip}'>Total Enrollment</div>
         <div style='@{kpi_big}'>{{ rendered_value }}</div></td>
@@ -151,7 +152,7 @@ view: +fct_course {
     sql: ${TABLE}.completions ;;
     value_format: "[>=1000000]0.0,,\"M\";[>=1000]0.0,\"K\";0"
     html: <table style='@{kpi_table}'><tr>
-      <td style='@{kpi_icon_td}'><span style='display:inline-block;box-sizing:border-box;@{kpi_icon}'>@{svg_completions}</span></td>
+      <td style='@{kpi_icon_td}'><span style='display:inline-block;box-sizing:border-box;@{kpi_icon}'><img src='@{svg_completions}' style='width:100%;height:100%;display:block;' alt=''></span></td>
       <td style='@{kpi_body_td}'>
         <div style='@{kpi_strip}'>Total Completions</div>
         <div style='@{kpi_big}'>{{ rendered_value }}</div></td>
@@ -163,7 +164,7 @@ view: +fct_course {
     type: count_distinct
     sql: ${course_id} ;;
     html: <table style='@{kpi_table}'><tr>
-      <td style='@{kpi_icon_td}'><span style='display:inline-block;box-sizing:border-box;@{kpi_icon}'>@{svg_courses}</span></td>
+      <td style='@{kpi_icon_td}'><span style='display:inline-block;box-sizing:border-box;@{kpi_icon}'><img src='@{svg_courses}' style='width:100%;height:100%;display:block;' alt=''></span></td>
       <td style='@{kpi_body_td}'>
         <div style='@{kpi_strip}'>No. of Courses</div>
         <div style='@{kpi_big}'>{{ rendered_value }}</div></td>
@@ -207,29 +208,29 @@ view: +fct_course {
       <td style='width:16%;@{card_green}'>
         <div style='@{card_title}'>Course Supply</div>
         <div style='@{inner_white}font-size:17px;color:#0B3A75;line-height:1.6;'>{{ value }}<br>Courses</div></td>
-      <td style='@{arrow_td}color:#81C784;'>&#10132;</td>
+      <td style='@{arrow_td}'><img src='@{svg_arrow_green}' style='width:30px;height:26px;display:inline-block;' alt=''></td>
       <td style='width:16%;@{card_green}'>
         <div style='@{card_title}'>Course Completion</div>
         <table style='@{inner_white}width:100%;border-collapse:collapse;'><tr>
           <td style='font-size:17px;color:#0B3A75;line-height:1.6;text-align:center;'>{{ fct_course.completions._rendered_value }}<br>Completions</td>
           <td style='font-size:17px;color:#0B3A75;line-height:1.6;text-align:center;'>{{ fct_course.completion_rate._rendered_value }}<br>Rate</td>
         </tr></table></td>
-      <td style='@{arrow_td}color:#81C784;'>&#10132;</td>
+      <td style='@{arrow_td}'><img src='@{svg_arrow_green}' style='width:30px;height:26px;display:inline-block;' alt=''></td>
       <td style='width:16%;@{card_green}'>
         <div style='@{card_title}'>End-of-Course Assessment</div>
         <table style='@{inner_white}width:100%;border-collapse:collapse;'><tr>
           <td style='font-size:17px;color:#0B3A75;line-height:1.6;text-align:center;'>{{ fct_course.eoc_coverage._rendered_value }}<br>Coverage</td>
           <td style='font-size:17px;color:#0B3A75;line-height:1.6;text-align:center;'>{{ fct_course.pass_rate._rendered_value }}<br>Pass Rate</td>
         </tr></table></td>
-      <td style='@{arrow_td}color:#81C784;'>&#10132;</td>
+      <td style='@{arrow_td}'><img src='@{svg_arrow_green}' style='width:30px;height:26px;display:inline-block;' alt=''></td>
       <td style='width:16%;@{card_cream}'>
         <div style='@{card_title}'>Competency Assessment</div>
         <div style='@{inner_white}font-size:16px;color:#0B3A75;line-height:1.6;'>Under development<br>@{badge_asp}</div></td>
-      <td style='@{arrow_td}color:#FFD54F;'>&#10132;</td>
+      <td style='@{arrow_td}'><img src='@{svg_arrow_amber}' style='width:30px;height:26px;display:inline-block;' alt=''></td>
       <td style='width:16%;@{card_grey}'>
         <div style='@{card_title}'>Workplace Validation</div>
         <div style='@{inner_white}font-size:15px;color:#0B3A75;line-height:1.35;'>360-degree Feedback System to be developed<br>@{badge_asp}</div></td>
-      <td style='@{arrow_td}color:#424242;'>&#10132;</td>
+      <td style='@{arrow_td}'><img src='@{svg_arrow_grey}' style='width:30px;height:26px;display:inline-block;' alt=''></td>
       <td style='width:16%;@{card_grey}'>
         <div style='@{card_title}'>Citizen Feedback / Workflow Application Systems</div>
         <div style='@{inner_white}font-size:15px;color:#0B3A75;line-height:1.5;'>Beyond CBC mandate<br>@{badge_asp}</div></td>
@@ -249,7 +250,7 @@ view: +rpt_taxonomy_coverage {
     type: string
     sql: ${themes_bf_label} ;;
     html: <table style='@{kpi_table}'><tr>
-      <td style='@{kpi_icon_td}'><span style='display:inline-block;box-sizing:border-box;@{kpi_icon}'>@{svg_themes}</span></td>
+      <td style='@{kpi_icon_td}'><span style='display:inline-block;box-sizing:border-box;@{kpi_icon}'><img src='@{svg_themes}' style='width:100%;height:100%;display:block;' alt=''></span></td>
       <td style='@{kpi_body_td}'>
         <div style='@{kpi_strip}'>Themes Covered</div>
         <table style='width:100%;border-collapse:collapse;'><tr>
@@ -269,7 +270,7 @@ view: +rpt_taxonomy_coverage {
     type: string
     sql: ${subthemes_bf_label} ;;
     html: <table style='@{kpi_table}'><tr>
-      <td style='@{kpi_icon_td}'><span style='display:inline-block;box-sizing:border-box;@{kpi_icon}'>@{svg_subthemes}</span></td>
+      <td style='@{kpi_icon_td}'><span style='display:inline-block;box-sizing:border-box;@{kpi_icon}'><img src='@{svg_subthemes}' style='width:100%;height:100%;display:block;' alt=''></span></td>
       <td style='@{kpi_body_td}'>
         <div style='@{kpi_strip}'>Sub-Themes Covered</div>
         <table style='width:100%;border-collapse:collapse;'><tr>
@@ -293,13 +294,13 @@ view: +fct_cbp_assignment {
     value_format: "[>=1000000]0.0,,\"M\";[>=1000]0.0,\"K\";0"
     html: <div style='width:100%;box-sizing:border-box;padding:0 4px;@{font}'>
       <table style='@{kpi_table}margin-bottom:14px;'><tr>
-        <td style='width:76px;'><span style='display:inline-block;box-sizing:border-box;width:74px;height:74px;border-radius:50%;background:#EEEEEE;display:block;'>@{svg_officials}</span></td>
+        <td style='width:76px;'><span style='display:inline-block;box-sizing:border-box;width:74px;height:74px;border-radius:50%;background:#EEEEEE;display:block;'><img src='@{svg_officials}' style='width:100%;height:100%;display:block;' alt=''></span></td>
         <td style='@{kpi_body_td}'>
           <div style='@{kpi_strip}font-size:17px;'>Total No. of Assigned Officials</div>
           <div style='@{kpi_chip}'>{{ rendered_value }}</div></td>
       </tr></table>
       <table style='@{kpi_table}'><tr>
-        <td style='width:76px;'><span style='display:inline-block;box-sizing:border-box;width:74px;height:74px;display:block;'>@{svg_officials_solid}</span></td>
+        <td style='width:76px;'><span style='display:inline-block;box-sizing:border-box;width:74px;height:74px;display:block;'><img src='@{svg_officials_solid}' style='width:100%;height:100%;display:block;' alt=''></span></td>
         <td style='@{kpi_body_td}'>
           <div style='@{kpi_strip}font-size:17px;'>Assigned Completion Rate</div>
           <div style='@{kpi_chip}'>{{ fct_cbp_assignment.completion_rate._rendered_value }}</div></td>

@@ -12,8 +12,14 @@
 # READING THE RESULT
 #   1 GREEN BOX only .......... html: works, all artwork is being stripped
 #   1 + 5 ..................... external <img> allowed, data: and <svg> blocked
-#   1 + 4 + 5 ................. <img> fine (incl. data URI), inline <svg> blocked
-#   all five ................. nothing is blocked -> the deploy did not land
+#   1 + 3 + 4 + 5 ............. EXPECTED. <img> fine (incl. data URI); inline
+#                               <svg> (box 2) is stripped by Looker's HTML
+#                               sanitiser, which is why the icons now ship as
+#                               PNG data URIs rather than as <svg> markup.
+#   all five ................. the sanitiser allow-list has changed
+#
+# If box 4 is also missing, this instance blocks data: URIs outright and the
+# artwork has to be served from a URL every viewer can reach instead.
 # =====================================================================
 
 view: +fct_course {
@@ -33,7 +39,7 @@ view: +fct_course {
           <div>2 bare svg</div></span>
 
         <span style='display:inline-block;width:110px;text-align:center;vertical-align:top;'>
-          <span style='display:inline-block;width:48px;height:48px;'>@{svg_courses}</span>
+          <span style='display:inline-block;width:48px;height:48px;'><img src='@{svg_courses}' style='width:100%;height:100%;display:block;' alt=''></span>
           <div>3 icon constant</div></span>
 
         <span style='display:inline-block;width:110px;text-align:center;vertical-align:top;'>
