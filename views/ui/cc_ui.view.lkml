@@ -39,7 +39,7 @@ view: cc_ui {
     type: max
     sql: ${TABLE}.one ;;
     html: <table style='@{hdr_table}'><tr>
-      <td style='@{hdr_logo_td}'><img src='@{asset_base}/cbc_logo.png' style='@{hdr_logo}'></td>
+      <td style='@{hdr_logo_td}'><img src='@{logo_cbc}' style='@{hdr_logo}'></td>
       <td style='@{hdr_title_td}'>Key Result Area: Citizen-Centricity</td>
       <td style='@{hdr_tabs_td}'><a href='/dashboards/citizen_centricity::cc_executive_summary' target='_self' style='@{tab_on}'>Executive Summary</a><a href='/dashboards/citizen_centricity::cc_coverage' target='_self' style='@{tab}'>Coverage</a><a href='/dashboards/citizen_centricity::cc_adoption' target='_self' style='@{tab}'>Adoption</a><a href='/dashboards/citizen_centricity::cc_learning' target='_self' style='@{tab}'>Learning</a><a href='/dashboards/citizen_centricity::cc_performance' target='_self' style='@{tab}'>Performance</a></td>
       </tr></table> ;;
@@ -49,7 +49,7 @@ view: cc_ui {
     type: max
     sql: ${TABLE}.one ;;
     html: <table style='@{hdr_table}'><tr>
-      <td style='@{hdr_logo_td}'><img src='@{asset_base}/cbc_logo.png' style='@{hdr_logo}'></td>
+      <td style='@{hdr_logo_td}'><img src='@{logo_cbc}' style='@{hdr_logo}'></td>
       <td style='@{hdr_title_td}'>Key Result Area: Citizen-Centricity</td>
       <td style='@{hdr_tabs_td}'><a href='/dashboards/citizen_centricity::cc_executive_summary' target='_self' style='@{tab}'>Executive Summary</a><a href='/dashboards/citizen_centricity::cc_coverage' target='_self' style='@{tab_on}'>Coverage</a><a href='/dashboards/citizen_centricity::cc_adoption' target='_self' style='@{tab}'>Adoption</a><a href='/dashboards/citizen_centricity::cc_learning' target='_self' style='@{tab}'>Learning</a><a href='/dashboards/citizen_centricity::cc_performance' target='_self' style='@{tab}'>Performance</a></td>
       </tr></table> ;;
@@ -59,7 +59,7 @@ view: cc_ui {
     type: max
     sql: ${TABLE}.one ;;
     html: <table style='@{hdr_table}'><tr>
-      <td style='@{hdr_logo_td}'><img src='@{asset_base}/cbc_logo.png' style='@{hdr_logo}'></td>
+      <td style='@{hdr_logo_td}'><img src='@{logo_cbc}' style='@{hdr_logo}'></td>
       <td style='@{hdr_title_td}'>Key Result Area: Citizen-Centricity</td>
       <td style='@{hdr_tabs_td}'><a href='/dashboards/citizen_centricity::cc_executive_summary' target='_self' style='@{tab}'>Executive Summary</a><a href='/dashboards/citizen_centricity::cc_coverage' target='_self' style='@{tab}'>Coverage</a><a href='/dashboards/citizen_centricity::cc_adoption' target='_self' style='@{tab_on}'>Adoption</a><a href='/dashboards/citizen_centricity::cc_learning' target='_self' style='@{tab}'>Learning</a><a href='/dashboards/citizen_centricity::cc_performance' target='_self' style='@{tab}'>Performance</a></td>
       </tr></table> ;;
@@ -69,7 +69,7 @@ view: cc_ui {
     type: max
     sql: ${TABLE}.one ;;
     html: <table style='@{hdr_table}'><tr>
-      <td style='@{hdr_logo_td}'><img src='@{asset_base}/cbc_logo.png' style='@{hdr_logo}'></td>
+      <td style='@{hdr_logo_td}'><img src='@{logo_cbc}' style='@{hdr_logo}'></td>
       <td style='@{hdr_title_td}'>Key Result Area: Citizen-Centricity</td>
       <td style='@{hdr_tabs_td}'><a href='/dashboards/citizen_centricity::cc_executive_summary' target='_self' style='@{tab}'>Executive Summary</a><a href='/dashboards/citizen_centricity::cc_coverage' target='_self' style='@{tab}'>Coverage</a><a href='/dashboards/citizen_centricity::cc_adoption' target='_self' style='@{tab}'>Adoption</a><a href='/dashboards/citizen_centricity::cc_learning' target='_self' style='@{tab_on}'>Learning</a><a href='/dashboards/citizen_centricity::cc_performance' target='_self' style='@{tab}'>Performance</a></td>
       </tr></table> ;;
@@ -79,7 +79,7 @@ view: cc_ui {
     type: max
     sql: ${TABLE}.one ;;
     html: <table style='@{hdr_table}'><tr>
-      <td style='@{hdr_logo_td}'><img src='@{asset_base}/cbc_logo.png' style='@{hdr_logo}'></td>
+      <td style='@{hdr_logo_td}'><img src='@{logo_cbc}' style='@{hdr_logo}'></td>
       <td style='@{hdr_title_td}'>Key Result Area: Citizen-Centricity</td>
       <td style='@{hdr_tabs_td}'><a href='/dashboards/citizen_centricity::cc_executive_summary' target='_self' style='@{tab}'>Executive Summary</a><a href='/dashboards/citizen_centricity::cc_coverage' target='_self' style='@{tab}'>Coverage</a><a href='/dashboards/citizen_centricity::cc_adoption' target='_self' style='@{tab}'>Adoption</a><a href='/dashboards/citizen_centricity::cc_learning' target='_self' style='@{tab}'>Learning</a><a href='/dashboards/citizen_centricity::cc_performance' target='_self' style='@{tab_on}'>Performance</a></td>
       </tr></table> ;;
@@ -90,7 +90,7 @@ view: cc_ui {
     type: max
     sql: ${TABLE}.one ;;
     html: <table style='@{hdr_table}'><tr>
-      <td style='@{hdr_logo_td}'><img src='@{asset_base}/cbc_logo.png' style='@{hdr_logo}'></td>
+      <td style='@{hdr_logo_td}'><img src='@{logo_cbc}' style='@{hdr_logo}'></td>
       <td style='@{hdr_title_td}'>Key Result Area: Citizen-Centricity</td>
       <td style='@{hdr_tabs_td}'><a href='/dashboards/citizen_centricity::cc_executive_summary' target='_self' style='@{tab}'>Executive Summary</a><a href='/dashboards/citizen_centricity::cc_coverage' target='_self' style='@{tab}'>Coverage</a><a href='/dashboards/citizen_centricity::cc_adoption' target='_self' style='@{tab}'>Adoption</a><a href='/dashboards/citizen_centricity::cc_learning' target='_self' style='@{tab}'>Learning</a><a href='/dashboards/citizen_centricity::cc_performance' target='_self' style='@{tab}'>Performance</a></td>
       </tr></table> ;;
@@ -210,11 +210,11 @@ view: cc_ui {
     sql: ${TABLE}.one ;;
     html: <div style='@{panel}'>
       <div style='margin:10px auto;width:88%;border:1px solid #E0E0E0;border-radius:6px;padding:10px;text-align:center;'>
-        <img src='@{asset_base}/icon_ai_tool.svg' style='width:28px;height:28px;'>
+        <span style='display:inline-block;box-sizing:border-box;width:28px;height:28px;'>@{svg_ai_tool}</span>
         <div style='font-size:13px;font-weight:700;color:#0B3A75;margin-top:3px;'>iGOT AI CBP Tool</div>
         <div style='font-size:11px;color:#757575;'>Recommends sub-themes to officials<br>building their capacity plan</div>
         <div style='color:#BDBDBD;margin:6px 0;'>&#8595;</div>
-        <img src='@{asset_base}/icon_flag_gap.svg' style='width:28px;height:28px;'>
+        <span style='display:inline-block;box-sizing:border-box;width:28px;height:28px;'>@{svg_flag_gap}</span>
         <div style='font-size:13px;font-weight:700;color:#0B3A75;margin-top:3px;'>Flag Supply Gaps</div>
         <div style='font-size:11px;color:#757575;'>Sub-themes with high demand but fewer<br>than 5 courses flagged for action</div>
         <div style='font-size:10px;font-style:italic;color:#9E9E9E;margin-top:10px;text-align:left;'>&#128274; Available once iGOT AI CBP tool data is piped in.</div>
