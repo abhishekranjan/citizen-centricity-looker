@@ -93,6 +93,10 @@ constant: svg_warning {
   value: "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='100%' height='100%' preserveAspectRatio='xMidYMid meet' style='display:block;'><path d='M12 2L1 21h22z' fill='#1E88E5'/><path d='M12 9v6' stroke='#fff' stroke-width='2.4' stroke-linecap='round'/><circle cx='12' cy='18' r='1.4' fill='#fff'/></svg>"
 }
 
+constant: zz_test_png {
+  value: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAA80lEQVR42u2ZyxHCMAxEg8ZVcIAyaQHK5AB1cCd8bFmW5PHTNcnuPluZ8edwuj62mUu2yQsAAAAAAAAAAIisMkL0fjl+e3S+PfMC/Mi9f8eKpLhF//hJP0bxj26LIYHpTXQkPH2nmmRI36MpSdKrlSVPep2+pEqvcFlpLeQz/K1ey8yA5/A3ObIfmALAv3/qfWkhAAAAAAAA/pb5aVRl1fjSQrMA+HdRpeNKLeQ5CfVei/3EPpPQ5CJD1UenV7bQOAaFsrg5DdIUZz9zNQlxNdQpJt7qY4v4OzI1Rq5byrdMs94Thyw62A8AAAAAAAAAQGS9AP4vV6kGS6l7AAAAAElFTkSuQmCC"
+}
+
 # ---- Typography --------------------------------------------------------
 # Roboto is already loaded by the Looker UI, so it renders for every viewer
 # without any web-font import (html: cannot load Google Fonts itself).
