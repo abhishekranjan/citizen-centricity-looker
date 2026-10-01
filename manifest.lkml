@@ -226,7 +226,7 @@ constant: lede_italic {
 
 # Explanatory paragraph copy on the Score Calculation page.
 constant: body_copy {
-  value: "font-size:15px;line-height:1.5;color:#212121;text-align:justify;margin:0 0 8px;"
+  value: "font-size:15px;line-height:1.55;text-align:justify;"
 }
 
 # White sheet behind an html: tile. Looker tiles are transparent over the
