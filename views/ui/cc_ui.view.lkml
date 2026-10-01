@@ -41,7 +41,7 @@ view: cc_ui {
     html: <table style='@{hdr_table}'><tr>
       <td style='@{hdr_logo_td}'><img src='@{asset_base}/cbc_logo.png' style='@{hdr_logo}'></td>
       <td style='@{hdr_title_td}'>Key Result Area: Citizen-Centricity</td>
-      <td style='@{hdr_tabs_td}'><a href='/dashboards/citizen_centricity::cc_executive_summary' target='_self' style='@{tab_on}'>Executive Summary</a><a href='/dashboards/citizen_centricity::cc_coverage' target='_self' style='@{tab}'>Coverage</a><a href='/dashboards/citizen_centricity::cc_adoption' target='_self' style='@{tab}'>Adoption</a><a href='/dashboards/citizen_centricity::cc_learning' target='_self' style='@{tab}'>Learning</a><a href='/dashboards/citizen_centricity::cc_performance' target='_self' style='@{tab}'>Performance</a></td>
+      <td style='@{hdr_tabs_td}'><a href='/dashboards/citizen_centricity::cc_executive_summary?theme=@{cc_theme}' target='_self' style='@{tab_on}'>Executive Summary</a><a href='/dashboards/citizen_centricity::cc_coverage?theme=@{cc_theme}' target='_self' style='@{tab}'>Coverage</a><a href='/dashboards/citizen_centricity::cc_adoption?theme=@{cc_theme}' target='_self' style='@{tab}'>Adoption</a><a href='/dashboards/citizen_centricity::cc_learning?theme=@{cc_theme}' target='_self' style='@{tab}'>Learning</a><a href='/dashboards/citizen_centricity::cc_performance?theme=@{cc_theme}' target='_self' style='@{tab}'>Performance</a></td>
       </tr></table> ;;
   }
 
@@ -51,7 +51,7 @@ view: cc_ui {
     html: <table style='@{hdr_table}'><tr>
       <td style='@{hdr_logo_td}'><img src='@{asset_base}/cbc_logo.png' style='@{hdr_logo}'></td>
       <td style='@{hdr_title_td}'>Key Result Area: Citizen-Centricity</td>
-      <td style='@{hdr_tabs_td}'><a href='/dashboards/citizen_centricity::cc_executive_summary' target='_self' style='@{tab}'>Executive Summary</a><a href='/dashboards/citizen_centricity::cc_coverage' target='_self' style='@{tab_on}'>Coverage</a><a href='/dashboards/citizen_centricity::cc_adoption' target='_self' style='@{tab}'>Adoption</a><a href='/dashboards/citizen_centricity::cc_learning' target='_self' style='@{tab}'>Learning</a><a href='/dashboards/citizen_centricity::cc_performance' target='_self' style='@{tab}'>Performance</a></td>
+      <td style='@{hdr_tabs_td}'><a href='/dashboards/citizen_centricity::cc_executive_summary?theme=@{cc_theme}' target='_self' style='@{tab}'>Executive Summary</a><a href='/dashboards/citizen_centricity::cc_coverage?theme=@{cc_theme}' target='_self' style='@{tab_on}'>Coverage</a><a href='/dashboards/citizen_centricity::cc_adoption?theme=@{cc_theme}' target='_self' style='@{tab}'>Adoption</a><a href='/dashboards/citizen_centricity::cc_learning?theme=@{cc_theme}' target='_self' style='@{tab}'>Learning</a><a href='/dashboards/citizen_centricity::cc_performance?theme=@{cc_theme}' target='_self' style='@{tab}'>Performance</a></td>
       </tr></table> ;;
   }
 
@@ -61,7 +61,7 @@ view: cc_ui {
     html: <table style='@{hdr_table}'><tr>
       <td style='@{hdr_logo_td}'><img src='@{asset_base}/cbc_logo.png' style='@{hdr_logo}'></td>
       <td style='@{hdr_title_td}'>Key Result Area: Citizen-Centricity</td>
-      <td style='@{hdr_tabs_td}'><a href='/dashboards/citizen_centricity::cc_executive_summary' target='_self' style='@{tab}'>Executive Summary</a><a href='/dashboards/citizen_centricity::cc_coverage' target='_self' style='@{tab}'>Coverage</a><a href='/dashboards/citizen_centricity::cc_adoption' target='_self' style='@{tab_on}'>Adoption</a><a href='/dashboards/citizen_centricity::cc_learning' target='_self' style='@{tab}'>Learning</a><a href='/dashboards/citizen_centricity::cc_performance' target='_self' style='@{tab}'>Performance</a></td>
+      <td style='@{hdr_tabs_td}'><a href='/dashboards/citizen_centricity::cc_executive_summary?theme=@{cc_theme}' target='_self' style='@{tab}'>Executive Summary</a><a href='/dashboards/citizen_centricity::cc_coverage?theme=@{cc_theme}' target='_self' style='@{tab}'>Coverage</a><a href='/dashboards/citizen_centricity::cc_adoption?theme=@{cc_theme}' target='_self' style='@{tab_on}'>Adoption</a><a href='/dashboards/citizen_centricity::cc_learning?theme=@{cc_theme}' target='_self' style='@{tab}'>Learning</a><a href='/dashboards/citizen_centricity::cc_performance?theme=@{cc_theme}' target='_self' style='@{tab}'>Performance</a></td>
       </tr></table> ;;
   }
 
@@ -71,7 +71,7 @@ view: cc_ui {
     html: <table style='@{hdr_table}'><tr>
       <td style='@{hdr_logo_td}'><img src='@{asset_base}/cbc_logo.png' style='@{hdr_logo}'></td>
       <td style='@{hdr_title_td}'>Key Result Area: Citizen-Centricity</td>
-      <td style='@{hdr_tabs_td}'><a href='/dashboards/citizen_centricity::cc_executive_summary' target='_self' style='@{tab}'>Executive Summary</a><a href='/dashboards/citizen_centricity::cc_coverage' target='_self' style='@{tab}'>Coverage</a><a href='/dashboards/citizen_centricity::cc_adoption' target='_self' style='@{tab}'>Adoption</a><a href='/dashboards/citizen_centricity::cc_learning' target='_self' style='@{tab_on}'>Learning</a><a href='/dashboards/citizen_centricity::cc_performance' target='_self' style='@{tab}'>Performance</a></td>
+      <td style='@{hdr_tabs_td}'><a href='/dashboards/citizen_centricity::cc_executive_summary?theme=@{cc_theme}' target='_self' style='@{tab}'>Executive Summary</a><a href='/dashboards/citizen_centricity::cc_coverage?theme=@{cc_theme}' target='_self' style='@{tab}'>Coverage</a><a href='/dashboards/citizen_centricity::cc_adoption?theme=@{cc_theme}' target='_self' style='@{tab}'>Adoption</a><a href='/dashboards/citizen_centricity::cc_learning?theme=@{cc_theme}' target='_self' style='@{tab_on}'>Learning</a><a href='/dashboards/citizen_centricity::cc_performance?theme=@{cc_theme}' target='_self' style='@{tab}'>Performance</a></td>
       </tr></table> ;;
   }
 
@@ -81,7 +81,7 @@ view: cc_ui {
     html: <table style='@{hdr_table}'><tr>
       <td style='@{hdr_logo_td}'><img src='@{asset_base}/cbc_logo.png' style='@{hdr_logo}'></td>
       <td style='@{hdr_title_td}'>Key Result Area: Citizen-Centricity</td>
-      <td style='@{hdr_tabs_td}'><a href='/dashboards/citizen_centricity::cc_executive_summary' target='_self' style='@{tab}'>Executive Summary</a><a href='/dashboards/citizen_centricity::cc_coverage' target='_self' style='@{tab}'>Coverage</a><a href='/dashboards/citizen_centricity::cc_adoption' target='_self' style='@{tab}'>Adoption</a><a href='/dashboards/citizen_centricity::cc_learning' target='_self' style='@{tab}'>Learning</a><a href='/dashboards/citizen_centricity::cc_performance' target='_self' style='@{tab_on}'>Performance</a></td>
+      <td style='@{hdr_tabs_td}'><a href='/dashboards/citizen_centricity::cc_executive_summary?theme=@{cc_theme}' target='_self' style='@{tab}'>Executive Summary</a><a href='/dashboards/citizen_centricity::cc_coverage?theme=@{cc_theme}' target='_self' style='@{tab}'>Coverage</a><a href='/dashboards/citizen_centricity::cc_adoption?theme=@{cc_theme}' target='_self' style='@{tab}'>Adoption</a><a href='/dashboards/citizen_centricity::cc_learning?theme=@{cc_theme}' target='_self' style='@{tab}'>Learning</a><a href='/dashboards/citizen_centricity::cc_performance?theme=@{cc_theme}' target='_self' style='@{tab_on}'>Performance</a></td>
       </tr></table> ;;
   }
 
@@ -92,7 +92,7 @@ view: cc_ui {
     html: <table style='@{hdr_table}'><tr>
       <td style='@{hdr_logo_td}'><img src='@{asset_base}/cbc_logo.png' style='@{hdr_logo}'></td>
       <td style='@{hdr_title_td}'>Key Result Area: Citizen-Centricity</td>
-      <td style='@{hdr_tabs_td}'><a href='/dashboards/citizen_centricity::cc_executive_summary' target='_self' style='@{tab}'>Executive Summary</a><a href='/dashboards/citizen_centricity::cc_coverage' target='_self' style='@{tab}'>Coverage</a><a href='/dashboards/citizen_centricity::cc_adoption' target='_self' style='@{tab}'>Adoption</a><a href='/dashboards/citizen_centricity::cc_learning' target='_self' style='@{tab}'>Learning</a><a href='/dashboards/citizen_centricity::cc_performance' target='_self' style='@{tab}'>Performance</a></td>
+      <td style='@{hdr_tabs_td}'><a href='/dashboards/citizen_centricity::cc_executive_summary?theme=@{cc_theme}' target='_self' style='@{tab}'>Executive Summary</a><a href='/dashboards/citizen_centricity::cc_coverage?theme=@{cc_theme}' target='_self' style='@{tab}'>Coverage</a><a href='/dashboards/citizen_centricity::cc_adoption?theme=@{cc_theme}' target='_self' style='@{tab}'>Adoption</a><a href='/dashboards/citizen_centricity::cc_learning?theme=@{cc_theme}' target='_self' style='@{tab}'>Learning</a><a href='/dashboards/citizen_centricity::cc_performance?theme=@{cc_theme}' target='_self' style='@{tab}'>Performance</a></td>
       </tr></table> ;;
   }
 
@@ -102,17 +102,17 @@ view: cc_ui {
   measure: go_back_executive_summary {
     type: max
     sql: ${TABLE}.one ;;
-    html: <div style='@{go_back}'><a href='/dashboards/citizen_centricity::cc_executive_summary' target='_self' style='@{go_back_a}'>Go Back</a></div> ;;
+    html: <div style='@{go_back}'><a href='/dashboards/citizen_centricity::cc_executive_summary?theme=@{cc_theme}' target='_self' style='@{go_back_a}'>Go Back</a></div> ;;
   }
   measure: go_back_coverage {
     type: max
     sql: ${TABLE}.one ;;
-    html: <div style='@{go_back}'><a href='/dashboards/citizen_centricity::cc_coverage' target='_self' style='@{go_back_a}'>Go Back</a></div> ;;
+    html: <div style='@{go_back}'><a href='/dashboards/citizen_centricity::cc_coverage?theme=@{cc_theme}' target='_self' style='@{go_back_a}'>Go Back</a></div> ;;
   }
   measure: go_back_adoption {
     type: max
     sql: ${TABLE}.one ;;
-    html: <div style='@{go_back}'><a href='/dashboards/citizen_centricity::cc_adoption' target='_self' style='@{go_back_a}'>Go Back</a></div> ;;
+    html: <div style='@{go_back}'><a href='/dashboards/citizen_centricity::cc_adoption?theme=@{cc_theme}' target='_self' style='@{go_back_a}'>Go Back</a></div> ;;
   }
 
   # ===================================================================
@@ -124,7 +124,7 @@ view: cc_ui {
     html: <table style='@{qbar_table}'><tr>
       <td style='width:20%;'></td>
       <td style='@{qbar_td}'>What is the overall reach of citizen-centric capacity building?</td>
-      <td style='width:20%;text-align:right;padding-right:10px;'><a href='/dashboards/citizen_centricity::cc_course_list' target='_self' style='@{pill}'>Get more details</a></td>
+      <td style='width:20%;text-align:right;padding-right:10px;'><a href='/dashboards/citizen_centricity::cc_course_list?theme=@{cc_theme}' target='_self' style='@{pill}'>Get more details</a></td>
       </tr></table> ;;
   }
   measure: q_coverage {
@@ -262,7 +262,7 @@ view: cc_ui {
     sql: ${TABLE}.one ;;
     html: <table style='@{strip_table}'><tr>
       <td style='@{strip_title}'>Course Difficulty Levels</td>
-      <td style='@{strip_right}'><a href='/dashboards/citizen_centricity::cc_difficulty_by_subtheme' target='_self' style='@{pill}'>Get more details</a></td>
+      <td style='@{strip_right}'><a href='/dashboards/citizen_centricity::cc_difficulty_by_subtheme?theme=@{cc_theme}' target='_self' style='@{pill}'>Get more details</a></td>
       </tr></table> ;;
   }
   measure: strip_assessment_maturity {
@@ -277,7 +277,7 @@ view: cc_ui {
     sql: ${TABLE}.one ;;
     html: <table style='@{strip_table}'><tr>
       <td style='@{strip_title}'>Data Gaps in the System</td>
-      <td style='@{strip_right}'><a href='/dashboards/citizen_centricity::cc_data_gaps' target='_self' style='@{pill}'>Get more details</a></td>
+      <td style='@{strip_right}'><a href='/dashboards/citizen_centricity::cc_data_gaps?theme=@{cc_theme}' target='_self' style='@{pill}'>Get more details</a></td>
       </tr></table> ;;
   }
   measure: strip_provider_contribution {
@@ -301,7 +301,7 @@ view: cc_ui {
     sql: ${TABLE}.one ;;
     html: <table style='@{strip_table}'><tr>
       <td style='@{strip_title}'>CBP Coverage</td>
-      <td style='@{strip_right}'><a href='/dashboards/citizen_centricity::cc_adoption_ministry' target='_self' style='@{pill}'>Get more details</a></td>
+      <td style='@{strip_right}'><a href='/dashboards/citizen_centricity::cc_adoption_ministry?theme=@{cc_theme}' target='_self' style='@{pill}'>Get more details</a></td>
       </tr></table> ;;
   }
   measure: strip_assigned_completion {
@@ -346,7 +346,7 @@ view: cc_ui {
     html: <table style='@{strip_table}'><tr>
       <td style='@{strip_title}'>Learning across MDOs and States</td>
       <td style='@{strip_right}'>
-        <a href='/dashboards/citizen_centricity::cc_learning?Date+Range={{ _filters["cc_ui.date_range"] | url_encode }}&Group={{ _filters["cc_ui.group"] | url_encode }}' target='_self' style='@{toggle_on}'>MDO</a><a href='/dashboards/citizen_centricity::cc_learning_state?Date+Range={{ _filters["cc_ui.date_range"] | url_encode }}&Group={{ _filters["cc_ui.group"] | url_encode }}' target='_self' style='@{toggle_off}'>State</a></td>
+        <a href='/dashboards/citizen_centricity::cc_learning?Date+Range={{ _filters["cc_ui.date_range"] | url_encode }}&Group={{ _filters["cc_ui.group"] | url_encode }}&theme=@{cc_theme}' target='_self' style='@{toggle_on}'>MDO</a><a href='/dashboards/citizen_centricity::cc_learning_state?Date+Range={{ _filters["cc_ui.date_range"] | url_encode }}&Group={{ _filters["cc_ui.group"] | url_encode }}&theme=@{cc_theme}' target='_self' style='@{toggle_off}'>State</a></td>
       </tr></table> ;;
   }
   measure: strip_learning_state {
@@ -355,7 +355,7 @@ view: cc_ui {
     html: <table style='@{strip_table}'><tr>
       <td style='@{strip_title}'>Learning across MDOs and States</td>
       <td style='@{strip_right}'>
-        <a href='/dashboards/citizen_centricity::cc_learning?Date+Range={{ _filters["cc_ui.date_range"] | url_encode }}&Group={{ _filters["cc_ui.group"] | url_encode }}' target='_self' style='@{toggle_off}'>MDO</a><a href='/dashboards/citizen_centricity::cc_learning_state?Date+Range={{ _filters["cc_ui.date_range"] | url_encode }}&Group={{ _filters["cc_ui.group"] | url_encode }}' target='_self' style='@{toggle_on}'>State</a></td>
+        <a href='/dashboards/citizen_centricity::cc_learning?Date+Range={{ _filters["cc_ui.date_range"] | url_encode }}&Group={{ _filters["cc_ui.group"] | url_encode }}&theme=@{cc_theme}' target='_self' style='@{toggle_off}'>MDO</a><a href='/dashboards/citizen_centricity::cc_learning_state?Date+Range={{ _filters["cc_ui.date_range"] | url_encode }}&Group={{ _filters["cc_ui.group"] | url_encode }}&theme=@{cc_theme}' target='_self' style='@{toggle_on}'>State</a></td>
       </tr></table> ;;
   }
 

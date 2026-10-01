@@ -42,7 +42,7 @@ view: +rpt_pillar_score {
       <table style='width:100%;border-collapse:collapse;margin-top:4px;'><tr>
         <td style='width:33%;'></td>
         <td style='width:34%;text-align:center;'><span style='display:inline-block;box-sizing:border-box;width:56px;height:56px;border-radius:50%;background:#ffffff;padding:3px;'><img src='@{asset_base}/composite.png' style='width:100%;height:100%;display:block;' alt=''></span></td>
-        <td style='width:33%;text-align:right;padding-right:6px;'><a href='/dashboards/citizen_centricity::cc_score_calculation' target='_self' style='@{link_pill}'>Click here to see Calculation for the Composite Score</a></td>
+        <td style='width:33%;text-align:right;padding-right:6px;'><a href='/dashboards/citizen_centricity::cc_score_calculation?theme=@{cc_theme}' target='_self' style='@{link_pill}'>Click here to see Calculation for the Composite Score</a></td>
       </tr></table>
       <table style='width:100%;border-collapse:collapse;background:#BBDEFB;margin-top:-22px;'><tr>
         <td style='width:16%;'></td>
@@ -50,7 +50,7 @@ view: +rpt_pillar_score {
           Composite Citizen Centricity Score for Capacity Building and Performance:
           <span style='font-size:28px;font-weight:400;margin-left:10px;'>{{ rendered_value }}/100</span></td>
         <td style='width:16%;text-align:right;padding-right:10px;white-space:nowrap;'>
-          <a href='/dashboards/citizen_centricity::cc_subtheme_analysis' target='_self' style='text-decoration:none;'>
+          <a href='/dashboards/citizen_centricity::cc_subtheme_analysis?theme=@{cc_theme}' target='_self' style='text-decoration:none;'>
             <span style='font-size:14px;font-style:italic;font-weight:600;color:#0B3A75;vertical-align:middle;margin-right:6px;'>Go to Detailed<br>Sub-Theme Analysis</span>
             <span style='display:inline-block;box-sizing:border-box;width:40px;height:40px;vertical-align:middle;'><img src='@{asset_base}/arrow_right.png' style='width:100%;height:100%;display:block;' alt=''></span></a></td>
       </tr></table></div> ;;
