@@ -107,10 +107,10 @@ constant: hdr_tabs_td {
 # a glance on a wall display and in PDF export. min-width holds all five the
 # same width; padding gives the taller hit area shown in the approved design.
 constant: tab {
-  value: "display:inline-block;box-sizing:border-box;min-width:118px;text-align:center;background:#0B3A75;color:#ffffff;padding:7px 8px;margin-left:5px;border-radius:4px;font-size:13px;font-weight:400;white-space:nowrap;text-decoration:none;font-family:Aptos Display,Calibri,Arial,sans-serif;"
+  value: "display:inline-block;box-sizing:border-box;min-width:118px;text-align:center;background:#0B3A75;color:#ffffff;padding:7px 8px;margin-left:5px;border-radius:4px;font-size:14px;font-weight:700;white-space:nowrap;text-decoration:none;font-family:Aptos Display,Calibri,Arial,sans-serif;"
 }
 constant: tab_on {
-  value: "display:inline-block;box-sizing:border-box;min-width:118px;text-align:center;background:#E0E0E0;color:#212121;padding:7px 8px;margin-left:5px;border-radius:4px;font-size:13px;font-weight:400;white-space:nowrap;text-decoration:none;font-family:Aptos Display,Calibri,Arial,sans-serif;"
+  value: "display:inline-block;box-sizing:border-box;min-width:118px;text-align:center;background:#E0E0E0;color:#212121;padding:7px 8px;margin-left:5px;border-radius:4px;font-size:14px;font-weight:700;white-space:nowrap;text-decoration:none;font-family:Aptos Display,Calibri,Arial,sans-serif;"
 }
 
 # ---- Navy question bar -------------------------------------------------
