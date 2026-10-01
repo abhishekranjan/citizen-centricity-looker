@@ -105,7 +105,13 @@
     transpose: false
     truncate_text: true
     hide_row_totals: true
-    size_to_fit: true
+    size_to_fit: false
+    series_column_widths:
+      fct_cbp_assignment.ministry: 420
+      fct_cbp_assignment.courses: 130
+      fct_cbp_assignment.allocations: 150
+      fct_cbp_assignment.completions: 150
+      fct_cbp_assignment.completion_rate: 150
     table_theme: white
     limit_displayed_rows: false
     series_text_format:

@@ -86,7 +86,14 @@
     transpose: false
     truncate_text: false
     hide_row_totals: true
-    size_to_fit: true
+    size_to_fit: false
+    series_column_widths:
+      seed_data_gaps.status: 120
+      seed_data_gaps.indicator: 230
+      seed_data_gaps.description: 380
+      seed_data_gaps.data_source: 200
+      seed_data_gaps.next_step: 380
+      seed_data_gaps.sort_order: 90
     table_theme: white
     limit_displayed_rows: false
     series_text_format:

@@ -59,7 +59,7 @@
     row: 3
     col: 0
     width: 24
-    height: 2
+    height: 3
   - name: calc_definitions
     title: calc_definitions
     model: citizen_centricity
@@ -74,7 +74,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 5
+    row: 6
     col: 0
     width: 13
     height: 9
@@ -94,7 +94,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 5
+    row: 6
     col: 13
     width: 11
     height: 9
@@ -112,7 +112,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 14
+    row: 15
     col: 0
     width: 24
     height: 1

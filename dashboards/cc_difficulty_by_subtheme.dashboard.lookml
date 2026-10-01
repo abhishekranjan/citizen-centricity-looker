@@ -108,7 +108,15 @@
     transpose: false
     truncate_text: true
     hide_row_totals: true
-    size_to_fit: true
+    size_to_fit: false
+    series_column_widths:
+      rpt_pillar_subtheme.pillar: 150
+      rpt_pillar_subtheme.theme: 180
+      rpt_pillar_subtheme.sub_theme: 250
+      rpt_pillar_subtheme.total_courses: 130
+      rpt_pillar_subtheme.beginner_courses: 125
+      rpt_pillar_subtheme.intermediate_courses: 135
+      rpt_pillar_subtheme.advanced_courses: 125
     table_theme: white
     limit_displayed_rows: false
     series_text_format:
