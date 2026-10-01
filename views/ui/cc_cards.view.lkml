@@ -33,8 +33,8 @@ view: +rpt_pillar_score {
     type: average
     sql: ${TABLE}.composite_score ;;
     value_format: "0"
-    html: <div style='width:100%;box-sizing:border-box;background:#ffffff;@{font}'>
-      <div style='text-align:center;font-size:15px;line-height:1.5;color:#0B3B76;padding:4px 16px;'>
+    html: <div style='width:100%;box-sizing:border-box;white-space:normal;background:#ffffff;@{font}'>
+      <div style='white-space:normal;text-align:center;font-size:15px;line-height:1.5;color:#0B3B76;padding:4px 16px;'>
         The Citizen Centricity KRA tracks how well government training programs prepare civil servants to deliver citizen-focused services.<br>
         This dashboard covers the citizen-centric courses across <b><i>6 Behavioural and Functional</i></b> and <b><i>10 Domain competency themes</i></b>
         mapped to 4 governance pillars: <b><i>Responsiveness, Transparency, Participation,</i></b> and <b><i>Service Knowledge.</i></b>
@@ -46,7 +46,7 @@ view: +rpt_pillar_score {
       </tr></table>
       <table style='width:100%;border-collapse:collapse;background:#BBDEFB;margin-top:-22px;'><tr>
         <td style='width:16%;'></td>
-        <td style='text-align:center;padding:14px 8px 12px;font-size:21px;font-weight:700;color:#0B3A75;@{font_head}'>
+        <td style='text-align:center;white-space:normal;padding:14px 8px 12px;font-size:21px;font-weight:700;color:#0B3A75;@{font_head}'>
           Composite Citizen Centricity Score for Capacity Building and Performance:
           <span style='font-size:28px;font-weight:400;margin-left:10px;'>{{ rendered_value }}/100</span></td>
         <td style='width:16%;text-align:right;padding-right:10px;white-space:nowrap;'>
@@ -70,7 +70,7 @@ view: +rpt_pillar_score {
       <div style='padding:4px;@{page_white}@{font}'>
         <table style='width:100%;border-collapse:collapse;background:#E3F2FD;border-radius:30px 0 0 30px;'><tr>
           <td style='width:56px;'><span style='display:block;box-sizing:border-box;width:54px;height:54px;border-radius:50%;background:#ffffff;padding:2px;'>{% if value == 'Service Knowledge' %}<img src='@{asset_base}/service_knowledge.png' style='width:100%;height:100%;display:block;' alt=''>{% elsif value == 'Responsiveness' %}<img src='@{asset_base}/responsiveness.png' style='width:100%;height:100%;display:block;' alt=''>{% elsif value == 'Transparency' %}<img src='@{asset_base}/transparency.png' style='width:100%;height:100%;display:block;' alt=''>{% else %}<img src='@{asset_base}/participation.png' style='width:100%;height:100%;display:block;' alt=''>{% endif %}</span></td>
-          <td style='text-align:center;font-size:22px;font-weight:700;color:#0B3A75;@{font_head}'>{{ value }}</td>
+          <td style='text-align:center;white-space:normal;font-size:22px;font-weight:700;color:#0B3A75;@{font_head}'>{{ value }}</td>
           <td style='width:30px;padding-right:8px;line-height:0;vertical-align:middle;'>{% if value == 'Participation' %}<img src='@{asset_base}/info.png' style='width:22px;height:22px;display:block;' alt='About the composite score' title='Composite score = 30% proficiency-level coverage + 40% assigned completion + 30% assessment pass rate.'>{% endif %}</td>
         </tr></table>
         <table style='width:100%;border-collapse:separate;border-spacing:8px 8px;margin-top:2px;'>
@@ -112,7 +112,7 @@ view: +rpt_pillar_score {
     value_format_name: percent_0
     html:
       {% assign total = value | plus: rpt_pillar_score.w_proficiency._value | plus: rpt_pillar_score.w_assigned_completion._value | times: 100 | round %}
-      <div style='width:100%;box-sizing:border-box;padding:0 12px;text-align:left;background:#ffffff;@{font}'>
+      <div style='width:100%;box-sizing:border-box;white-space:normal;padding:0 12px;text-align:left;background:#ffffff;@{font}'>
         <table style='width:100%;border-collapse:collapse;font-size:16px;color:#212121;box-shadow:0 1px 4px rgba(0,0,0,.2);border-radius:6px;'>
           <tr style='background:#E3F2FD;color:#0B3A75;font-weight:700;'><td style='padding:9px 12px;text-align:center;vertical-align:middle;'>Item</td><td style='text-align:center;vertical-align:middle;padding:9px 12px;'>Weight &#9650;</td></tr>
           <tr><td style='padding:10px 12px;'>Assessment Pass Rate Weight</td><td style='text-align:center;vertical-align:middle;'>{{ rendered_value }}</td></tr>
@@ -120,7 +120,7 @@ view: +rpt_pillar_score {
           <tr><td style='padding:10px 12px;'>Assigned Completion Weight</td><td style='text-align:center;vertical-align:middle;'>{{ rpt_pillar_score.w_assigned_completion._rendered_value }}</td></tr>
           <tr style='background:#F7F7F7;'><td style='padding:10px 12px;'>Weights Total (must = 100%)</td><td style='text-align:center;vertical-align:middle;'>{{ total }}%</td></tr>
         </table>
-        <div style='font-size:21px;font-weight:700;color:#0B3A75;margin:16px 0 10px;@{font_head}'>Why the weights are set at 30 / 40 / 30</div>
+        <div style='font-size:21px;font-weight:700;color:#0B3A75;margin:16px 0 10px;white-space:normal;@{font_head}'>Why the weights are set at 30 / 40 / 30</div>
         <p style='@{body_copy}'>&#8226; <b><i>Assigned Completion</i></b> carries the highest weight (40%) because it is the variable most within the control of the capacity building system. It reflects whether the ecosystem - MDOs, training institutions, and iGOT together - is successfully driving civil servants to actually learn.</p>
         <p style='@{body_copy}'>&#8226; <b><i>Proficiency-Level Coverage</i></b> and <b><i>Pass Rate</i></b> are weighted equally (30% each) because both are necessary conditions. Content without completion is underutilised supply; completion without demonstrated learning is shallow engagement. One without the other is incomplete.</p>
       </div> ;;
