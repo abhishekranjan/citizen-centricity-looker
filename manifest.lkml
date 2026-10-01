@@ -80,25 +80,25 @@ constant: hdr_table {
   value: "width:100%;border-collapse:collapse;background:#F0961E;font-family:Calibri,Arial,Aptos Narrow,sans-serif;table-layout:auto;"
 }
 constant: hdr_logo_td {
-  value: "width:172px;padding:5px 0 5px 10px;vertical-align:middle;"
+  value: "width:150px;padding:4px 0 4px 8px;vertical-align:middle;"
 }
 constant: hdr_logo {
-  value: "height:48px;background:#ffffff;padding:2px 4px;display:block;"
+  value: "height:42px;background:#ffffff;padding:2px 4px;display:block;"
 }
 constant: hdr_title_td {
-  value: "padding-left:14px;vertical-align:middle;color:#ffffff;font-size:22px;font-weight:700;letter-spacing:.2px;white-space:nowrap;text-align:left;font-family:Aptos Display,Calibri,Arial,sans-serif;"
+  value: "padding-left:12px;vertical-align:middle;color:#ffffff;font-size:20px;font-weight:700;letter-spacing:0;white-space:nowrap;text-align:left;font-family:Aptos Display,Calibri,Arial,sans-serif;"
 }
 constant: hdr_tabs_td {
-  value: "text-align:right;vertical-align:middle;padding:5px 8px;white-space:nowrap;"
+  value: "text-align:right;vertical-align:middle;padding:4px 6px;white-space:nowrap;width:1%;"
 }
 # Tab buttons. Sized up from the original 112px / 13px so the labels read at
 # a glance on a wall display and in PDF export. min-width holds all five the
 # same width; padding gives the taller hit area shown in the approved design.
 constant: tab {
-  value: "display:inline-block;box-sizing:border-box;min-width:138px;text-align:center;background:#0B3A75;color:#ffffff;padding:8px 10px;margin-left:6px;border-radius:4px;font-size:14px;font-weight:400;white-space:nowrap;text-decoration:none;font-family:Aptos Display,Calibri,Arial,sans-serif;"
+  value: "display:inline-block;box-sizing:border-box;min-width:118px;text-align:center;background:#0B3A75;color:#ffffff;padding:7px 8px;margin-left:5px;border-radius:4px;font-size:13px;font-weight:400;white-space:nowrap;text-decoration:none;font-family:Aptos Display,Calibri,Arial,sans-serif;"
 }
 constant: tab_on {
-  value: "display:inline-block;box-sizing:border-box;min-width:138px;text-align:center;background:#E0E0E0;color:#212121;padding:8px 10px;margin-left:6px;border-radius:4px;font-size:14px;font-weight:400;white-space:nowrap;text-decoration:none;font-family:Aptos Display,Calibri,Arial,sans-serif;"
+  value: "display:inline-block;box-sizing:border-box;min-width:118px;text-align:center;background:#E0E0E0;color:#212121;padding:7px 8px;margin-left:5px;border-radius:4px;font-size:13px;font-weight:400;white-space:nowrap;text-decoration:none;font-family:Aptos Display,Calibri,Arial,sans-serif;"
 }
 
 # ---- Navy question bar -------------------------------------------------
@@ -109,7 +109,7 @@ constant: qbar_table {
   value: "width:100%;border-collapse:collapse;background:#0B3A75;border-radius:4px;font-family:Aptos Display,Calibri,Arial,sans-serif;"
 }
 constant: qbar_td {
-  value: "text-align:center;color:#ffffff;font-size:19px;font-weight:700;letter-spacing:.2px;padding:10px 12px;font-family:Aptos Display,Calibri,Arial,sans-serif;"
+  value: "text-align:center;vertical-align:middle;color:#ffffff;font-size:19px;font-weight:700;letter-spacing:.2px;padding:10px 12px;font-family:Aptos Display,Calibri,Arial,sans-serif;"
 }
 
 # ---- Pills / links -----------------------------------------------------
@@ -157,21 +157,32 @@ constant: arrow_td {
   value: "width:2%;text-align:center;vertical-align:middle;line-height:0;overflow:hidden;"
 }
 
-# ---- KPI cards with icon ----------------------------------------------
+# ---- KPI card header band ---------------------------------------------
+# The icon sits INSIDE the light-blue band, exactly as the pillar cards on
+# the Executive Summary do, instead of floating outside it to the left.
+# The band is one table row: circle icon cell + centred title cell.
+constant: kpi_band {
+  value: "width:100%;border-collapse:collapse;background:#E3F2FD;border-radius:26px 0 0 26px;"
+}
+constant: kpi_band_icon_td {
+  value: "width:48px;padding:2px 0 2px 2px;vertical-align:middle;line-height:0;"
+}
+constant: kpi_band_icon {
+  value: "display:block;box-sizing:border-box;width:46px;height:46px;border-radius:50%;background:#ffffff;padding:3px;"
+}
+constant: kpi_band_title {
+  value: "text-align:center;vertical-align:middle;color:#0B3A75;font-size:16px;font-weight:700;padding:6px 8px;line-height:1.2;font-family:Aptos Display,Calibri,Arial,sans-serif;"
+}
+
+# ---- KPI card body ----------------------------------------------------
 constant: kpi_table {
   value: "width:100%;border-collapse:collapse;background:#ffffff;font-family:Calibri,Arial,Aptos Narrow,sans-serif;"
-}
-constant: kpi_icon_td {
-  value: "width:50px;vertical-align:middle;"
-}
-constant: kpi_icon {
-  value: "width:48px;height:48px;display:block;"
 }
 constant: kpi_body_td {
   value: "vertical-align:middle;padding-left:6px;"
 }
 constant: kpi_strip {
-  value: "background:#E3F2FD;text-align:center;font-size:16px;font-weight:700;color:#0B3A75;padding:6px 5px;border-radius:3px;"
+  value: "background:#E3F2FD;text-align:center;vertical-align:middle;font-size:16px;font-weight:700;color:#0B3A75;padding:7px 6px;border-radius:3px;"
 }
 constant: kpi_big {
   value: "text-align:center;font-size:30px;font-weight:400;color:#0B3A75;padding:4px 0;"
@@ -261,10 +272,10 @@ constant: strip_table {
   value: "width:100%;border-collapse:collapse;background:#E3F2FD;border-radius:4px;border-bottom:2px solid #90CAF9;font-family:Calibri,Arial,Aptos Narrow,sans-serif;"
 }
 constant: strip_title {
-  value: "color:#0B3A75;font-size:17px;font-weight:700;padding:9px 12px;text-align:left;vertical-align:middle;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family:Aptos Display,Calibri,Arial,sans-serif;"
+  value: "color:#0B3A75;font-size:16px;font-weight:700;padding:7px 10px;text-align:left;vertical-align:middle;white-space:normal;line-height:1.25;font-family:Aptos Display,Calibri,Arial,sans-serif;"
 }
 constant: strip_right {
-  value: "text-align:right;padding:6px 10px;white-space:nowrap;width:1%;"
+  value: "text-align:right;vertical-align:middle;padding:6px 10px;white-space:nowrap;width:1%;"
 }
 constant: toggle_on {
   value: "display:inline-block;min-width:70px;text-align:center;background:#0B3A75;color:#ffffff;padding:6px 18px;border-radius:15px;font-size:15px;font-weight:600;text-decoration:none;margin-left:6px;"
