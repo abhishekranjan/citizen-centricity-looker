@@ -227,17 +227,16 @@ view: cc_ui {
   measure: calc_intro {
     type: max
     sql: ${TABLE}.one ;;
-    html: <table style='width:100%;border-collapse:collapse;background:#E3F2FD;border-radius:4px;@{font}'><tr>
-      <td style='text-align:center;vertical-align:middle;color:#0B3A75;font-size:16px;font-weight:600;line-height:1.5;padding:9px 22px;'>
+    html: <div style='width:100%;box-sizing:border-box;background:#E3F2FD;color:#0B3A75;font-size:16px;font-weight:600;line-height:1.5;text-align:center;padding:9px 22px;border-radius:4px;@{font}'>
       The composite score measures citizen-centricity learning across four pillars: Service Knowledge, Responsiveness, Transparency, and Participation.
       Each pillar is scored on three components - course supply, assigned completion, and assessment pass rate and combined using the weights below.
-      </td></tr></table> ;;
+      </div> ;;
   }
 
   measure: calc_definitions {
     type: max
     sql: ${TABLE}.one ;;
-    html: <table style='width:100%;border-collapse:collapse;@{page_white}@{font}'><tr><td style='vertical-align:top;padding:2px 14px;'>
+    html: <div style='width:100%;text-align:justify;font-size:15px;line-height:1.55;color:#212121;padding:0 14px;box-sizing:border-box;background:#ffffff;@{font}'>
       <div style='font-size:19px;font-weight:700;color:#0B3A75;text-align:left;@{font_head}'>&#8226; Proficiency-Level Coverage:</div>
       <div style='@{lede_italic}'>Is citizen-centric learning available at the right depth?</div>
       <p style='@{body_copy}'>This measures whether iGOT has courses mapped to each pillar across all three proficiency levels: Beginner, Intermediate, and Advanced. A pillar with content only at beginner level scores lower than one with full coverage across all levels. The score is calculated as the percentage of sub-theme &#215; proficiency level combinations that have at least one course available.</p>
@@ -247,7 +246,7 @@ view: cc_ui {
       <div style='font-size:19px;font-weight:700;color:#0B3A75;margin-top:12px;text-align:left;@{font_head}'>&#8226; Assessment Pass Rate</div>
       <div style='@{lede_italic}'>Are civil servants demonstrating they have understood what they learned?</div>
       <p style='@{body_copy}'>Completion alone does not confirm learning. The pass rate adds a quality filter, indicating whether engagement translated into measurable competency acquisition. This measures the percentage of assessment attempts that result in a pass.</p>
-      </td></tr></table> ;;
+      </div> ;;
   }
 
   # ===================================================================

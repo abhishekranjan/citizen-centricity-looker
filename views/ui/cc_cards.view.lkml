@@ -33,12 +33,12 @@ view: +rpt_pillar_score {
     type: average
     sql: ${TABLE}.composite_score ;;
     value_format: "0"
-    html: <div style='@{page_white}@{font}'>
-      <table style='width:100%;border-collapse:collapse;'><tr><td style='text-align:center;vertical-align:middle;font-size:15px;line-height:1.5;color:#0B3B76;padding:4px 16px;'>
+    html: <div style='width:100%;box-sizing:border-box;background:#ffffff;@{font}'>
+      <div style='text-align:center;font-size:15px;line-height:1.5;color:#0B3B76;padding:4px 16px;'>
         The Citizen Centricity KRA tracks how well government training programs prepare civil servants to deliver citizen-focused services.<br>
         This dashboard covers the citizen-centric courses across <b><i>6 Behavioural and Functional</i></b> and <b><i>10 Domain competency themes</i></b>
         mapped to 4 governance pillars: <b><i>Responsiveness, Transparency, Participation,</i></b> and <b><i>Service Knowledge.</i></b>
-      </td></tr></table>
+      </div>
       <table style='width:100%;border-collapse:collapse;margin-top:4px;'><tr>
         <td style='width:33%;'></td>
         <td style='width:34%;text-align:center;'><span style='display:inline-block;box-sizing:border-box;width:56px;height:56px;border-radius:50%;background:#ffffff;padding:3px;'><img src='@{asset_base}/composite.png' style='width:100%;height:100%;display:block;' alt=''></span></td>
@@ -112,7 +112,7 @@ view: +rpt_pillar_score {
     value_format_name: percent_0
     html:
       {% assign total = value | plus: rpt_pillar_score.w_proficiency._value | plus: rpt_pillar_score.w_assigned_completion._value | times: 100 | round %}
-      <div style='padding:2px 12px;text-align:left;@{page_white}@{font}'>
+      <div style='width:100%;box-sizing:border-box;padding:0 12px;text-align:left;background:#ffffff;@{font}'>
         <table style='width:100%;border-collapse:collapse;font-size:16px;color:#212121;box-shadow:0 1px 4px rgba(0,0,0,.2);border-radius:6px;'>
           <tr style='background:#E3F2FD;color:#0B3A75;font-weight:700;'><td style='padding:9px 12px;text-align:center;vertical-align:middle;'>Item</td><td style='text-align:center;vertical-align:middle;padding:9px 12px;'>Weight &#9650;</td></tr>
           <tr><td style='padding:10px 12px;'>Assessment Pass Rate Weight</td><td style='text-align:center;vertical-align:middle;'>{{ rendered_value }}</td></tr>
