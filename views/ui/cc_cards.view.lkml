@@ -182,7 +182,7 @@ view: +fct_course {
     type: number
     sql: ${pass_rate} ;;
     value_format_name: percent_0
-    html: <table style='@{row_table}'>
+    html: <table style='@{row_table}border-spacing:10px 0;'>
       <tr>
       <td style='@{card_green}@{card_top}'><div style='@{card_title}'>Overall Pass Rate</div></td>
       <td style='@{card_green}@{card_top}'><div style='@{card_title}'>Courses with End-of-Course Assessments</div></td>
