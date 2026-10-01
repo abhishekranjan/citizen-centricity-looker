@@ -41,6 +41,18 @@ constant: asset_base {
   value: "https://raw.githubusercontent.com/abhishekranjan/citizen-centricity-looker/refs/heads/dev-abhishek-ranjan-bvwv/assets/png"
 }
 
+# ---- Dashboard theme ---------------------------------------------------
+# The grey canvas between tiles in dashboards-next cannot be set from
+# dashboard LookML (embed_style only affects legacy dashboards). It comes
+# from a Looker Theme. cc_theme names the theme created by
+# scripts/create_theme.py (white canvas, white tiles, no tile shadows).
+# Every inter-dashboard href appends ?theme=@{cc_theme} (or &theme=... when
+# the link already has a query string) so the theme survives navigation.
+# Change the value here if the theme is renamed.
+constant: cc_theme {
+  value: "cc_plain_white"
+}
+
 # Diagnostic control only - a 64x64 data: URI, used by the Zz Render Test
 # measure to demonstrate that data: URIs do not survive sanitisation here.
 constant: zz_test_png {
