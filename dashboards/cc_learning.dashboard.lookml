@@ -134,9 +134,14 @@
     size_to_fit: true
     table_theme: white
     limit_displayed_rows: false
+    series_text_format:
+      fct_user_course.officials:
+        align: center
+      fct_user_course.completions:
+        align: center
     header_text_alignment: left
-    header_font_size: '13'
-    rows_font_size: '13'
+    header_font_size: '16'
+    rows_font_size: '15'
     header_font_color: '#0B3A75'
     header_background_color: '#E3F2FD'
     show_row_totals: false
@@ -303,9 +308,14 @@
     size_to_fit: true
     table_theme: white
     limit_displayed_rows: false
+    series_text_format:
+      fct_cbp_assignment.allocations:
+        align: center
+      fct_cbp_assignment.completions:
+        align: center
     header_text_alignment: left
-    header_font_size: '13'
-    rows_font_size: '13'
+    header_font_size: '16'
+    rows_font_size: '15'
     header_font_color: '#0B3A75'
     header_background_color: '#E3F2FD'
     show_row_totals: false

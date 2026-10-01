@@ -118,9 +118,16 @@
     size_to_fit: true
     table_theme: white
     limit_displayed_rows: false
+    series_text_format:
+      fct_course.course_id:
+        align: center
+      fct_course.eoc_yn:
+        align: center
+      fct_course.content_rating:
+        align: center
     header_text_alignment: left
-    header_font_size: '14'
-    rows_font_size: '14'
+    header_font_size: '16'
+    rows_font_size: '15'
     header_font_color: '#0B3A75'
     header_background_color: '#E3F2FD'
     show_row_totals: false

@@ -104,9 +104,20 @@
     size_to_fit: true
     table_theme: white
     limit_displayed_rows: false
+    series_text_format:
+      rpt_pillar_subtheme.completions:
+        align: center
+      rpt_pillar_subtheme.enrolments:
+        align: center
+      rpt_pillar_subtheme.total_courses:
+        align: center
+      rpt_pillar_subtheme.completion_rate:
+        align: center
+      rpt_pillar_subtheme.assessment_passed_pct:
+        align: center
     header_text_alignment: left
-    header_font_size: '14'
-    rows_font_size: '14'
+    header_font_size: '16'
+    rows_font_size: '15'
     header_font_color: '#0B3A75'
     header_background_color: '#E3F2FD'
     show_row_totals: false

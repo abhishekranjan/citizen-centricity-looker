@@ -313,9 +313,22 @@
     size_to_fit: true
     table_theme: white
     limit_displayed_rows: false
+    series_text_format:
+      fct_course.course_count:
+        align: center
+      brg_course_subtheme.sub_theme_count:
+        align: center
+      fct_course.avg_content_rating:
+        align: center
+      fct_course.completion_rate:
+        align: center
+      fct_course.enrolments_exact:
+        align: center
+      fct_course.completions_exact:
+        align: center
     header_text_alignment: left
-    header_font_size: '13'
-    rows_font_size: '13'
+    header_font_size: '16'
+    rows_font_size: '15'
     header_font_color: '#0B3A75'
     header_background_color: '#E3F2FD'
     show_row_totals: false
@@ -372,9 +385,16 @@
     size_to_fit: true
     table_theme: white
     limit_displayed_rows: false
+    series_text_format:
+      rpt_pillar_subtheme.subthemes_covered:
+        align: center
+      rpt_pillar_subtheme.subthemes_total:
+        align: center
+      rpt_pillar_subtheme.subtheme_coverage_pct:
+        align: center
     header_text_alignment: left
-    header_font_size: '13'
-    rows_font_size: '13'
+    header_font_size: '16'
+    rows_font_size: '15'
     header_font_color: '#0B3A75'
     header_background_color: '#E3F2FD'
     show_row_totals: false
