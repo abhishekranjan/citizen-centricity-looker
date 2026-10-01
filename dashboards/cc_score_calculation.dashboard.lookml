@@ -59,7 +59,7 @@
     row: 3
     col: 0
     width: 24
-    height: 3
+    height: 2
   - name: calc_definitions
     title: calc_definitions
     model: citizen_centricity
@@ -74,10 +74,10 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 6
+    row: 5
     col: 0
     width: 13
-    height: 9
+    height: 10
   - name: weights
     title: weights
     model: citizen_centricity
@@ -94,10 +94,10 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 6
+    row: 5
     col: 13
     width: 11
-    height: 9
+    height: 10
   - name: footer
     title: footer
     model: citizen_centricity
