@@ -211,11 +211,11 @@ view: cc_ui {
     html: <div style='@{panel}'>
       <div style='margin:10px auto;width:88%;border:1px solid #E0E0E0;border-radius:6px;padding:10px;text-align:center;'>
         <span style='display:inline-block;box-sizing:border-box;width:28px;height:28px;'><img src='@{asset_base}/ai_tool.png' style='width:100%;height:100%;display:block;' alt=''></span>
-        <div style='font-size:13px;font-weight:700;color:#0B3A75;margin-top:3px;'>iGOT AI CBP Tool</div>
+        <div style='font-size:13px;font-weight:700;color:#0B3A75;margin-top:3px;@{font_head}'>iGOT AI CBP Tool</div>
         <div style='font-size:11px;color:#757575;'>Recommends sub-themes to officials<br>building their capacity plan</div>
         <div style='color:#BDBDBD;margin:6px 0;'>&#8595;</div>
         <span style='display:inline-block;box-sizing:border-box;width:28px;height:28px;'><img src='@{asset_base}/flag_gap.png' style='width:100%;height:100%;display:block;' alt=''></span>
-        <div style='font-size:13px;font-weight:700;color:#0B3A75;margin-top:3px;'>Flag Supply Gaps</div>
+        <div style='font-size:13px;font-weight:700;color:#0B3A75;margin-top:3px;@{font_head}'>Flag Supply Gaps</div>
         <div style='font-size:11px;color:#757575;'>Sub-themes with high demand but fewer<br>than 5 courses flagged for action</div>
         <div style='font-size:10px;font-style:italic;color:#9E9E9E;margin-top:10px;text-align:left;'>&#128274; Available once iGOT AI CBP tool data is piped in.</div>
       </div></div> ;;
@@ -237,13 +237,13 @@ view: cc_ui {
     type: max
     sql: ${TABLE}.one ;;
     html: <div style='width:100%;text-align:justify;font-size:14px;line-height:1.6;color:#212121;padding:0 14px;box-sizing:border-box;@{font}'>
-      <div style='font-size:17px;font-weight:700;color:#0B3A75;text-align:left;'>&#8226; Proficiency-Level Coverage:</div>
+      <div style='font-size:17px;font-weight:700;color:#0B3A75;text-align:left;@{font_head}'>&#8226; Proficiency-Level Coverage:</div>
       <div style='font-style:italic;margin-bottom:10px;text-align:left;'>Is citizen-centric learning available at the right depth?</div>
       <p>This measures whether iGOT has courses mapped to each pillar across all three proficiency levels: Beginner, Intermediate, and Advanced. A pillar with content only at beginner level scores lower than one with full coverage across all levels. The score is calculated as the percentage of sub-theme &#215; proficiency level combinations that have at least one course available.</p>
-      <div style='font-size:17px;font-weight:700;color:#0B3A75;margin-top:14px;text-align:left;'>&#8226; Assigned Completion Rate</div>
+      <div style='font-size:17px;font-weight:700;color:#0B3A75;margin-top:14px;text-align:left;@{font_head}'>&#8226; Assigned Completion Rate</div>
       <div style='font-style:italic;margin-bottom:10px;text-align:left;'>Are civil servants engaging with the learning assigned to them?</div>
       <p>This is the most direct signal of behavioural engagement. An MDO may have courses available and assigned, but if completion is low, capacity building is not happening in practice. This measures the percentage of assigned learning that officials actually complete.</p>
-      <div style='font-size:17px;font-weight:700;color:#0B3A75;margin-top:14px;text-align:left;'>&#8226; Assessment Pass Rate</div>
+      <div style='font-size:17px;font-weight:700;color:#0B3A75;margin-top:14px;text-align:left;@{font_head}'>&#8226; Assessment Pass Rate</div>
       <div style='font-style:italic;margin-bottom:10px;text-align:left;'>Are civil servants demonstrating they have understood what they learned?</div>
       <p>Completion alone does not confirm learning. The pass rate adds a quality filter, indicating whether engagement translated into measurable competency acquisition. This measures the percentage of assessment attempts that result in a pass.</p>
       </div> ;;
