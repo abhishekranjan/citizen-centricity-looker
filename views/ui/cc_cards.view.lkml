@@ -39,20 +39,22 @@ view: +rpt_pillar_score {
         This dashboard covers the citizen-centric courses across <b><i>6 Behavioural and Functional</i></b> and <b><i>10 Domain competency themes</i></b>
         mapped to 4 governance pillars: <b><i>Responsiveness, Transparency, Participation,</i></b> and <b><i>Service Knowledge.</i></b>
       </div>
-      <table style='width:100%;border-collapse:collapse;margin-top:4px;'><tr>
+      <table style='width:100%;border-collapse:collapse;margin-top:4px;background:#ffffff;background:linear-gradient(to bottom,#ffffff 50%,#BBDEFB 50%);'><tr>
         <td style='width:33%;'></td>
-        <td style='width:34%;text-align:center;'><span style='display:inline-block;box-sizing:border-box;width:56px;height:56px;border-radius:50%;background:#ffffff;padding:3px;'><img src='@{asset_base}/composite.png' style='width:100%;height:100%;display:block;' alt=''></span></td>
-        <td style='width:33%;text-align:right;padding-right:6px;'><a href='/dashboards/citizen_centricity::cc_score_calculation?theme=@{cc_theme}' target='_self' style='@{link_pill}'>Click here to see Calculation for the Composite Score</a></td>
+        <td style='width:34%;text-align:center;line-height:0;'><span style='display:inline-block;box-sizing:border-box;width:96px;height:96px;border-radius:50%;background:#ffffff;padding:6px;'><span style='display:block;box-sizing:border-box;width:84px;height:84px;border-radius:50%;background:#E8F1FB;padding:3px;'><img src='@{asset_base}/composite.png' style='width:100%;height:100%;display:block;' alt=''></span></span></td>
+        <td style='width:33%;text-align:right;vertical-align:top;padding:4px 6px 0 0;'><a href='/dashboards/citizen_centricity::cc_score_calculation?theme=@{cc_theme}' target='_self' style='@{link_pill}'>Click here to see Calculation for the Composite Score</a></td>
       </tr></table>
-      <table style='width:100%;border-collapse:collapse;background:#BBDEFB;margin-top:-22px;'><tr>
-        <td style='width:16%;'></td>
-        <td style='text-align:center;white-space:normal;padding:14px 8px 12px;font-size:21px;font-weight:700;color:#0B3A75;@{font_head}'>
+      <table style='width:100%;border-collapse:collapse;background:#BBDEFB;'><tr>
+        <td style='width:18%;'></td>
+        <td style='text-align:center;vertical-align:middle;white-space:normal;padding:4px 8px 14px;font-size:21px;font-weight:700;color:#0B3A75;@{font_head}'>
           Composite Citizen Centricity Score for Capacity Building and Performance:
           <span style='font-size:28px;font-weight:400;margin-left:10px;'>{{ rendered_value }}/100</span></td>
-        <td style='width:16%;text-align:right;padding-right:10px;white-space:nowrap;'>
+        <td style='width:18%;text-align:right;vertical-align:middle;padding:0 12px 10px 0;'>
           <a href='/dashboards/citizen_centricity::cc_subtheme_analysis?theme=@{cc_theme}' target='_self' style='text-decoration:none;'>
-            <span style='font-size:14px;font-style:italic;font-weight:600;color:#0B3A75;vertical-align:middle;margin-right:6px;'>Go to Detailed<br>Sub-Theme Analysis</span>
-            <span style='display:inline-block;box-sizing:border-box;width:40px;height:40px;vertical-align:middle;'><img src='@{asset_base}/arrow_right.png' style='width:100%;height:100%;display:block;' alt=''></span></a></td>
+          <table style='border-collapse:collapse;margin-left:auto;'><tr>
+            <td style='text-align:right;vertical-align:middle;padding-right:10px;font-size:15px;font-style:italic;font-weight:400;line-height:1.35;color:#0B3A75;white-space:nowrap;'>Go to Detailed<br>Sub-Theme Analysis</td>
+            <td style='vertical-align:middle;line-height:0;'><span style='display:inline-block;box-sizing:border-box;width:44px;height:44px;'><img src='@{asset_base}/arrow_right.png' style='width:100%;height:100%;display:block;' alt=''></span></td>
+          </tr></table></a></td>
       </tr></table></div> ;;
   }
 
