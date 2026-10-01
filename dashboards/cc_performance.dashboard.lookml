@@ -60,7 +60,7 @@
     row: 3
     col: 0
     width: 24
-    height: 2
+    height: 3
   - name: q_perf_demonstrating
     title: q_perf_demonstrating
     model: citizen_centricity
@@ -75,7 +75,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 5
+    row: 6
     col: 0
     width: 24
     height: 1
@@ -93,7 +93,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 6
+    row: 7
     col: 0
     width: 15
     height: 1
@@ -153,7 +153,7 @@
     x_axis_label_font_size: 12
     font_size: '12'
     title_hidden: true
-    row: 7
+    row: 8
     col: 0
     width: 15
     height: 5
@@ -171,7 +171,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 6
+    row: 7
     col: 15
     width: 9
     height: 1
@@ -189,7 +189,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 7
+    row: 8
     col: 15
     width: 9
     height: 5
@@ -207,7 +207,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 12
+    row: 13
     col: 0
     width: 24
     height: 1
@@ -229,7 +229,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 13
+    row: 14
     col: 0
     width: 24
     height: 3
@@ -247,7 +247,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 16
+    row: 17
     col: 0
     width: 24
     height: 1
