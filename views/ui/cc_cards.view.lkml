@@ -307,16 +307,16 @@ view: +fct_cbp_assignment {
     type: count
     value_format: "[>=1000000]0.0,,\"M\";[>=1000]0.0,\"K\";0"
     html: <div style='padding:4px;@{page_white}@{font}'>
-      <table style='@{kpi_table}margin-bottom:14px;'><tr>
-        <td style='width:76px;'><span style='display:inline-block;box-sizing:border-box;width:74px;height:74px;border-radius:50%;background:#EEEEEE;display:block;'><img src='@{asset_base}/officials.png' style='width:100%;height:100%;display:block;' alt=''></span></td>
-        <td style='@{kpi_body_td}'>
-          <div style='@{kpi_strip}font-size:17px;'>Total No. of Assigned Officials</div>
+      <table style='@{kpi_card}margin-bottom:14px;'><tr>
+        <td style='@{kpi_card_icon_td}'><span style='@{kpi_card_ring}'><span style='@{kpi_card_disc}background:#EEEEEE;'><img src='@{asset_base}/officials.png' style='width:100%;height:100%;display:block;' alt=''></span></span></td>
+        <td style='@{kpi_card_body_td}'>
+          <table style='width:100%;border-collapse:collapse;'><tr><td style='@{kpi_card_band}'>Total No. of Assigned Officials</td></tr></table>
           <div style='@{kpi_chip}'>{{ rendered_value }}</div></td>
       </tr></table>
-      <table style='@{kpi_table}'><tr>
-        <td style='width:76px;'><span style='display:inline-block;box-sizing:border-box;width:74px;height:74px;display:block;'><img src='@{asset_base}/officials_solid.png' style='width:100%;height:100%;display:block;' alt=''></span></td>
-        <td style='@{kpi_body_td}'>
-          <div style='@{kpi_strip}font-size:17px;'>Assigned Completion Rate</div>
+      <table style='@{kpi_card}'><tr>
+        <td style='@{kpi_card_icon_td}'><span style='@{kpi_card_ring}'><span style='@{kpi_card_disc}background:#BBDEFB;'><img src='@{asset_base}/officials_solid.png' style='width:100%;height:100%;display:block;' alt=''></span></span></td>
+        <td style='@{kpi_card_body_td}'>
+          <table style='width:100%;border-collapse:collapse;'><tr><td style='@{kpi_card_band}'>Assigned Completion Rate</td></tr></table>
           <div style='@{kpi_chip}'>{{ fct_cbp_assignment.completion_rate._rendered_value }}</div></td>
       </tr></table></div> ;;
   }
