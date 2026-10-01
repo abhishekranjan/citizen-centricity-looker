@@ -115,7 +115,7 @@
     transpose: false
     truncate_text: false
     hide_row_totals: true
-    size_to_fit: true
+    size_to_fit: false
     series_labels:
       fct_course.eoc_yn: Assessment (Y/N)
     table_theme: white
