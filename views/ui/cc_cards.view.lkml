@@ -175,68 +175,75 @@ view: +fct_course {
   }
 
   # Performance row 1. Tile fields: [fct_course.perf_kpi_row, fct_course.eoc_coverage]
+  # Row 1 = titles, row 2 = equal-height white value boxes (see card_top /
+  # card_bottom in manifest.lkml).
   measure: perf_kpi_row {
     hidden: yes
     type: number
     sql: ${pass_rate} ;;
     value_format_name: percent_0
-    html: <table style='@{row_table}'><tr>
-      <td style='width:20%;@{card_green}'>
-        <div style='@{card_title}'>Overall Pass Rate</div>
-        <div style='@{inner_white}font-size:30px;color:#0B3A75;'>{{ rendered_value }}</div></td>
-      <td style='width:20%;@{card_green}'>
-        <div style='@{card_title}'>Courses with End-of-Course Assessments</div>
-        <div style='@{inner_white}font-size:30px;color:#0B3A75;'>{{ fct_course.eoc_coverage._rendered_value }}</div></td>
-      <td style='width:20%;@{card_salmon}'>
-        <div style='@{card_title}'>Competency Assessments</div>
-        <div style='@{inner_white}padding:9px;'>@{badge_asp}</div></td>
-      <td style='width:20%;@{card_salmon}'>
-        <div style='@{card_title}'>Flagged Courses</div>
-        <div style='font-size:14px;font-style:italic;font-weight:600;color:#0B3A75;'>Pass rate below 50%</div>
-        <div style='@{inner_white}padding:7px;margin-top:2px;'>@{badge_asp}</div></td>
-      <td style='width:20%;@{card_salmon}'>
-        <div style='@{card_title}'>Content Health Quality</div>
-        <div style='@{inner_white}padding:9px;'>@{badge_asp}</div></td>
+    html: <table style='@{row_table}'>
+      <tr>
+      <td style='@{card_green}@{card_top}'><div style='@{card_title}'>Overall Pass Rate</div></td>
+      <td style='@{card_green}@{card_top}'><div style='@{card_title}'>Courses with End-of-Course Assessments</div></td>
+      <td style='@{card_salmon}@{card_top}'><div style='@{card_title}'>Competency Assessments</div></td>
+      <td style='@{card_salmon}@{card_top}'><div style='@{card_title}'>Flagged Courses</div>
+        <div style='font-size:14px;font-style:italic;font-weight:600;color:#0B3A75;line-height:1.3;'>Pass rate below 50%</div></td>
+      <td style='@{card_salmon}@{card_top}'><div style='@{card_title}'>Content Health Quality</div></td>
+      </tr>
+      <tr>
+      <td style='@{card_green}@{card_bottom}'><table style='@{value_box}height:52px;'><tr><td style='@{value_box_td}font-size:30px;'>{{ rendered_value }}</td></tr></table></td>
+      <td style='@{card_green}@{card_bottom}'><table style='@{value_box}height:52px;'><tr><td style='@{value_box_td}font-size:30px;'>{{ fct_course.eoc_coverage._rendered_value }}</td></tr></table></td>
+      <td style='@{card_salmon}@{card_bottom}'><table style='@{value_box}height:52px;'><tr><td style='@{value_box_td}'>@{badge_asp}</td></tr></table></td>
+      <td style='@{card_salmon}@{card_bottom}'><table style='@{value_box}height:52px;'><tr><td style='@{value_box_td}'>@{badge_asp}</td></tr></table></td>
+      <td style='@{card_salmon}@{card_bottom}'><table style='@{value_box}height:52px;'><tr><td style='@{value_box_td}'>@{badge_asp}</td></tr></table></td>
       </tr></table> ;;
   }
 
   # Performance row 3 (progression chain). Tile fields:
   # [fct_course.progression_row, fct_course.completions, fct_course.completion_rate,
   #  fct_course.eoc_coverage, fct_course.pass_rate]
+  # Row 1 = titles, row 2 = equal-height white value boxes with the arrows
+  # between them. Arrow columns are a fixed 34px (arrow_td) so the 30px arrows are never
+  # clipped; the six card columns share the remaining width equally.
   measure: progression_row {
     hidden: yes
     type: count_distinct
     sql: ${course_id} ;;
-    html: <table style='@{row_table}'><tr>
-      <td style='width:15%;@{card_green}'>
-        <div style='@{card_title}'>Course Supply</div>
-        <div style='@{inner_white}font-size:18px;color:#0B3A75;line-height:1.4;'>{{ value }}<br>Courses</div></td>
+    html: <table style='@{row_table}'>
+      <tr>
+      <td style='@{card_green}@{card_top}'><div style='@{card_title}'>Course Supply</div></td>
+      <td style='@{arrow_td}'></td>
+      <td style='@{card_green}@{card_top}'><div style='@{card_title}'>Course Completion</div></td>
+      <td style='@{arrow_td}'></td>
+      <td style='@{card_green}@{card_top}'><div style='@{card_title}'>End-of-Course Assessment</div></td>
+      <td style='@{arrow_td}'></td>
+      <td style='@{card_cream}@{card_top}'><div style='@{card_title}'>Competency Assessment</div></td>
+      <td style='@{arrow_td}'></td>
+      <td style='@{card_grey}@{card_top}'><div style='@{card_title}'>Workplace Validation</div></td>
+      <td style='@{arrow_td}'></td>
+      <td style='@{card_grey}@{card_top}'><div style='@{card_title}'>Citizen Feedback / Workflow Application Systems</div></td>
+      </tr>
+      <tr>
+      <td style='@{card_green}@{card_bottom}'><table style='@{value_box}height:80px;'><tr>
+        <td style='@{value_box_td}font-size:18px;line-height:1.4;'>{{ value }}<br><span style='font-size:15px;'>Courses</span></td></tr></table></td>
       <td style='@{arrow_td}'><img src='@{asset_base}/arrow_green.png' style='width:30px;height:26px;display:inline-block;' alt=''></td>
-      <td style='width:15%;@{card_green}'>
-        <div style='@{card_title}'>Course Completion</div>
-        <table style='@{inner_white}width:100%;border-collapse:collapse;'><tr>
-          <td style='font-size:18px;color:#0B3A75;line-height:1.4;text-align:center;'>{{ fct_course.completions._rendered_value }}<br>Completions</td>
-          <td style='font-size:18px;color:#0B3A75;line-height:1.4;text-align:center;'>{{ fct_course.completion_rate._rendered_value }}<br>Rate</td>
-        </tr></table></td>
+      <td style='@{card_green}@{card_bottom}'><table style='@{value_box}height:80px;'><tr>
+        <td style='@{value_box_td}font-size:18px;line-height:1.4;'>{{ fct_course.completions._rendered_value }}<br><span style='font-size:15px;'>Completions</span></td>
+        <td style='@{value_box_td}font-size:18px;line-height:1.4;'>{{ fct_course.completion_rate._rendered_value }}<br><span style='font-size:15px;'>Rate</span></td></tr></table></td>
       <td style='@{arrow_td}'><img src='@{asset_base}/arrow_green.png' style='width:30px;height:26px;display:inline-block;' alt=''></td>
-      <td style='width:15%;@{card_green}'>
-        <div style='@{card_title}'>End-of-Course Assessment</div>
-        <table style='@{inner_white}width:100%;border-collapse:collapse;'><tr>
-          <td style='font-size:18px;color:#0B3A75;line-height:1.4;text-align:center;'>{{ fct_course.eoc_coverage._rendered_value }}<br>Coverage</td>
-          <td style='font-size:18px;color:#0B3A75;line-height:1.4;text-align:center;'>{{ fct_course.pass_rate._rendered_value }}<br>Pass Rate</td>
-        </tr></table></td>
+      <td style='@{card_green}@{card_bottom}'><table style='@{value_box}height:80px;'><tr>
+        <td style='@{value_box_td}font-size:18px;line-height:1.4;'>{{ fct_course.eoc_coverage._rendered_value }}<br><span style='font-size:15px;'>Coverage</span></td>
+        <td style='@{value_box_td}font-size:18px;line-height:1.4;'>{{ fct_course.pass_rate._rendered_value }}<br><span style='font-size:15px;'>Pass Rate</span></td></tr></table></td>
       <td style='@{arrow_td}'><img src='@{asset_base}/arrow_green.png' style='width:30px;height:26px;display:inline-block;' alt=''></td>
-      <td style='width:15%;@{card_cream}'>
-        <div style='@{card_title}'>Competency Assessment</div>
-        <div style='@{inner_white}font-size:15px;color:#0B3A75;line-height:1.35;'>Under development<br>@{badge_asp}</div></td>
+      <td style='@{card_cream}@{card_bottom}'><table style='@{value_box}height:80px;'><tr>
+        <td style='@{value_box_td}font-size:15px;line-height:1.35;'>Under development<br>@{badge_asp}</td></tr></table></td>
       <td style='@{arrow_td}'><img src='@{asset_base}/arrow_amber.png' style='width:30px;height:26px;display:inline-block;' alt=''></td>
-      <td style='width:15%;@{card_grey}'>
-        <div style='@{card_title}'>Workplace Validation</div>
-        <div style='@{inner_white}font-size:14px;color:#0B3A75;line-height:1.3;'>360-degree Feedback System to be developed<br>@{badge_asp}</div></td>
+      <td style='@{card_grey}@{card_bottom}'><table style='@{value_box}height:80px;'><tr>
+        <td style='@{value_box_td}font-size:14px;line-height:1.3;'>360-degree Feedback System to be developed<br>@{badge_asp}</td></tr></table></td>
       <td style='@{arrow_td}'><img src='@{asset_base}/arrow_grey.png' style='width:30px;height:26px;display:inline-block;' alt=''></td>
-      <td style='width:15%;@{card_grey}'>
-        <div style='@{card_title}'>Citizen Feedback / Workflow Application Systems</div>
-        <div style='@{inner_white}font-size:14px;color:#0B3A75;line-height:1.3;'>Beyond CBC mandate<br>@{badge_asp}</div></td>
+      <td style='@{card_grey}@{card_bottom}'><table style='@{value_box}height:80px;'><tr>
+        <td style='@{value_box_td}font-size:14px;line-height:1.3;'>Beyond CBC mandate<br>@{badge_asp}</td></tr></table></td>
       </tr></table> ;;
   }
 }
