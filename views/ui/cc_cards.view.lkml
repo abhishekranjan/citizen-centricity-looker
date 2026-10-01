@@ -34,19 +34,19 @@ view: +rpt_pillar_score {
     sql: ${TABLE}.composite_score ;;
     value_format: "0"
     html: <div style='width:100%;box-sizing:border-box;white-space:normal;background:#ffffff;@{font}'>
-      <div style='white-space:normal;text-align:center;font-size:15px;line-height:1.5;color:#0B3B76;padding:4px 16px;'>
+      <div style='white-space:normal;text-align:center;font-size:20px;line-height:1.4;color:#0B3B76;padding:0 16px;max-width:1300px;margin:0 auto;box-sizing:border-box;'>
         The Citizen Centricity KRA tracks how well government training programs prepare civil servants to deliver citizen-focused services.<br>
-        This dashboard covers the citizen-centric courses across <b><i>6 Behavioural and Functional</i></b> and <b><i>10 Domain competency themes</i></b>
+        This dashboard covers the citizen-centric courses across <b><i>6 Behavioural and Functional</i></b> and <b><i>10 Domain competency themes</i></b><br>
         mapped to 4 governance pillars: <b><i>Responsiveness, Transparency, Participation,</i></b> and <b><i>Service Knowledge.</i></b>
       </div>
-      <table style='width:100%;border-collapse:collapse;margin-top:4px;background:#ffffff;background:linear-gradient(to bottom,#ffffff 50%,#BBDEFB 50%);'><tr>
+      <table style='width:100%;border-collapse:collapse;margin-top:2px;background:#ffffff;background:linear-gradient(to bottom,#ffffff 50%,#BBDEFB 50%);'><tr>
         <td style='width:33%;'></td>
-        <td style='width:34%;text-align:center;line-height:0;'><span style='display:inline-block;box-sizing:border-box;width:96px;height:96px;border-radius:50%;background:#ffffff;padding:6px;'><span style='display:block;box-sizing:border-box;width:84px;height:84px;border-radius:50%;background:#E8F1FB;padding:3px;'><img src='@{asset_base}/composite.png' style='width:100%;height:100%;display:block;' alt=''></span></span></td>
+        <td style='width:34%;text-align:center;line-height:0;'><span style='display:inline-block;box-sizing:border-box;width:80px;height:80px;border-radius:50%;background:#ffffff;padding:5px;'><span style='display:block;box-sizing:border-box;width:70px;height:70px;border-radius:50%;background:#E8F1FB;padding:3px;'><img src='@{asset_base}/composite.png' style='width:100%;height:100%;display:block;' alt=''></span></span></td>
         <td style='width:33%;text-align:right;vertical-align:top;padding:4px 6px 0 0;'><a href='/dashboards/citizen_centricity::cc_score_calculation?theme=@{cc_theme}' target='_self' style='@{link_pill}'>Click here to see Calculation for the Composite Score</a></td>
       </tr></table>
       <table style='width:100%;border-collapse:collapse;background:#BBDEFB;'><tr>
         <td style='width:18%;'></td>
-        <td style='text-align:center;vertical-align:middle;white-space:normal;padding:4px 8px 14px;font-size:21px;font-weight:700;color:#0B3A75;@{font_head}'>
+        <td style='text-align:center;vertical-align:middle;white-space:normal;padding:2px 8px 10px;font-size:21px;font-weight:700;color:#0B3A75;@{font_head}'>
           Composite Citizen Centricity Score for Capacity Building and Performance:
           <span style='font-size:28px;font-weight:400;margin-left:10px;'>{{ rendered_value }}/100</span></td>
         <td style='width:18%;text-align:right;vertical-align:middle;padding:0 12px 10px 0;'>
