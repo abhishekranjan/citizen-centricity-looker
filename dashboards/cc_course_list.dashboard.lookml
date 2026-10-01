@@ -120,13 +120,13 @@
     # at 230 and wrap; short columns are narrower, sized to their content.
     series_column_widths:
       fct_course.course_name: 230
-      fct_course.course_id: 230
+      fct_course.course_id: 160
       fct_course.content_provider_name: 230
       fct_course.pillar_list: 160
-      fct_course.theme_list: 200
-      fct_course.sub_theme_list: 230
-      fct_course.eoc_yn: 170
-      fct_course.content_rating: 150
+      fct_course.theme_list: 170
+      fct_course.sub_theme_list: 200
+      fct_course.eoc_yn: 160
+      fct_course.content_rating: 140
     series_labels:
       fct_course.eoc_yn: Assessment (Y/N)
     table_theme: white
