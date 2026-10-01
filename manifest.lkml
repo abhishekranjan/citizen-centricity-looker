@@ -80,25 +80,25 @@ constant: hdr_table {
   value: "width:100%;border-collapse:collapse;background:#F0961E;font-family:Calibri,Arial,Aptos Narrow,sans-serif;table-layout:auto;"
 }
 constant: hdr_logo_td {
-  value: "width:190px;padding:7px 0 7px 12px;vertical-align:middle;"
+  value: "width:172px;padding:5px 0 5px 10px;vertical-align:middle;"
 }
 constant: hdr_logo {
-  value: "height:54px;background:#ffffff;padding:3px 5px;display:block;"
+  value: "height:48px;background:#ffffff;padding:2px 4px;display:block;"
 }
 constant: hdr_title_td {
-  value: "padding-left:16px;vertical-align:middle;color:#ffffff;font-size:25px;font-weight:700;letter-spacing:.2px;white-space:nowrap;text-align:left;font-family:Aptos Display,Calibri,Arial,sans-serif;"
+  value: "padding-left:14px;vertical-align:middle;color:#ffffff;font-size:22px;font-weight:700;letter-spacing:.2px;white-space:nowrap;text-align:left;font-family:Aptos Display,Calibri,Arial,sans-serif;"
 }
 constant: hdr_tabs_td {
-  value: "text-align:right;vertical-align:middle;padding:6px 12px;white-space:nowrap;"
+  value: "text-align:right;vertical-align:middle;padding:5px 8px;white-space:nowrap;"
 }
 # Tab buttons. Sized up from the original 112px / 13px so the labels read at
 # a glance on a wall display and in PDF export. min-width holds all five the
 # same width; padding gives the taller hit area shown in the approved design.
 constant: tab {
-  value: "display:inline-block;min-width:158px;text-align:center;background:#0B3A75;color:#ffffff;padding:11px 18px;margin-left:9px;border-radius:4px;font-size:16px;font-weight:600;text-decoration:none;font-family:Aptos Display,Calibri,Arial,sans-serif;"
+  value: "display:inline-block;box-sizing:border-box;min-width:138px;text-align:center;background:#0B3A75;color:#ffffff;padding:8px 10px;margin-left:6px;border-radius:4px;font-size:14px;font-weight:400;white-space:nowrap;text-decoration:none;font-family:Aptos Display,Calibri,Arial,sans-serif;"
 }
 constant: tab_on {
-  value: "display:inline-block;min-width:158px;text-align:center;background:#E0E0E0;color:#212121;padding:11px 18px;margin-left:9px;border-radius:4px;font-size:16px;font-weight:600;text-decoration:none;font-family:Aptos Display,Calibri,Arial,sans-serif;"
+  value: "display:inline-block;box-sizing:border-box;min-width:138px;text-align:center;background:#E0E0E0;color:#212121;padding:8px 10px;margin-left:6px;border-radius:4px;font-size:14px;font-weight:400;white-space:nowrap;text-decoration:none;font-family:Aptos Display,Calibri,Arial,sans-serif;"
 }
 
 # ---- Navy question bar -------------------------------------------------
@@ -136,25 +136,25 @@ constant: card_dashed {
   value: "background:#FAFAFA;border:1.5px dashed #9E9E9E;border-radius:10px;padding:8px 10px;text-align:left;box-sizing:border-box;vertical-align:top;"
 }
 constant: card_green {
-  value: "background:#C8E6C9;border:1.5px dashed #9CCC65;border-radius:6px;padding:6px 8px;text-align:center;box-sizing:border-box;vertical-align:top;"
+  value: "background:#C8E6C9;border:1.5px dashed #9CCC65;border-radius:6px;padding:6px 6px;text-align:center;box-sizing:border-box;vertical-align:top;overflow-wrap:break-word;word-break:normal;"
 }
 constant: card_salmon {
-  value: "background:#FFCCBC;border:1.5px dashed #E57373;border-radius:6px;padding:6px 8px;text-align:center;box-sizing:border-box;vertical-align:top;"
+  value: "background:#FFCCBC;border:1.5px dashed #E57373;border-radius:6px;padding:6px 6px;text-align:center;box-sizing:border-box;vertical-align:top;overflow-wrap:break-word;word-break:normal;"
 }
 constant: card_cream {
-  value: "background:#FFF8E1;border:1.5px dashed #FFD54F;border-radius:6px;padding:6px 8px;text-align:center;box-sizing:border-box;vertical-align:top;"
+  value: "background:#FFF8E1;border:1.5px dashed #FFD54F;border-radius:6px;padding:6px 6px;text-align:center;box-sizing:border-box;vertical-align:top;overflow-wrap:break-word;word-break:normal;"
 }
 constant: card_grey {
-  value: "background:#EEEEEE;border:1.5px dashed #757575;border-radius:6px;padding:6px 8px;text-align:center;box-sizing:border-box;vertical-align:top;"
+  value: "background:#EEEEEE;border:1.5px dashed #757575;border-radius:6px;padding:6px 6px;text-align:center;box-sizing:border-box;vertical-align:top;overflow-wrap:break-word;word-break:normal;"
 }
 constant: inner_white {
-  value: "background:#ffffff;border-radius:12px;padding:6px 8px;margin-top:5px;"
+  value: "background:#ffffff;border-radius:12px;padding:6px 5px;margin-top:5px;overflow-wrap:break-word;"
 }
 constant: row_table {
-  value: "width:100%;border-collapse:separate;border-spacing:5px 0;table-layout:fixed;background:#ffffff;font-family:Calibri,Arial,Aptos Narrow,sans-serif;"
+  value: "width:100%;border-collapse:separate;border-spacing:3px 0;table-layout:fixed;background:#ffffff;font-family:Calibri,Arial,Aptos Narrow,sans-serif;"
 }
 constant: arrow_td {
-  value: "width:2%;text-align:center;vertical-align:middle;line-height:0;"
+  value: "width:2%;text-align:center;vertical-align:middle;line-height:0;overflow:hidden;"
 }
 
 # ---- KPI cards with icon ----------------------------------------------
@@ -174,10 +174,10 @@ constant: kpi_strip {
   value: "background:#E3F2FD;text-align:center;font-size:16px;font-weight:700;color:#0B3A75;padding:6px 5px;border-radius:3px;"
 }
 constant: kpi_big {
-  value: "text-align:center;font-size:30px;font-weight:600;color:#0B3A75;padding:4px 0;"
+  value: "text-align:center;font-size:30px;font-weight:400;color:#0B3A75;padding:4px 0;"
 }
 constant: kpi_pair {
-  value: "font-size:24px;font-weight:600;color:#0B3A75;"
+  value: "font-size:24px;font-weight:400;color:#0B3A75;"
 }
 # "B&F" / "Domain" captions under the paired values - were 11px regular and
 # effectively unreadable at normal zoom.
@@ -190,7 +190,7 @@ constant: kpi_chip {
 
 # ---- Text styles -------------------------------------------------------
 constant: kpi_value {
-  value: "font-size:28px;font-weight:600;color:#0B3A75;line-height:1.15;"
+  value: "font-size:28px;font-weight:400;color:#0B3A75;line-height:1.15;"
 }
 # Caption under each pillar-card figure ("Composite Score", "Completion Rate",
 # ...). Was 12px/500 in a mid grey; now bold, larger and in the navy so it
@@ -210,12 +210,12 @@ constant: panel {
 # least readable text on the page, so this is larger, semi-bold and navy
 # rather than near-black.
 constant: lede_italic {
-  value: "font-size:17px;font-style:italic;font-weight:600;color:#0B3A75;line-height:1.45;margin-bottom:10px;text-align:left;"
+  value: "font-size:16px;font-style:italic;font-weight:600;color:#0B3A75;line-height:1.4;margin-bottom:7px;text-align:left;"
 }
 
 # Explanatory paragraph copy on the Score Calculation page.
 constant: body_copy {
-  value: "font-size:16px;line-height:1.65;color:#212121;text-align:justify;margin:0 0 12px;"
+  value: "font-size:15px;line-height:1.5;color:#212121;text-align:justify;margin:0 0 8px;"
 }
 
 # White sheet behind an html: tile. Looker tiles are transparent over the
@@ -261,7 +261,7 @@ constant: strip_table {
   value: "width:100%;border-collapse:collapse;background:#E3F2FD;border-radius:4px;border-bottom:2px solid #90CAF9;font-family:Calibri,Arial,Aptos Narrow,sans-serif;"
 }
 constant: strip_title {
-  value: "color:#0B3A75;font-size:17px;font-weight:700;padding:9px 12px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family:Aptos Display,Calibri,Arial,sans-serif;"
+  value: "color:#0B3A75;font-size:17px;font-weight:700;padding:9px 12px;text-align:left;vertical-align:middle;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family:Aptos Display,Calibri,Arial,sans-serif;"
 }
 constant: strip_right {
   value: "text-align:right;padding:6px 10px;white-space:nowrap;width:1%;"
