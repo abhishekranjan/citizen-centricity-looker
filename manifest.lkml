@@ -130,25 +130,25 @@ constant: go_back_a {
 
 # ---- Cards -------------------------------------------------------------
 constant: card_score {
-  value: "background:#EEF3C4;border:1.5px solid #8D8D6E;border-radius:10px;padding:8px 10px;text-align:left;box-sizing:border-box;vertical-align:top;"
+  value: "background:#EEF3C4;border:1.5px solid #8D8D6E;border-radius:10px;padding:8px 10px;text-align:left;box-sizing:border-box;vertical-align:top;white-space:normal;"
 }
 constant: card_dashed {
-  value: "background:#FAFAFA;border:1.5px dashed #9E9E9E;border-radius:10px;padding:8px 10px;text-align:left;box-sizing:border-box;vertical-align:top;"
+  value: "background:#FAFAFA;border:1.5px dashed #9E9E9E;border-radius:10px;padding:8px 10px;text-align:left;box-sizing:border-box;vertical-align:top;white-space:normal;"
 }
 constant: card_green {
-  value: "background:#C8E6C9;border:1.5px dashed #9CCC65;border-radius:6px;padding:6px 6px;text-align:center;box-sizing:border-box;vertical-align:top;overflow-wrap:break-word;word-break:normal;"
+  value: "background:#C8E6C9;border:1.5px dashed #9CCC65;border-radius:6px;padding:6px 6px;text-align:center;box-sizing:border-box;vertical-align:top;overflow-wrap:break-word;word-break:normal;white-space:normal;"
 }
 constant: card_salmon {
-  value: "background:#FFCCBC;border:1.5px dashed #E57373;border-radius:6px;padding:6px 6px;text-align:center;box-sizing:border-box;vertical-align:top;overflow-wrap:break-word;word-break:normal;"
+  value: "background:#FFCCBC;border:1.5px dashed #E57373;border-radius:6px;padding:6px 6px;text-align:center;box-sizing:border-box;vertical-align:top;overflow-wrap:break-word;word-break:normal;white-space:normal;"
 }
 constant: card_cream {
-  value: "background:#FFF8E1;border:1.5px dashed #FFD54F;border-radius:6px;padding:6px 6px;text-align:center;box-sizing:border-box;vertical-align:top;overflow-wrap:break-word;word-break:normal;"
+  value: "background:#FFF8E1;border:1.5px dashed #FFD54F;border-radius:6px;padding:6px 6px;text-align:center;box-sizing:border-box;vertical-align:top;overflow-wrap:break-word;word-break:normal;white-space:normal;"
 }
 constant: card_grey {
-  value: "background:#EEEEEE;border:1.5px dashed #757575;border-radius:6px;padding:6px 6px;text-align:center;box-sizing:border-box;vertical-align:top;overflow-wrap:break-word;word-break:normal;"
+  value: "background:#EEEEEE;border:1.5px dashed #757575;border-radius:6px;padding:6px 6px;text-align:center;box-sizing:border-box;vertical-align:top;overflow-wrap:break-word;word-break:normal;white-space:normal;"
 }
 constant: inner_white {
-  value: "background:#ffffff;border-radius:12px;padding:6px 5px;margin-top:5px;overflow-wrap:break-word;"
+  value: "background:#ffffff;border-radius:12px;padding:6px 5px;margin-top:5px;overflow-wrap:break-word;white-space:normal;"
 }
 constant: row_table {
   value: "width:100%;border-collapse:separate;border-spacing:3px 0;table-layout:fixed;background:#ffffff;font-family:Calibri,Arial,Aptos Narrow,sans-serif;"
@@ -171,7 +171,7 @@ constant: kpi_band_icon {
   value: "display:block;box-sizing:border-box;width:46px;height:46px;border-radius:50%;background:#ffffff;padding:3px;"
 }
 constant: kpi_band_title {
-  value: "text-align:center;vertical-align:middle;color:#0B3A75;font-size:16px;font-weight:700;padding:6px 8px;line-height:1.2;font-family:Aptos Display,Calibri,Arial,sans-serif;"
+  value: "text-align:center;vertical-align:middle;color:#0B3A75;font-size:16px;font-weight:700;padding:6px 8px;line-height:1.2;font-family:Aptos Display,Calibri,Arial,sans-serif;white-space:normal;"
 }
 
 # ---- KPI card body ----------------------------------------------------
@@ -182,7 +182,7 @@ constant: kpi_body_td {
   value: "vertical-align:middle;padding-left:6px;"
 }
 constant: kpi_strip {
-  value: "background:#E3F2FD;text-align:center;vertical-align:middle;font-size:16px;font-weight:700;color:#0B3A75;padding:7px 6px;border-radius:3px;"
+  value: "background:#E3F2FD;text-align:center;vertical-align:middle;font-size:16px;font-weight:700;color:#0B3A75;padding:7px 6px;border-radius:3px;white-space:normal;"
 }
 constant: kpi_big {
   value: "text-align:center;font-size:30px;font-weight:400;color:#0B3A75;padding:4px 0;"
@@ -207,13 +207,13 @@ constant: kpi_value {
 # ...). Was 12px/500 in a mid grey; now bold, larger and in the navy so it
 # carries at a glance.
 constant: kpi_label {
-  value: "font-size:14px;font-weight:700;color:#0B3A75;margin-top:4px;line-height:1.3;"
+  value: "font-size:14px;font-weight:700;color:#0B3A75;margin-top:4px;line-height:1.3;white-space:normal;"
 }
 constant: card_title {
-  value: "font-size:15px;font-weight:700;color:#0B3A75;line-height:1.3;font-family:Aptos Display,Calibri,Arial,sans-serif;"
+  value: "font-size:15px;font-weight:700;color:#0B3A75;line-height:1.3;font-family:Aptos Display,Calibri,Arial,sans-serif;white-space:normal;"
 }
 constant: panel {
-  value: "width:100%;box-sizing:border-box;background:#ffffff;font-family:Calibri,Arial,Aptos Narrow,sans-serif;"
+  value: "width:100%;box-sizing:border-box;background:#ffffff;font-family:Calibri,Arial,Aptos Narrow,sans-serif;white-space:normal;"
 }
 
 # Italic sub-question under each definition heading ("Is citizen-centric
@@ -221,12 +221,12 @@ constant: panel {
 # least readable text on the page, so this is larger, semi-bold and navy
 # rather than near-black.
 constant: lede_italic {
-  value: "font-size:16px;font-style:italic;font-weight:600;color:#0B3A75;line-height:1.4;margin-bottom:7px;text-align:left;"
+  value: "font-size:16px;font-style:italic;font-weight:600;color:#0B3A75;line-height:1.4;margin-bottom:7px;text-align:left;white-space:normal;"
 }
 
 # Explanatory paragraph copy on the Score Calculation page.
 constant: body_copy {
-  value: "font-size:15px;line-height:1.55;text-align:justify;"
+  value: "font-size:15px;line-height:1.55;text-align:justify;white-space:normal;"
 }
 
 # White sheet behind an html: tile. Looker tiles are transparent over the
@@ -236,7 +236,7 @@ constant: body_copy {
 # See the Typography/background note in the project README or apply a theme
 # with background_color #FFFFFF in Admin > Themes.
 constant: page_white {
-  value: "width:100%;box-sizing:border-box;background:#ffffff;"
+  value: "width:100%;box-sizing:border-box;background:#ffffff;white-space:normal;"
 }
 
 # ---- Skeleton placeholders (aspirational tables) -----------------------
