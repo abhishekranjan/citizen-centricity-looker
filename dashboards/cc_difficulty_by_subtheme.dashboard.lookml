@@ -96,12 +96,6 @@
     hide_totals: true
     show_totals: false
     enable_conditional_formatting: false
-    series_labels:
-      rpt_pillar_subtheme.sub_theme: Sub-Theme
-      rpt_pillar_subtheme.total_courses: Total Courses*
-      rpt_pillar_subtheme.beginner_courses: Beginner
-      rpt_pillar_subtheme.intermediate_courses: Intermediate
-      rpt_pillar_subtheme.advanced_courses: Advance
     listen:
       Pillar: rpt_pillar_subtheme.pillar
     show_view_names: false
@@ -113,10 +107,16 @@
       rpt_pillar_subtheme.pillar: 150
       rpt_pillar_subtheme.theme: 180
       rpt_pillar_subtheme.sub_theme: 250
-      rpt_pillar_subtheme.total_courses: 130
+      rpt_pillar_subtheme.total_courses: 142
       rpt_pillar_subtheme.beginner_courses: 125
       rpt_pillar_subtheme.intermediate_courses: 135
       rpt_pillar_subtheme.advanced_courses: 125
+    series_labels:
+      rpt_pillar_subtheme.sub_theme: Sub-Theme
+      rpt_pillar_subtheme.total_courses: Total Courses*
+      rpt_pillar_subtheme.beginner_courses: Beginner
+      rpt_pillar_subtheme.intermediate_courses: Intermediate
+      rpt_pillar_subtheme.advanced_courses: Advance
     table_theme: white
     limit_displayed_rows: false
     series_text_format:

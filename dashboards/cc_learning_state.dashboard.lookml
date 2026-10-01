@@ -114,10 +114,6 @@
     hide_totals: false
     show_totals: true
     enable_conditional_formatting: false
-    series_labels:
-      fct_user_course.primary_group: Group
-      fct_user_course.officials: Officials
-      fct_user_course.completions: Completions
     column_order:
     - fct_user_course.primary_group
     - fct_user_course.officials
@@ -131,7 +127,15 @@
     transpose: false
     truncate_text: true
     hide_row_totals: true
-    size_to_fit: true
+    size_to_fit: false
+    series_column_widths:
+      fct_user_course.primary_group: 78
+      fct_user_course.officials: 94
+      fct_user_course.completions: 127
+    series_labels:
+      fct_user_course.primary_group: Group
+      fct_user_course.officials: Officials
+      fct_user_course.completions: Completions
     table_theme: white
     limit_displayed_rows: false
     series_text_format:

@@ -81,11 +81,6 @@
     hide_totals: true
     show_totals: false
     enable_conditional_formatting: false
-    series_labels:
-      rpt_pillar_subtheme.sub_theme: Sub_Theme
-      rpt_pillar_subtheme.total_courses: Courses
-      rpt_pillar_subtheme.completion_rate: Completion Rate (%)
-      rpt_pillar_subtheme.assessment_passed_pct: Assessment Passed (%)
     series_cell_visualizations:
       rpt_pillar_subtheme.assessment_passed_pct:
         is_active: true
@@ -109,8 +104,13 @@
       rpt_pillar_subtheme.completions: 130
       rpt_pillar_subtheme.enrolments: 130
       rpt_pillar_subtheme.total_courses: 120
-      rpt_pillar_subtheme.completion_rate: 140
-      rpt_pillar_subtheme.assessment_passed_pct: 150
+      rpt_pillar_subtheme.completion_rate: 187
+      rpt_pillar_subtheme.assessment_passed_pct: 215
+    series_labels:
+      rpt_pillar_subtheme.sub_theme: Sub_Theme
+      rpt_pillar_subtheme.total_courses: Courses
+      rpt_pillar_subtheme.completion_rate: Completion Rate (%)
+      rpt_pillar_subtheme.assessment_passed_pct: Assessment Passed (%)
     table_theme: white
     limit_displayed_rows: false
     series_text_format:

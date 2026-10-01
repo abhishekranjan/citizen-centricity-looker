@@ -274,14 +274,6 @@
     show_row_numbers: true
     hide_totals: false
     show_totals: true
-    series_labels:
-      fct_course.content_provider_name: Course Provider
-      fct_course.course_count: Number of Courses
-      brg_course_subtheme.sub_theme_count: Sub-Themes
-      fct_course.avg_content_rating: Average Content Rating
-      fct_course.completion_rate: Completion Rate
-      fct_course.enrolments_exact: Enrolments
-      fct_course.completions_exact: Completions
     enable_conditional_formatting: true
     conditional_formatting:
     - type: along a scale...
@@ -314,13 +306,21 @@
     hide_row_totals: true
     size_to_fit: false
     series_column_widths:
-      fct_course.content_provider_name: 340
+      fct_course.content_provider_name: 160
       fct_course.course_count: 130
-      brg_course_subtheme.sub_theme_count: 115
+      brg_course_subtheme.sub_theme_count: 127
       fct_course.avg_content_rating: 130
-      fct_course.completion_rate: 125
-      fct_course.enrolments_exact: 140
-      fct_course.completions_exact: 140
+      fct_course.completion_rate: 158
+      fct_course.enrolments_exact: 120
+      fct_course.completions_exact: 130
+    series_labels:
+      fct_course.content_provider_name: Course Provider
+      fct_course.course_count: Courses
+      brg_course_subtheme.sub_theme_count: Sub-Themes
+      fct_course.avg_content_rating: Avg Rating
+      fct_course.completion_rate: Completion Rate
+      fct_course.enrolments_exact: Enrolments
+      fct_course.completions_exact: Completions
     table_theme: white
     limit_displayed_rows: false
     series_text_format:
@@ -383,22 +383,22 @@
     hide_totals: true
     show_totals: false
     enable_conditional_formatting: false
-    series_labels:
-      rpt_pillar_subtheme.covered_subtheme_list: Sub-theme list
-      rpt_pillar_subtheme.subthemes_covered: Sub-themes
-      rpt_pillar_subtheme.subthemes_total: Total Sub-themes
-      rpt_pillar_subtheme.subtheme_coverage_pct: Sub-themes Covered
     show_view_names: false
     transpose: false
     truncate_text: true
     hide_row_totals: true
     size_to_fit: false
     series_column_widths:
-      rpt_pillar_subtheme.pillar: 150
-      rpt_pillar_subtheme.covered_subtheme_list: 330
-      rpt_pillar_subtheme.subthemes_covered: 110
-      rpt_pillar_subtheme.subthemes_total: 120
-      rpt_pillar_subtheme.subtheme_coverage_pct: 135
+      rpt_pillar_subtheme.pillar: 70
+      rpt_pillar_subtheme.covered_subtheme_list: 130
+      rpt_pillar_subtheme.subthemes_covered: 100
+      rpt_pillar_subtheme.subthemes_total: 70
+      rpt_pillar_subtheme.subtheme_coverage_pct: 115
+    series_labels:
+      rpt_pillar_subtheme.covered_subtheme_list: Sub-themes
+      rpt_pillar_subtheme.subthemes_covered: Covered
+      rpt_pillar_subtheme.subthemes_total: Total
+      rpt_pillar_subtheme.subtheme_coverage_pct: Covered %
     table_theme: white
     limit_displayed_rows: false
     series_text_format:

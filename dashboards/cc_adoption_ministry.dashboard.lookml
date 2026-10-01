@@ -87,8 +87,6 @@
     hide_totals: true
     show_totals: false
     enable_conditional_formatting: false
-    series_labels:
-      fct_cbp_assignment.completion_rate: Completion rate
     series_cell_visualizations:
       fct_cbp_assignment.completion_rate:
         is_active: true
@@ -111,7 +109,9 @@
       fct_cbp_assignment.courses: 130
       fct_cbp_assignment.allocations: 150
       fct_cbp_assignment.completions: 150
-      fct_cbp_assignment.completion_rate: 150
+      fct_cbp_assignment.completion_rate: 152
+    series_labels:
+      fct_cbp_assignment.completion_rate: Completion rate
     table_theme: white
     limit_displayed_rows: false
     series_text_format:

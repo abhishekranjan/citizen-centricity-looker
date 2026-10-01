@@ -189,12 +189,6 @@
     hide_totals: true
     show_totals: false
     enable_conditional_formatting: false
-    series_labels:
-      rpt_pillar_subtheme.sub_theme: Sub-Theme
-      rpt_pillar_subtheme.state_cbps: State CBPs
-      rpt_pillar_subtheme.state_completion_pct: State Completion %
-      rpt_pillar_subtheme.union_cbps: Union CBPs
-      rpt_pillar_subtheme.union_completion_pct: Union Completion %
     series_cell_visualizations:
       rpt_pillar_subtheme.state_completion_pct:
         is_active: true
@@ -219,12 +213,18 @@
     size_to_fit: false
     series_column_widths:
       rpt_pillar_subtheme.pillar: 150
-      rpt_pillar_subtheme.theme: 170
-      rpt_pillar_subtheme.sub_theme: 235
-      rpt_pillar_subtheme.state_cbps: 110
+      rpt_pillar_subtheme.theme: 160
+      rpt_pillar_subtheme.sub_theme: 165
+      rpt_pillar_subtheme.state_cbps: 117
       rpt_pillar_subtheme.state_completion_pct: 150
-      rpt_pillar_subtheme.union_cbps: 110
+      rpt_pillar_subtheme.union_cbps: 123
       rpt_pillar_subtheme.union_completion_pct: 150
+    series_labels:
+      rpt_pillar_subtheme.sub_theme: Sub-Theme
+      rpt_pillar_subtheme.state_cbps: State CBPs
+      rpt_pillar_subtheme.state_completion_pct: State Comp. %
+      rpt_pillar_subtheme.union_cbps: Union CBPs
+      rpt_pillar_subtheme.union_completion_pct: Union Comp. %
     table_theme: white
     limit_displayed_rows: false
     series_text_format:

@@ -93,7 +93,7 @@
       seed_data_gaps.description: 380
       seed_data_gaps.data_source: 200
       seed_data_gaps.next_step: 380
-      seed_data_gaps.sort_order: 90
+      seed_data_gaps.sort_order: 111
     table_theme: white
     limit_displayed_rows: false
     series_text_format:
