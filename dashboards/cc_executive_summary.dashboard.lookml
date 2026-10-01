@@ -41,7 +41,7 @@
     row: 2
     col: 0
     width: 24
-    height: 6
+    height: 5
   - name: pillar_service_knowledge
     title: pillar_service_knowledge
     model: citizen_centricity
@@ -64,7 +64,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 8
+    row: 7
     col: 0
     width: 6
     height: 7
@@ -90,7 +90,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 8
+    row: 7
     col: 6
     width: 6
     height: 7
@@ -116,7 +116,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 8
+    row: 7
     col: 12
     width: 6
     height: 7
@@ -142,7 +142,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 8
+    row: 7
     col: 18
     width: 6
     height: 7
@@ -160,7 +160,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 15
+    row: 14
     col: 0
     width: 24
     height: 1
@@ -178,7 +178,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 16
+    row: 15
     col: 0
     width: 5
     height: 2
@@ -196,7 +196,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 16
+    row: 15
     col: 5
     width: 5
     height: 2
@@ -214,7 +214,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 16
+    row: 15
     col: 10
     width: 4
     height: 2
@@ -233,7 +233,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 16
+    row: 15
     col: 14
     width: 5
     height: 2
@@ -252,7 +252,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 16
+    row: 15
     col: 19
     width: 5
     height: 2
@@ -270,7 +270,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 18
+    row: 17
     col: 0
     width: 24
     height: 1
