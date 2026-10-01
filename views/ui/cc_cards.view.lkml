@@ -34,10 +34,10 @@ view: +rpt_pillar_score {
     sql: ${TABLE}.composite_score ;;
     value_format: "0"
     html: <div style='width:100%;box-sizing:border-box;white-space:normal;background:#ffffff;@{font}'>
-      <div style='white-space:normal;text-align:center;font-size:20px;line-height:1.4;color:#0B3B76;padding:0 16px;max-width:1300px;margin:0 auto;box-sizing:border-box;'>
+      <div style='white-space:normal;text-align:center;font-size:18px;line-height:1.4;color:#0B3B76;padding:0 50px;box-sizing:border-box;text-wrap:balance;'>
         The Citizen Centricity KRA tracks how well government training programs prepare civil servants to deliver citizen-focused services.<br>
-        This dashboard covers the citizen-centric courses across <b><i>6 Behavioural and Functional</i></b> and <b><i>10 Domain competency themes</i></b><br>
-        mapped to 4 governance pillars: <b><i>Responsiveness, Transparency, Participation,</i></b> and <b><i>Service Knowledge.</i></b>
+        This dashboard covers the citizen-centric courses across <b><i>6 Behavioural and Functional</i></b> and <b><i>10 Domain competency themes</i></b>
+        mapped to 4 governance pillars: <b><i>Responsiveness, Transparency, Participation,</i></b> <span style='white-space:nowrap;'>and <b><i>Service Knowledge.</i></b></span>
       </div>
       <table style='width:100%;border-collapse:collapse;margin-top:2px;background:#ffffff;background:linear-gradient(to bottom,#ffffff 50%,#BBDEFB 50%);'><tr>
         <td style='width:33%;'></td>
