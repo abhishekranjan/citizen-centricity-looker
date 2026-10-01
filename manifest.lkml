@@ -270,6 +270,31 @@ constant: body_copy {
 # Looker theme applied to the dashboard, which cannot live in this project.
 # See the Typography/background note in the project README or apply a theme
 # with background_color #FFFFFF in Admin > Themes.
+# ---- Adoption KPI cards (logo overlapping the title band) ------------
+# Each KPI is a bordered card. The circle logo sits at the top-left and its
+# right half covers the start of the light-blue title band, the same overlap
+# idea as the Executive Summary composite logo. The band "behind" the logo
+# is drawn by a gradient on the icon cell, sized to the band (top 14px,
+# height 42px) and starting at the circle's centre (50%). If the sanitiser
+# strips the gradient, the band simply starts next to the logo.
+constant: kpi_card {
+  value: "width:100%;border-collapse:separate;border-spacing:0;background:#ffffff;border:1px solid #E0E0E0;border-radius:10px;box-shadow:0 1px 4px rgba(0,0,0,.18);"
+}
+constant: kpi_card_icon_td {
+  value: "width:96px;padding:6px 0 8px 6px;vertical-align:top;line-height:0;background-color:#ffffff;background-image:linear-gradient(to right,#ffffff 50%,#E3F2FD 50%);background-repeat:no-repeat;background-position:0 14px;background-size:100% 42px;"
+}
+constant: kpi_card_ring {
+  value: "display:block;box-sizing:border-box;width:96px;height:96px;border-radius:50%;background:#ffffff;padding:5px;"
+}
+constant: kpi_card_disc {
+  value: "display:block;box-sizing:border-box;width:86px;height:86px;border-radius:50%;padding:6px;"
+}
+constant: kpi_card_body_td {
+  value: "vertical-align:top;padding:14px 10px 10px 0;"
+}
+constant: kpi_card_band {
+  value: "height:42px;box-sizing:border-box;background:#E3F2FD;text-align:center;vertical-align:middle;font-size:17px;font-weight:700;color:#0B3A75;padding:4px 8px;border-radius:0 3px 3px 0;white-space:normal;font-family:Aptos Display,Calibri,Arial,sans-serif;"
+}
 constant: page_white {
   value: "width:100%;box-sizing:border-box;background:#ffffff;white-space:normal;"
 }
