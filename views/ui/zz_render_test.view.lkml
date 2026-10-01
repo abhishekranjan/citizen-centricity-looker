@@ -33,7 +33,7 @@ view: +fct_course {
     label: "Zz Render Test"
     type: count
     html:
-      <div style='font:12px Roboto,Arial,sans-serif;white-space:nowrap;'>
+      <div style='font-size:12px;white-space:nowrap;@{font}'>
         <span style='display:inline-block;width:110px;text-align:center;vertical-align:top;'>
           <span style='display:inline-block;width:48px;height:48px;background:#2E7D32;border-radius:6px;'></span>
           <div>1 plain div</div></span>
