@@ -115,16 +115,7 @@
     transpose: false
     truncate_text: false
     hide_row_totals: true
-    size_to_fit: false
-    series_column_widths:
-      fct_course.course_name: 230
-      fct_course.course_id: 200
-      fct_course.content_provider_name: 240
-      fct_course.pillar_list: 140
-      fct_course.theme_list: 160
-      fct_course.sub_theme_list: 230
-      fct_course.eoc_yn: 167
-      fct_course.content_rating: 145
+    size_to_fit: true
     series_labels:
       fct_course.eoc_yn: Assessment (Y/N)
     table_theme: white

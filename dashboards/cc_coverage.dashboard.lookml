@@ -304,15 +304,7 @@
     transpose: false
     truncate_text: true
     hide_row_totals: true
-    size_to_fit: false
-    series_column_widths:
-      fct_course.content_provider_name: 160
-      fct_course.course_count: 130
-      brg_course_subtheme.sub_theme_count: 127
-      fct_course.avg_content_rating: 130
-      fct_course.completion_rate: 158
-      fct_course.enrolments_exact: 120
-      fct_course.completions_exact: 130
+    size_to_fit: true
     series_labels:
       fct_course.content_provider_name: Course Provider
       fct_course.course_count: Courses
@@ -387,13 +379,7 @@
     transpose: false
     truncate_text: true
     hide_row_totals: true
-    size_to_fit: false
-    series_column_widths:
-      rpt_pillar_subtheme.pillar: 70
-      rpt_pillar_subtheme.covered_subtheme_list: 130
-      rpt_pillar_subtheme.subthemes_covered: 100
-      rpt_pillar_subtheme.subthemes_total: 70
-      rpt_pillar_subtheme.subtheme_coverage_pct: 115
+    size_to_fit: true
     series_labels:
       rpt_pillar_subtheme.covered_subtheme_list: Sub-themes
       rpt_pillar_subtheme.subthemes_covered: Covered

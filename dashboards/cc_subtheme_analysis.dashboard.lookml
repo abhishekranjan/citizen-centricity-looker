@@ -96,16 +96,7 @@
     transpose: false
     truncate_text: true
     hide_row_totals: true
-    size_to_fit: false
-    series_column_widths:
-      rpt_pillar_subtheme.pillar: 150
-      rpt_pillar_subtheme.theme: 170
-      rpt_pillar_subtheme.sub_theme: 235
-      rpt_pillar_subtheme.completions: 130
-      rpt_pillar_subtheme.enrolments: 130
-      rpt_pillar_subtheme.total_courses: 120
-      rpt_pillar_subtheme.completion_rate: 187
-      rpt_pillar_subtheme.assessment_passed_pct: 215
+    size_to_fit: true
     series_labels:
       rpt_pillar_subtheme.sub_theme: Sub_Theme
       rpt_pillar_subtheme.total_courses: Courses

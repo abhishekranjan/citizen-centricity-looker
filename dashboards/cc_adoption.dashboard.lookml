@@ -210,15 +210,7 @@
     transpose: false
     truncate_text: true
     hide_row_totals: true
-    size_to_fit: false
-    series_column_widths:
-      rpt_pillar_subtheme.pillar: 150
-      rpt_pillar_subtheme.theme: 160
-      rpt_pillar_subtheme.sub_theme: 165
-      rpt_pillar_subtheme.state_cbps: 117
-      rpt_pillar_subtheme.state_completion_pct: 150
-      rpt_pillar_subtheme.union_cbps: 123
-      rpt_pillar_subtheme.union_completion_pct: 150
+    size_to_fit: true
     series_labels:
       rpt_pillar_subtheme.sub_theme: Sub-Theme
       rpt_pillar_subtheme.state_cbps: State CBPs

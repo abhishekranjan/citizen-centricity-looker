@@ -127,11 +127,7 @@
     transpose: false
     truncate_text: true
     hide_row_totals: true
-    size_to_fit: false
-    series_column_widths:
-      fct_user_course.primary_group: 78
-      fct_user_course.officials: 94
-      fct_user_course.completions: 127
+    size_to_fit: true
     series_labels:
       fct_user_course.primary_group: Group
       fct_user_course.officials: Officials
@@ -142,6 +138,10 @@
       fct_user_course.officials:
         align: center
       fct_user_course.completions:
+        align: center
+      pct_officials:
+        align: center
+      pct_completions:
         align: center
     header_text_alignment: center
     header_font_size: '16'
@@ -306,11 +306,7 @@
     transpose: false
     truncate_text: true
     hide_row_totals: true
-    size_to_fit: false
-    series_column_widths:
-      fct_cbp_assignment.ministry: 92
-      fct_cbp_assignment.allocations: 117
-      fct_cbp_assignment.completions: 127
+    size_to_fit: true
     series_labels:
       fct_cbp_assignment.ministry: Ministry
       fct_cbp_assignment.allocations: Allocations
