@@ -80,49 +80,52 @@ constant: hdr_table {
   value: "width:100%;border-collapse:collapse;background:#F0961E;font-family:Calibri,Arial,Aptos Narrow,sans-serif;table-layout:auto;"
 }
 constant: hdr_logo_td {
-  value: "width:170px;padding:5px 0 5px 10px;vertical-align:middle;"
+  value: "width:190px;padding:7px 0 7px 12px;vertical-align:middle;"
 }
 constant: hdr_logo {
-  value: "height:46px;background:#ffffff;padding:2px 4px;display:block;"
+  value: "height:54px;background:#ffffff;padding:3px 5px;display:block;"
 }
 constant: hdr_title_td {
-  value: "padding-left:14px;vertical-align:middle;color:#ffffff;font-size:21px;font-weight:600;letter-spacing:.2px;white-space:nowrap;text-align:left;font-family:Aptos Display,Calibri,Arial,sans-serif;"
+  value: "padding-left:16px;vertical-align:middle;color:#ffffff;font-size:25px;font-weight:700;letter-spacing:.2px;white-space:nowrap;text-align:left;font-family:Aptos Display,Calibri,Arial,sans-serif;"
 }
 constant: hdr_tabs_td {
-  value: "text-align:right;vertical-align:middle;padding:4px 10px;white-space:nowrap;"
+  value: "text-align:right;vertical-align:middle;padding:6px 12px;white-space:nowrap;"
 }
+# Tab buttons. Sized up from the original 112px / 13px so the labels read at
+# a glance on a wall display and in PDF export. min-width holds all five the
+# same width; padding gives the taller hit area shown in the approved design.
 constant: tab {
-  value: "display:inline-block;min-width:112px;text-align:center;background:#0B3A75;color:#ffffff;padding:6px 10px;margin-left:6px;border-radius:3px;font-size:13px;text-decoration:none;"
+  value: "display:inline-block;min-width:158px;text-align:center;background:#0B3A75;color:#ffffff;padding:11px 18px;margin-left:9px;border-radius:4px;font-size:16px;font-weight:600;text-decoration:none;font-family:Aptos Display,Calibri,Arial,sans-serif;"
 }
 constant: tab_on {
-  value: "display:inline-block;min-width:112px;text-align:center;background:#E0E0E0;color:#212121;padding:6px 10px;margin-left:6px;border-radius:3px;font-size:13px;text-decoration:none;"
+  value: "display:inline-block;min-width:158px;text-align:center;background:#E0E0E0;color:#212121;padding:11px 18px;margin-left:9px;border-radius:4px;font-size:16px;font-weight:600;text-decoration:none;font-family:Aptos Display,Calibri,Arial,sans-serif;"
 }
 
 # ---- Navy question bar -------------------------------------------------
 constant: qbar {
-  value: "width:100%;box-sizing:border-box;background:#0B3A75;color:#ffffff;text-align:center;font-size:17px;font-weight:600;letter-spacing:.2px;padding:8px 10px;border-radius:4px;font-family:Aptos Display,Calibri,Arial,sans-serif;"
+  value: "width:100%;box-sizing:border-box;background:#0B3A75;color:#ffffff;text-align:center;font-size:19px;font-weight:700;letter-spacing:.2px;padding:10px 12px;border-radius:4px;font-family:Aptos Display,Calibri,Arial,sans-serif;"
 }
 constant: qbar_table {
   value: "width:100%;border-collapse:collapse;background:#0B3A75;border-radius:4px;font-family:Aptos Display,Calibri,Arial,sans-serif;"
 }
 constant: qbar_td {
-  value: "text-align:center;color:#ffffff;font-size:17px;font-weight:600;letter-spacing:.2px;padding:8px 10px;font-family:Aptos Display,Calibri,Arial,sans-serif;"
+  value: "text-align:center;color:#ffffff;font-size:19px;font-weight:700;letter-spacing:.2px;padding:10px 12px;font-family:Aptos Display,Calibri,Arial,sans-serif;"
 }
 
 # ---- Pills / links -----------------------------------------------------
 constant: pill {
-  value: "display:inline-block;background:#64B5F6;color:#ffffff;padding:4px 18px;border-radius:14px;font-size:12px;text-decoration:none;box-shadow:0 1px 3px rgba(0,0,0,.25);"
+  value: "display:inline-block;background:#1E88E5;color:#ffffff;padding:6px 20px;border-radius:15px;font-size:14px;font-weight:600;text-decoration:none;box-shadow:0 1px 3px rgba(0,0,0,.25);"
 }
 constant: link_pill {
-  value: "display:inline-block;background:#E3F2FD;color:#1565C0;border-radius:14px;padding:4px 10px;font-size:13px;text-decoration:none;"
+  value: "display:inline-block;background:#E3F2FD;color:#0B3A75;border-radius:15px;padding:6px 14px;font-size:15px;font-weight:600;text-decoration:none;"
 }
 
 # ---- Go Back -----------------------------------------------------------
 constant: go_back {
-  value: "width:100%;text-align:left;padding-left:30px;box-sizing:border-box;font-family:Calibri,Arial,Aptos Narrow,sans-serif;"
+  value: "width:100%;text-align:left;padding:4px 0 4px 30px;box-sizing:border-box;background:#ffffff;font-family:Calibri,Arial,Aptos Narrow,sans-serif;"
 }
 constant: go_back_a {
-  value: "font-size:24px;color:#212121;text-decoration:none;"
+  value: "font-size:24px;font-weight:600;color:#0B3A75;text-decoration:none;"
 }
 
 # ---- Cards -------------------------------------------------------------
@@ -148,7 +151,7 @@ constant: inner_white {
   value: "background:#ffffff;border-radius:12px;padding:6px 8px;margin-top:5px;"
 }
 constant: row_table {
-  value: "width:100%;border-collapse:separate;border-spacing:5px 0;table-layout:fixed;font-family:Calibri,Arial,Aptos Narrow,sans-serif;"
+  value: "width:100%;border-collapse:separate;border-spacing:5px 0;table-layout:fixed;background:#ffffff;font-family:Calibri,Arial,Aptos Narrow,sans-serif;"
 }
 constant: arrow_td {
   value: "width:2%;text-align:center;vertical-align:middle;line-height:0;"
@@ -156,7 +159,7 @@ constant: arrow_td {
 
 # ---- KPI cards with icon ----------------------------------------------
 constant: kpi_table {
-  value: "width:100%;border-collapse:collapse;font-family:Calibri,Arial,Aptos Narrow,sans-serif;"
+  value: "width:100%;border-collapse:collapse;background:#ffffff;font-family:Calibri,Arial,Aptos Narrow,sans-serif;"
 }
 constant: kpi_icon_td {
   value: "width:50px;vertical-align:middle;"
@@ -168,16 +171,18 @@ constant: kpi_body_td {
   value: "vertical-align:middle;padding-left:6px;"
 }
 constant: kpi_strip {
-  value: "background:#E3F2FD;text-align:center;font-size:14px;font-weight:500;color:#263238;padding:5px;border-radius:3px;"
+  value: "background:#E3F2FD;text-align:center;font-size:16px;font-weight:700;color:#0B3A75;padding:6px 5px;border-radius:3px;"
 }
 constant: kpi_big {
-  value: "text-align:center;font-size:26px;color:#0B3A75;padding:3px 0;"
+  value: "text-align:center;font-size:30px;font-weight:600;color:#0B3A75;padding:4px 0;"
 }
 constant: kpi_pair {
-  value: "font-size:22px;color:#0B3A75;"
+  value: "font-size:24px;font-weight:600;color:#0B3A75;"
 }
+# "B&F" / "Domain" captions under the paired values - were 11px regular and
+# effectively unreadable at normal zoom.
 constant: kpi_sub {
-  value: "font-size:11px;color:#0B3A75;"
+  value: "font-size:14px;font-weight:700;color:#0B3A75;letter-spacing:.2px;"
 }
 constant: kpi_chip {
   value: "margin:8px auto 0;width:62%;background:#F5F5F5;border-radius:10px;text-align:center;font-size:32px;color:#0B3A75;padding:4px 0;"
@@ -185,16 +190,42 @@ constant: kpi_chip {
 
 # ---- Text styles -------------------------------------------------------
 constant: kpi_value {
-  value: "font-size:26px;font-weight:400;color:#0B3A75;line-height:1.15;"
+  value: "font-size:28px;font-weight:600;color:#0B3A75;line-height:1.15;"
 }
+# Caption under each pillar-card figure ("Composite Score", "Completion Rate",
+# ...). Was 12px/500 in a mid grey; now bold, larger and in the navy so it
+# carries at a glance.
 constant: kpi_label {
-  value: "font-size:12px;font-weight:500;color:#455A64;margin-top:3px;"
+  value: "font-size:14px;font-weight:700;color:#0B3A75;margin-top:4px;line-height:1.3;"
 }
 constant: card_title {
-  value: "font-size:14px;font-weight:600;color:#0B3A75;line-height:1.25;font-family:Aptos Display,Calibri,Arial,sans-serif;"
+  value: "font-size:15px;font-weight:700;color:#0B3A75;line-height:1.3;font-family:Aptos Display,Calibri,Arial,sans-serif;"
 }
 constant: panel {
-  value: "width:100%;box-sizing:border-box;font-family:Calibri,Arial,Aptos Narrow,sans-serif;"
+  value: "width:100%;box-sizing:border-box;background:#ffffff;font-family:Calibri,Arial,Aptos Narrow,sans-serif;"
+}
+
+# Italic sub-question under each definition heading ("Is citizen-centric
+# learning available at the right depth?"). Italic Calibri at 14px was the
+# least readable text on the page, so this is larger, semi-bold and navy
+# rather than near-black.
+constant: lede_italic {
+  value: "font-size:17px;font-style:italic;font-weight:600;color:#0B3A75;line-height:1.45;margin-bottom:10px;text-align:left;"
+}
+
+# Explanatory paragraph copy on the Score Calculation page.
+constant: body_copy {
+  value: "font-size:16px;line-height:1.65;color:#212121;text-align:justify;margin:0 0 12px;"
+}
+
+# White sheet behind an html: tile. Looker tiles are transparent over the
+# dashboard canvas, so every full-width html: tile paints its own white.
+# NOTE: this covers the tiles only - the canvas BETWEEN tiles is set by the
+# Looker theme applied to the dashboard, which cannot live in this project.
+# See the Typography/background note in the project README or apply a theme
+# with background_color #FFFFFF in Admin > Themes.
+constant: page_white {
+  value: "width:100%;box-sizing:border-box;background:#ffffff;"
 }
 
 # ---- Skeleton placeholders (aspirational tables) -----------------------
@@ -218,7 +249,7 @@ constant: ff_bar {
 # assets/icons/rasterise.py keeps this copy in step with warning.svg.
 # svg_warning itself stays in the library for full-size use.
 constant: badge_asp {
-  value: "<span style='display:inline-block;border:1.5px solid #37474F;background:#D2E7F9;color:#1F2933;border-radius:4px;padding:2px 7px;font-size:10px;font-weight:700;letter-spacing:.3px;white-space:nowrap;'><img src='@{asset_base}/warning_badge.png' style='width:11px;height:11px;display:inline-block;vertical-align:-1px;margin-right:4px;' alt=''>ASPIRATIONAL</span>"
+  value: "<span style='display:inline-block;border:1.5px solid #37474F;background:#D2E7F9;color:#1F2933;border-radius:4px;padding:3px 9px;font-size:12px;font-weight:700;letter-spacing:.3px;white-space:nowrap;'><img src='@{asset_base}/warning_badge.png' style='width:13px;height:13px;display:inline-block;vertical-align:-2px;margin-right:5px;' alt=''>ASPIRATIONAL</span>"
 }
 
 # ---- Card header strip (sits directly above a native chart/table) ------
@@ -227,20 +258,20 @@ constant: badge_asp {
 # demo has one, the "Get more details" pill or MDO/State toggle - so the
 # pill always belongs visibly to the card underneath it.
 constant: strip_table {
-  value: "width:100%;border-collapse:collapse;background:#E3F2FD;border-radius:4px;border-bottom:2px solid #BBDEFB;font-family:Calibri,Arial,Aptos Narrow,sans-serif;"
+  value: "width:100%;border-collapse:collapse;background:#E3F2FD;border-radius:4px;border-bottom:2px solid #90CAF9;font-family:Calibri,Arial,Aptos Narrow,sans-serif;"
 }
 constant: strip_title {
-  value: "color:#0B3A75;font-size:15px;font-weight:600;padding:8px 12px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family:Aptos Display,Calibri,Arial,sans-serif;"
+  value: "color:#0B3A75;font-size:17px;font-weight:700;padding:9px 12px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family:Aptos Display,Calibri,Arial,sans-serif;"
 }
 constant: strip_right {
   value: "text-align:right;padding:6px 10px;white-space:nowrap;width:1%;"
 }
 constant: toggle_on {
-  value: "display:inline-block;min-width:70px;text-align:center;background:#0B3A75;color:#ffffff;padding:4px 14px;border-radius:14px;font-size:13px;font-weight:500;text-decoration:none;margin-left:6px;"
+  value: "display:inline-block;min-width:70px;text-align:center;background:#0B3A75;color:#ffffff;padding:6px 18px;border-radius:15px;font-size:15px;font-weight:600;text-decoration:none;margin-left:6px;"
 }
 constant: toggle_off {
-  value: "display:inline-block;min-width:70px;text-align:center;background:#ffffff;color:#0B3A75;border:1px solid #90CAF9;padding:3px 14px;border-radius:14px;font-size:13px;font-weight:500;text-decoration:none;margin-left:6px;"
+  value: "display:inline-block;min-width:70px;text-align:center;background:#ffffff;color:#0B3A75;border:1px solid #90CAF9;padding:5px 18px;border-radius:15px;font-size:15px;font-weight:600;text-decoration:none;margin-left:6px;"
 }
 constant: page_title {
-  value: "width:100%;text-align:center;color:#0B3A75;font-size:20px;font-weight:600;letter-spacing:.2px;font-family:Aptos Display,Calibri,Arial,sans-serif;"
+  value: "width:100%;text-align:center;color:#0B3A75;font-size:22px;font-weight:700;letter-spacing:.2px;padding:6px 0;background:#ffffff;font-family:Aptos Display,Calibri,Arial,sans-serif;"
 }
