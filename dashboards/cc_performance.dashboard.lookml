@@ -232,7 +232,7 @@
     row: 14
     col: 0
     width: 24
-    height: 3
+    height: 4
   - name: footer
     title: footer
     model: citizen_centricity
@@ -247,7 +247,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 17
+    row: 18
     col: 0
     width: 24
     height: 1
