@@ -34,11 +34,11 @@ view: +rpt_pillar_score {
     sql: ${TABLE}.composite_score ;;
     value_format: "0"
     html: <div style='@{page_white}@{font}'>
-      <div style='font-size:15px;font-weight:400;line-height:1.5;color:#0B3B76;text-align:center;padding:4px 14px;white-space:normal;overflow-wrap:break-word;'>
+      <table style='width:100%;border-collapse:collapse;'><tr><td style='text-align:center;vertical-align:middle;font-size:15px;line-height:1.5;color:#0B3B76;padding:4px 16px;'>
         The Citizen Centricity KRA tracks how well government training programs prepare civil servants to deliver citizen-focused services.<br>
         This dashboard covers the citizen-centric courses across <b><i>6 Behavioural and Functional</i></b> and <b><i>10 Domain competency themes</i></b>
         mapped to 4 governance pillars: <b><i>Responsiveness, Transparency, Participation,</i></b> and <b><i>Service Knowledge.</i></b>
-      </div>
+      </td></tr></table>
       <table style='width:100%;border-collapse:collapse;margin-top:4px;'><tr>
         <td style='width:33%;'></td>
         <td style='width:34%;text-align:center;'><span style='display:inline-block;box-sizing:border-box;width:56px;height:56px;border-radius:50%;background:#ffffff;padding:3px;'><img src='@{asset_base}/composite.png' style='width:100%;height:100%;display:block;' alt=''></span></td>
@@ -138,12 +138,13 @@ view: +fct_course {
     type: sum
     sql: ${TABLE}.enrolments ;;
     value_format: "[>=1000000]0.0,,\"M\";[>=1000]0.0,\"K\";0"
-    html: <table style='@{kpi_table}'><tr>
-      <td style='@{kpi_icon_td}'><span style='display:inline-block;box-sizing:border-box;@{kpi_icon}'><img src='@{asset_base}/enrolment.png' style='width:100%;height:100%;display:block;' alt=''></span></td>
-      <td style='@{kpi_body_td}'>
-        <div style='@{kpi_strip}'>Total Enrollment</div>
-        <div style='@{kpi_big}'>{{ rendered_value }}</div></td>
-      </tr></table> ;;
+    html: <div style='@{page_white}@{font}'>
+      <table style='@{kpi_band}'><tr>
+        <td style='@{kpi_band_icon_td}'><span style='@{kpi_band_icon}'><img src='@{asset_base}/enrolment.png' style='width:100%;height:100%;display:block;' alt=''></span></td>
+        <td style='@{kpi_band_title}'>Total Enrollment</td>
+      </tr></table>
+      <div style='@{kpi_big}'>{{ rendered_value }}</div>
+      </div> ;;
   }
 
   measure: reach_completions_card {
@@ -151,24 +152,26 @@ view: +fct_course {
     type: sum
     sql: ${TABLE}.completions ;;
     value_format: "[>=1000000]0.0,,\"M\";[>=1000]0.0,\"K\";0"
-    html: <table style='@{kpi_table}'><tr>
-      <td style='@{kpi_icon_td}'><span style='display:inline-block;box-sizing:border-box;@{kpi_icon}'><img src='@{asset_base}/completions.png' style='width:100%;height:100%;display:block;' alt=''></span></td>
-      <td style='@{kpi_body_td}'>
-        <div style='@{kpi_strip}'>Total Completions</div>
-        <div style='@{kpi_big}'>{{ rendered_value }}</div></td>
-      </tr></table> ;;
+    html: <div style='@{page_white}@{font}'>
+      <table style='@{kpi_band}'><tr>
+        <td style='@{kpi_band_icon_td}'><span style='@{kpi_band_icon}'><img src='@{asset_base}/completions.png' style='width:100%;height:100%;display:block;' alt=''></span></td>
+        <td style='@{kpi_band_title}'>Total Completions</td>
+      </tr></table>
+      <div style='@{kpi_big}'>{{ rendered_value }}</div>
+      </div> ;;
   }
 
   measure: reach_courses_card {
     hidden: yes
     type: count_distinct
     sql: ${course_id} ;;
-    html: <table style='@{kpi_table}'><tr>
-      <td style='@{kpi_icon_td}'><span style='display:inline-block;box-sizing:border-box;@{kpi_icon}'><img src='@{asset_base}/courses.png' style='width:100%;height:100%;display:block;' alt=''></span></td>
-      <td style='@{kpi_body_td}'>
-        <div style='@{kpi_strip}'>No. of Courses</div>
-        <div style='@{kpi_big}'>{{ rendered_value }}</div></td>
-      </tr></table> ;;
+    html: <div style='@{page_white}@{font}'>
+      <table style='@{kpi_band}'><tr>
+        <td style='@{kpi_band_icon_td}'><span style='@{kpi_band_icon}'><img src='@{asset_base}/courses.png' style='width:100%;height:100%;display:block;' alt=''></span></td>
+        <td style='@{kpi_band_title}'>No. of Courses</td>
+      </tr></table>
+      <div style='@{kpi_big}'>{{ rendered_value }}</div>
+      </div> ;;
   }
 
   # Performance row 1. Tile fields: [fct_course.perf_kpi_row, fct_course.eoc_coverage]
@@ -249,15 +252,16 @@ view: +rpt_taxonomy_coverage {
     hidden: yes
     type: string
     sql: ${themes_bf_label} ;;
-    html: <table style='@{kpi_table}'><tr>
-      <td style='@{kpi_icon_td}'><span style='display:inline-block;box-sizing:border-box;@{kpi_icon}'><img src='@{asset_base}/themes.png' style='width:100%;height:100%;display:block;' alt=''></span></td>
-      <td style='@{kpi_body_td}'>
-        <div style='@{kpi_strip}'>Themes Covered</div>
-        <table style='width:100%;border-collapse:collapse;'><tr>
-          <td style='text-align:center;'><div style='@{kpi_pair}'>{{ value }}</div><div style='@{kpi_sub}'>B&amp;F</div></td>
-          <td style='text-align:center;'><div style='@{kpi_pair}'>{{ rpt_taxonomy_coverage.themes_domain_label._value }}</div><div style='@{kpi_sub}'>Domain</div></td>
-        </tr></table></td>
-      </tr></table> ;;
+    html: <div style='@{page_white}@{font}'>
+      <table style='@{kpi_band}'><tr>
+        <td style='@{kpi_band_icon_td}'><span style='@{kpi_band_icon}'><img src='@{asset_base}/themes.png' style='width:100%;height:100%;display:block;' alt=''></span></td>
+        <td style='@{kpi_band_title}'>Themes Covered</td>
+      </tr></table>
+      <table style='width:100%;border-collapse:collapse;'><tr>
+        <td style='text-align:center;vertical-align:middle;'><div style='@{kpi_pair}'>{{ value }}</div><div style='@{kpi_sub}'>B&amp;F</div></td>
+        <td style='text-align:center;vertical-align:middle;'><div style='@{kpi_pair}'>{{ rpt_taxonomy_coverage.themes_domain_label._value }}</div><div style='@{kpi_sub}'>Domain</div></td>
+      </tr></table>
+      </div> ;;
   }
 
   # Tile fields: [rpt_taxonomy_coverage.subthemes_card, rpt_taxonomy_coverage.subthemes_all_label]
@@ -269,15 +273,16 @@ view: +rpt_taxonomy_coverage {
     hidden: yes
     type: string
     sql: ${subthemes_bf_label} ;;
-    html: <table style='@{kpi_table}'><tr>
-      <td style='@{kpi_icon_td}'><span style='display:inline-block;box-sizing:border-box;@{kpi_icon}'><img src='@{asset_base}/subthemes.png' style='width:100%;height:100%;display:block;' alt=''></span></td>
-      <td style='@{kpi_body_td}'>
-        <div style='@{kpi_strip}'>Sub-Themes Covered</div>
-        <table style='width:100%;border-collapse:collapse;'><tr>
-          <td style='text-align:center;'><div style='@{kpi_pair}'>{{ value }}</div><div style='@{kpi_sub}'>B&amp;F</div></td>
-          <td style='text-align:center;'><div style='@{kpi_pair}'>{{ rpt_taxonomy_coverage.subthemes_all_label._value }}</div><div style='@{kpi_sub}'>Domain</div></td>
-        </tr></table></td>
-      </tr></table> ;;
+    html: <div style='@{page_white}@{font}'>
+      <table style='@{kpi_band}'><tr>
+        <td style='@{kpi_band_icon_td}'><span style='@{kpi_band_icon}'><img src='@{asset_base}/subthemes.png' style='width:100%;height:100%;display:block;' alt=''></span></td>
+        <td style='@{kpi_band_title}'>Sub-Themes Covered</td>
+      </tr></table>
+      <table style='width:100%;border-collapse:collapse;'><tr>
+        <td style='text-align:center;vertical-align:middle;'><div style='@{kpi_pair}'>{{ value }}</div><div style='@{kpi_sub}'>B&amp;F</div></td>
+        <td style='text-align:center;vertical-align:middle;'><div style='@{kpi_pair}'>{{ rpt_taxonomy_coverage.subthemes_all_label._value }}</div><div style='@{kpi_sub}'>Domain</div></td>
+      </tr></table>
+      </div> ;;
   }
 }
 
