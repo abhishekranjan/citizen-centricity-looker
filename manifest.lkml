@@ -166,7 +166,30 @@ constant: row_table {
   value: "width:100%;border-collapse:separate;border-spacing:3px 0;table-layout:fixed;background:#ffffff;font-family:Calibri,Arial,Aptos Narrow,sans-serif;"
 }
 constant: arrow_td {
-  value: "width:2%;text-align:center;vertical-align:middle;line-height:0;overflow:hidden;"
+  value: "width:34px;padding:0;text-align:center;vertical-align:middle;line-height:0;"
+}
+
+# ---- Equal-height card rows (Performance KPI row + progression chain) --
+# Each card is split over TWO table rows of the same column: a title cell
+# (row 1) and a value-box cell (row 2). Table rows share one height, so
+# every title cell gets the height of the tallest title and every value box
+# starts and ends on the same line - the boxes are bottom-aligned with room
+# for the titles above. Append card_top / card_bottom AFTER a card_* colour
+# constant: the later declarations override its border, radius and padding.
+# No flexbox and no rowspan, so nothing depends on the HTML sanitiser.
+constant: card_top {
+  value: "border-bottom:0;border-radius:6px 6px 0 0;padding:6px 6px 2px;vertical-align:top;"
+}
+constant: card_bottom {
+  value: "border-top:0;border-radius:0 0 6px 6px;padding:4px 6px 6px;vertical-align:bottom;"
+}
+# The white value box: a fixed-height table so content centres vertically
+# and every box in a row is exactly the same size. Height is set per row.
+constant: value_box {
+  value: "width:100%;background:#ffffff;border-radius:12px;border-collapse:separate;border-spacing:0;table-layout:fixed;"
+}
+constant: value_box_td {
+  value: "vertical-align:middle;text-align:center;padding:4px 3px;color:#0B3A75;overflow-wrap:normal;word-break:normal;white-space:normal;"
 }
 
 # ---- KPI card header band ---------------------------------------------
