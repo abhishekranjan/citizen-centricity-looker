@@ -98,19 +98,19 @@ constant: hdr_logo {
   value: "height:42px;background:#ffffff;padding:2px 4px;display:block;"
 }
 constant: hdr_title_td {
-  value: "padding-left:12px;vertical-align:middle;color:#ffffff;font-size:20px;font-weight:700;letter-spacing:0;white-space:nowrap;text-align:left;font-family:Aptos Display,Calibri,Arial,sans-serif;"
+  value: "width:1%;padding:0 60px 0 12px;vertical-align:middle;color:#ffffff;font-size:20px;font-weight:700;letter-spacing:0;white-space:nowrap;text-align:left;font-family:Aptos Display,Calibri,Arial,sans-serif;"
 }
 constant: hdr_tabs_td {
-  value: "text-align:right;vertical-align:middle;padding:4px 6px;white-space:nowrap;width:1%;"
+  value: "text-align:right;vertical-align:middle;padding:4px 6px;white-space:nowrap;"
 }
 # Tab buttons. Sized up from the original 112px / 13px so the labels read at
 # a glance on a wall display and in PDF export. min-width holds all five the
 # same width; padding gives the taller hit area shown in the approved design.
 constant: tab {
-  value: "display:inline-block;box-sizing:border-box;min-width:118px;text-align:center;background:#0B3A75;color:#ffffff;padding:7px 8px;margin-left:5px;border-radius:4px;font-size:14px;font-weight:700;white-space:nowrap;text-decoration:none;font-family:Aptos Display,Calibri,Arial,sans-serif;"
+  value: "display:inline-block;box-sizing:border-box;width:18.4%;min-width:max-content;text-align:center;background:#0B3A75;color:#ffffff;padding:7px 8px;margin-left:1%;border-radius:4px;font-size:14px;font-weight:400;white-space:nowrap;text-decoration:none;font-family:Aptos Display,Calibri,Arial,sans-serif;"
 }
 constant: tab_on {
-  value: "display:inline-block;box-sizing:border-box;min-width:118px;text-align:center;background:#E0E0E0;color:#212121;padding:7px 8px;margin-left:5px;border-radius:4px;font-size:14px;font-weight:700;white-space:nowrap;text-decoration:none;font-family:Aptos Display,Calibri,Arial,sans-serif;"
+  value: "display:inline-block;box-sizing:border-box;width:18.4%;min-width:max-content;text-align:center;background:#E0E0E0;color:#212121;padding:7px 8px;margin-left:1%;border-radius:4px;font-size:14px;font-weight:400;white-space:nowrap;text-decoration:none;font-family:Aptos Display,Calibri,Arial,sans-serif;"
 }
 
 # ---- Navy question bar -------------------------------------------------
