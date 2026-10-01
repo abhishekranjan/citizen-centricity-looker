@@ -139,7 +139,7 @@
         align: center
       fct_user_course.completions:
         align: center
-    header_text_alignment: left
+    header_text_alignment: center
     header_font_size: '16'
     rows_font_size: '15'
     header_font_color: '#0B3A75'
@@ -209,6 +209,7 @@
     model: citizen_centricity
     explore: fct_user_course
     type: looker_bar
+    column_spacing_ratio: 0.55
     fields:
     - brg_course_pillar.pillar
     - fct_user_course.completions

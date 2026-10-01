@@ -125,7 +125,7 @@
         align: center
       fct_course.content_rating:
         align: center
-    header_text_alignment: left
+    header_text_alignment: center
     header_font_size: '16'
     rows_font_size: '15'
     header_font_color: '#0B3A75'

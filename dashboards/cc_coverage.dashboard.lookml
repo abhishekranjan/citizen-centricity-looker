@@ -112,6 +112,7 @@
     model: citizen_centricity
     explore: assessment_maturity
     type: looker_bar
+    column_spacing_ratio: 0.55
     fields:
     - assessment_maturity.stage
     - assessment_maturity.pct
@@ -188,6 +189,7 @@
     model: citizen_centricity
     explore: seed_data_gaps
     type: looker_bar
+    column_spacing_ratio: 0.55
     fields:
     - seed_data_gaps.status_axis
     - seed_data_gaps.status
@@ -326,7 +328,7 @@
         align: center
       fct_course.completions_exact:
         align: center
-    header_text_alignment: left
+    header_text_alignment: center
     header_font_size: '16'
     rows_font_size: '15'
     header_font_color: '#0B3A75'
@@ -392,7 +394,7 @@
         align: center
       rpt_pillar_subtheme.subtheme_coverage_pct:
         align: center
-    header_text_alignment: left
+    header_text_alignment: center
     header_font_size: '16'
     rows_font_size: '15'
     header_font_color: '#0B3A75'

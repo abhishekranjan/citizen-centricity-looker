@@ -102,6 +102,7 @@
     model: citizen_centricity
     explore: rpt_pillar_score
     type: looker_bar
+    column_spacing_ratio: 0.55
     fields:
     - rpt_pillar_score.pillar
     - rpt_pillar_score.assessment_pass_rate

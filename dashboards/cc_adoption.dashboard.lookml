@@ -84,6 +84,7 @@
     model: citizen_centricity
     explore: rpt_pillar_score
     type: looker_bar
+    column_spacing_ratio: 0.55
     fields:
     - rpt_pillar_score.pillar
     - rpt_pillar_score.union_ministries
@@ -227,7 +228,7 @@
         align: center
       rpt_pillar_subtheme.union_completion_pct:
         align: center
-    header_text_alignment: left
+    header_text_alignment: center
     header_font_size: '16'
     rows_font_size: '15'
     header_font_color: '#0B3A75'
