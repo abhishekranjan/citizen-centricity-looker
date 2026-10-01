@@ -170,14 +170,14 @@ view: cc_ui {
     type: max
     sql: ${TABLE}.one ;;
     html: <div style='@{panel}'>
-      <table style='width:100%;border-collapse:collapse;font-size:11px;color:#9E9E9E;'>
+      <table style='width:100%;border-collapse:collapse;font-size:13px;color:#757575;'>
         <tr style='text-align:left;background:#F5F5F5;'><th style='padding:5px;'>Course</th><th>Pillar</th><th>Provider</th><th>Pass Rate</th><th>Health Score</th></tr>
         <tr><td style='padding:7px 5px;'><div style='@{sk_bar}width:80%;'></div></td><td><div style='@{sk_bar}width:60%;'></div></td><td><div style='@{sk_bar}width:70%;'></div></td><td><div style='@{sk_bar}width:40%;'></div></td><td><div style='@{sk_chip}'></div></td></tr>
         <tr><td style='padding:7px 5px;'><div style='@{sk_bar}width:70%;'></div></td><td><div style='@{sk_bar}width:60%;'></div></td><td><div style='@{sk_bar}width:70%;'></div></td><td><div style='@{sk_bar}width:40%;'></div></td><td><div style='@{sk_chip}'></div></td></tr>
         <tr><td style='padding:7px 5px;'><div style='@{sk_bar}width:85%;'></div></td><td><div style='@{sk_bar}width:60%;'></div></td><td><div style='@{sk_bar}width:70%;'></div></td><td><div style='@{sk_bar}width:40%;'></div></td><td><div style='@{sk_chip}'></div></td></tr>
         <tr><td style='padding:7px 5px;'><div style='@{sk_bar}width:65%;'></div></td><td><div style='@{sk_bar}width:60%;'></div></td><td><div style='@{sk_bar}width:70%;'></div></td><td><div style='@{sk_bar}width:40%;'></div></td><td><div style='@{sk_chip}'></div></td></tr>
       </table>
-      <div style='font-size:10px;color:#9E9E9E;margin-top:6px;text-align:left;'>
+      <div style='font-size:12px;color:#616161;margin-top:8px;text-align:left;'>
         <b>Health Score =</b>
         <span style='color:#43A047;'>&#9679;</span> Pass rate
         <span style='color:#1E88E5;'>&#9679;</span> Has assessment
@@ -194,14 +194,14 @@ view: cc_ui {
         <span style='display:inline-block;background:#1565C0;color:#fff;border-radius:16px;padding:5px 18px;font-size:13px;font-weight:700;'>Functional Family</span>
         <span style='display:inline-block;border:1.5px solid #90CAF9;color:#1565C0;border-radius:16px;padding:4px 18px;font-size:13px;font-weight:700;margin-left:8px;'>Gender</span>
       </div>
-      <table style='width:94%;margin-left:20px;font-size:13px;color:#424242;border-collapse:collapse;'>
+      <table style='width:94%;margin-left:20px;font-size:15px;font-weight:600;color:#37474F;border-collapse:collapse;'>
         <tr><td style='width:34%;padding:5px 0;text-align:left;'>Decision Makers</td><td><div style='@{ff_bar}'></div></td></tr>
         <tr><td style='padding:5px 0;text-align:left;'>Frontline Staff</td><td><div style='@{ff_bar}'></div></td></tr>
         <tr><td style='padding:5px 0;text-align:left;'>Supervisory Roles</td><td><div style='@{ff_bar}'></div></td></tr>
         <tr><td style='padding:5px 0;text-align:left;'>Programme Leadership</td><td><div style='@{ff_bar}'></div></td></tr>
         <tr><td style='padding:5px 0;text-align:left;'>Policy Leadership</td><td><div style='@{ff_bar}'></div></td></tr>
       </table>
-      <div style='text-align:center;font-size:12px;font-style:italic;color:#9E9E9E;margin-top:8px;'>Available once functional family fields are tagged in iGOT learner profiles.</div>
+      <div style='text-align:center;font-size:14px;font-style:italic;font-weight:600;color:#757575;margin-top:10px;'>Available once functional family fields are tagged in iGOT learner profiles.</div>
       </div> ;;
   }
 
@@ -211,13 +211,13 @@ view: cc_ui {
     html: <div style='@{panel}'>
       <div style='margin:10px auto;width:88%;border:1px solid #E0E0E0;border-radius:6px;padding:10px;text-align:center;'>
         <span style='display:inline-block;box-sizing:border-box;width:28px;height:28px;'><img src='@{asset_base}/ai_tool.png' style='width:100%;height:100%;display:block;' alt=''></span>
-        <div style='font-size:13px;font-weight:700;color:#0B3A75;margin-top:3px;@{font_head}'>iGOT AI CBP Tool</div>
-        <div style='font-size:11px;color:#757575;'>Recommends sub-themes to officials<br>building their capacity plan</div>
+        <div style='font-size:15px;font-weight:700;color:#0B3A75;margin-top:4px;@{font_head}'>iGOT AI CBP Tool</div>
+        <div style='font-size:13px;color:#616161;line-height:1.4;'>Recommends sub-themes to officials<br>building their capacity plan</div>
         <div style='color:#BDBDBD;margin:6px 0;'>&#8595;</div>
         <span style='display:inline-block;box-sizing:border-box;width:28px;height:28px;'><img src='@{asset_base}/flag_gap.png' style='width:100%;height:100%;display:block;' alt=''></span>
-        <div style='font-size:13px;font-weight:700;color:#0B3A75;margin-top:3px;@{font_head}'>Flag Supply Gaps</div>
-        <div style='font-size:11px;color:#757575;'>Sub-themes with high demand but fewer<br>than 5 courses flagged for action</div>
-        <div style='font-size:10px;font-style:italic;color:#9E9E9E;margin-top:10px;text-align:left;'>&#128274; Available once iGOT AI CBP tool data is piped in.</div>
+        <div style='font-size:15px;font-weight:700;color:#0B3A75;margin-top:4px;@{font_head}'>Flag Supply Gaps</div>
+        <div style='font-size:13px;color:#616161;line-height:1.4;'>Sub-themes with high demand but fewer<br>than 5 courses flagged for action</div>
+        <div style='font-size:12px;font-style:italic;font-weight:600;color:#616161;margin-top:12px;text-align:left;'>&#128274; Available once iGOT AI CBP tool data is piped in.</div>
       </div></div> ;;
   }
 
@@ -227,25 +227,26 @@ view: cc_ui {
   measure: calc_intro {
     type: max
     sql: ${TABLE}.one ;;
-    html: <div style='width:100%;box-sizing:border-box;background:#E3F2FD;color:#1565C0;font-size:16px;line-height:1.4;text-align:center;padding:8px 20px;@{font}'>
+    html: <div style='@{page_white}padding:4px 0;'>
+      <div style='width:100%;box-sizing:border-box;background:#E3F2FD;color:#0B3A75;font-size:17px;font-weight:600;line-height:1.5;text-align:center;padding:10px 20px;border-radius:4px;@{font}'>
       The composite score measures citizen-centricity learning across four pillars: Service Knowledge, Responsiveness, Transparency, and Participation.
       Each pillar is scored on three components - course supply, assigned completion, and assessment pass rate and combined using the weights below.
-      </div> ;;
+      </div></div> ;;
   }
 
   measure: calc_definitions {
     type: max
     sql: ${TABLE}.one ;;
-    html: <div style='width:100%;text-align:justify;font-size:14px;line-height:1.6;color:#212121;padding:0 14px;box-sizing:border-box;@{font}'>
-      <div style='font-size:17px;font-weight:700;color:#0B3A75;text-align:left;@{font_head}'>&#8226; Proficiency-Level Coverage:</div>
-      <div style='font-style:italic;margin-bottom:10px;text-align:left;'>Is citizen-centric learning available at the right depth?</div>
-      <p>This measures whether iGOT has courses mapped to each pillar across all three proficiency levels: Beginner, Intermediate, and Advanced. A pillar with content only at beginner level scores lower than one with full coverage across all levels. The score is calculated as the percentage of sub-theme &#215; proficiency level combinations that have at least one course available.</p>
-      <div style='font-size:17px;font-weight:700;color:#0B3A75;margin-top:14px;text-align:left;@{font_head}'>&#8226; Assigned Completion Rate</div>
-      <div style='font-style:italic;margin-bottom:10px;text-align:left;'>Are civil servants engaging with the learning assigned to them?</div>
-      <p>This is the most direct signal of behavioural engagement. An MDO may have courses available and assigned, but if completion is low, capacity building is not happening in practice. This measures the percentage of assigned learning that officials actually complete.</p>
-      <div style='font-size:17px;font-weight:700;color:#0B3A75;margin-top:14px;text-align:left;@{font_head}'>&#8226; Assessment Pass Rate</div>
-      <div style='font-style:italic;margin-bottom:10px;text-align:left;'>Are civil servants demonstrating they have understood what they learned?</div>
-      <p>Completion alone does not confirm learning. The pass rate adds a quality filter, indicating whether engagement translated into measurable competency acquisition. This measures the percentage of assessment attempts that result in a pass.</p>
+    html: <div style='padding:10px 16px;@{page_white}@{font}'>
+      <div style='font-size:19px;font-weight:700;color:#0B3A75;text-align:left;@{font_head}'>&#8226; Proficiency-Level Coverage:</div>
+      <div style='@{lede_italic}'>Is citizen-centric learning available at the right depth?</div>
+      <p style='@{body_copy}'>This measures whether iGOT has courses mapped to each pillar across all three proficiency levels: Beginner, Intermediate, and Advanced. A pillar with content only at beginner level scores lower than one with full coverage across all levels. The score is calculated as the percentage of sub-theme &#215; proficiency level combinations that have at least one course available.</p>
+      <div style='font-size:19px;font-weight:700;color:#0B3A75;margin-top:16px;text-align:left;@{font_head}'>&#8226; Assigned Completion Rate</div>
+      <div style='@{lede_italic}'>Are civil servants engaging with the learning assigned to them?</div>
+      <p style='@{body_copy}'>This is the most direct signal of behavioural engagement. An MDO may have courses available and assigned, but if completion is low, capacity building is not happening in practice. This measures the percentage of assigned learning that officials actually complete.</p>
+      <div style='font-size:19px;font-weight:700;color:#0B3A75;margin-top:16px;text-align:left;@{font_head}'>&#8226; Assessment Pass Rate</div>
+      <div style='@{lede_italic}'>Are civil servants demonstrating they have understood what they learned?</div>
+      <p style='@{body_copy}'>Completion alone does not confirm learning. The pass rate adds a quality filter, indicating whether engagement translated into measurable competency acquisition. This measures the percentage of assessment attempts that result in a pass.</p>
       </div> ;;
   }
 
@@ -417,6 +418,6 @@ view: cc_ui {
   measure: footer_last_updated {
     type: string
     sql: MAX(${TABLE}.last_updated) ;;
-    html: <div style='width:100%;text-align:left;font-size:13px;color:#616161;padding-left:4px;@{font}'>Data Last Updated: {{ value }}</div> ;;
+    html: <div style='text-align:left;font-size:15px;font-weight:600;color:#455A64;padding:6px 4px;@{page_white}@{font}'>Data Last Updated: {{ value }}</div> ;;
   }
 }

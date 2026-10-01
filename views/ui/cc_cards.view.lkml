@@ -33,8 +33,8 @@ view: +rpt_pillar_score {
     type: average
     sql: ${TABLE}.composite_score ;;
     value_format: "0"
-    html: <div style='width:100%;@{font}'>
-      <div style='font-size:14px;line-height:1.4;color:#212121;text-align:center;padding:0 10px;'>
+    html: <div style='@{page_white}@{font}'>
+      <div style='font-size:16px;font-weight:500;line-height:1.55;color:#0B3B76;text-align:center;padding:4px 10px;'>
         The Citizen Centricity KRA tracks how well government training programs prepare civil servants to deliver citizen-focused services.<br>
         This dashboard covers the citizen-centric courses across <b><i>6 Behavioural and Functional</i></b> and <b><i>10 Domain competency themes</i></b>
         mapped to 4 governance pillars: <b><i>Responsiveness, Transparency, Participation,</i></b> and <b><i>Service Knowledge.</i></b>
@@ -51,7 +51,7 @@ view: +rpt_pillar_score {
           <span style='font-size:28px;font-weight:400;margin-left:10px;'>{{ rendered_value }}/100</span></td>
         <td style='width:16%;text-align:right;padding-right:10px;white-space:nowrap;'>
           <a href='/dashboards/citizen_centricity::cc_subtheme_analysis' target='_self' style='text-decoration:none;'>
-            <span style='font-size:12px;font-style:italic;color:#212121;vertical-align:middle;margin-right:6px;'>Go to Detailed<br>Sub-Theme Analysis</span>
+            <span style='font-size:14px;font-style:italic;font-weight:600;color:#0B3A75;vertical-align:middle;margin-right:6px;'>Go to Detailed<br>Sub-Theme Analysis</span>
             <span style='display:inline-block;box-sizing:border-box;width:40px;height:40px;vertical-align:middle;'><img src='@{asset_base}/arrow_right.png' style='width:100%;height:100%;display:block;' alt=''></span></a></td>
       </tr></table></div> ;;
   }
@@ -67,7 +67,7 @@ view: +rpt_pillar_score {
     type: string
     sql: MAX(${TABLE}.pillar) ;;
     html:
-      <div style='width:100%;box-sizing:border-box;padding:0 4px;@{font}'>
+      <div style='padding:4px;@{page_white}@{font}'>
         <table style='width:100%;border-collapse:collapse;background:#E3F2FD;border-radius:30px 0 0 30px;'><tr>
           <td style='width:56px;'><span style='display:block;box-sizing:border-box;width:54px;height:54px;border-radius:50%;background:#ffffff;padding:2px;'>{% if value == 'Service Knowledge' %}<img src='@{asset_base}/service_knowledge.png' style='width:100%;height:100%;display:block;' alt=''>{% elsif value == 'Responsiveness' %}<img src='@{asset_base}/responsiveness.png' style='width:100%;height:100%;display:block;' alt=''>{% elsif value == 'Transparency' %}<img src='@{asset_base}/transparency.png' style='width:100%;height:100%;display:block;' alt=''>{% else %}<img src='@{asset_base}/participation.png' style='width:100%;height:100%;display:block;' alt=''>{% endif %}</span></td>
           <td style='text-align:center;font-size:22px;font-weight:700;color:#0B3A75;@{font_head}'>{{ value }}</td>
@@ -112,17 +112,17 @@ view: +rpt_pillar_score {
     value_format_name: percent_0
     html:
       {% assign total = value | plus: rpt_pillar_score.w_proficiency._value | plus: rpt_pillar_score.w_assigned_completion._value | times: 100 | round %}
-      <div style='width:100%;box-sizing:border-box;padding:0 10px;text-align:left;@{font}'>
-        <table style='width:100%;border-collapse:collapse;font-size:15px;color:#212121;box-shadow:0 1px 4px rgba(0,0,0,.2);border-radius:6px;'>
-          <tr style='background:#E3F2FD;color:#1565C0;font-weight:700;'><td style='padding:7px 10px;'>Item</td><td style='text-align:center;'>Weight &#9650;</td></tr>
-          <tr><td style='padding:8px 10px;'>Assessment Pass Rate Weight</td><td style='text-align:center;'>{{ rendered_value }}</td></tr>
-          <tr style='background:#F7F7F7;'><td style='padding:8px 10px;'>Proficiency-Level Coverage</td><td style='text-align:center;'>{{ rpt_pillar_score.w_proficiency._rendered_value }}</td></tr>
-          <tr><td style='padding:8px 10px;'>Assigned Completion Weight</td><td style='text-align:center;'>{{ rpt_pillar_score.w_assigned_completion._rendered_value }}</td></tr>
-          <tr style='background:#F7F7F7;'><td style='padding:8px 10px;'>Weights Total (must = 100%)</td><td style='text-align:center;'>{{ total }}%</td></tr>
+      <div style='padding:10px 12px;text-align:left;@{page_white}@{font}'>
+        <table style='width:100%;border-collapse:collapse;font-size:16px;color:#212121;box-shadow:0 1px 4px rgba(0,0,0,.2);border-radius:6px;'>
+          <tr style='background:#E3F2FD;color:#0B3A75;font-weight:700;'><td style='padding:9px 12px;'>Item</td><td style='text-align:center;padding:9px 12px;'>Weight &#9650;</td></tr>
+          <tr><td style='padding:10px 12px;'>Assessment Pass Rate Weight</td><td style='text-align:center;font-weight:600;'>{{ rendered_value }}</td></tr>
+          <tr style='background:#F7F7F7;'><td style='padding:10px 12px;'>Proficiency-Level Coverage</td><td style='text-align:center;font-weight:600;'>{{ rpt_pillar_score.w_proficiency._rendered_value }}</td></tr>
+          <tr><td style='padding:10px 12px;'>Assigned Completion Weight</td><td style='text-align:center;font-weight:600;'>{{ rpt_pillar_score.w_assigned_completion._rendered_value }}</td></tr>
+          <tr style='background:#F7F7F7;'><td style='padding:10px 12px;'>Weights Total (must = 100%)</td><td style='text-align:center;font-weight:700;'>{{ total }}%</td></tr>
         </table>
-        <div style='font-size:19px;font-weight:700;color:#0B3A75;margin:22px 0 12px;@{font_head}'>Why the weights are set at 30 / 40 / 30</div>
-        <p style='font-size:14px;line-height:1.6;text-align:justify;'>&#8226; <b><i>Assigned Completion</i></b> carries the highest weight (40%) because it is the variable most within the control of the capacity building system. It reflects whether the ecosystem - MDOs, training institutions, and iGOT together - is successfully driving civil servants to actually learn.</p>
-        <p style='font-size:14px;line-height:1.6;text-align:justify;'>&#8226; <b><i>Proficiency-Level Coverage</i></b> and <b><i>Pass Rate</i></b> are weighted equally (30% each) because both are necessary conditions. Content without completion is underutilised supply; completion without demonstrated learning is shallow engagement. One without the other is incomplete.</p>
+        <div style='font-size:21px;font-weight:700;color:#0B3A75;margin:24px 0 12px;@{font_head}'>Why the weights are set at 30 / 40 / 30</div>
+        <p style='@{body_copy}'>&#8226; <b><i>Assigned Completion</i></b> carries the highest weight (40%) because it is the variable most within the control of the capacity building system. It reflects whether the ecosystem - MDOs, training institutions, and iGOT together - is successfully driving civil servants to actually learn.</p>
+        <p style='@{body_copy}'>&#8226; <b><i>Proficiency-Level Coverage</i></b> and <b><i>Pass Rate</i></b> are weighted equally (30% each) because both are necessary conditions. Content without completion is underutilised supply; completion without demonstrated learning is shallow engagement. One without the other is incomplete.</p>
       </div> ;;
   }
 }
@@ -180,16 +180,16 @@ view: +fct_course {
     html: <table style='@{row_table}'><tr>
       <td style='width:20%;@{card_green}'>
         <div style='@{card_title}'>Overall Pass Rate</div>
-        <div style='@{inner_white}font-size:28px;color:#0B3A75;'>{{ rendered_value }}</div></td>
+        <div style='@{inner_white}font-size:30px;font-weight:600;color:#0B3A75;'>{{ rendered_value }}</div></td>
       <td style='width:20%;@{card_green}'>
         <div style='@{card_title}'>Courses with End-of-Course Assessments</div>
-        <div style='@{inner_white}font-size:28px;color:#0B3A75;'>{{ fct_course.eoc_coverage._rendered_value }}</div></td>
+        <div style='@{inner_white}font-size:30px;font-weight:600;color:#0B3A75;'>{{ fct_course.eoc_coverage._rendered_value }}</div></td>
       <td style='width:20%;@{card_salmon}'>
         <div style='@{card_title}'>Competency Assessments</div>
         <div style='@{inner_white}padding:9px;'>@{badge_asp}</div></td>
       <td style='width:20%;@{card_salmon}'>
         <div style='@{card_title}'>Flagged Courses</div>
-        <div style='font-size:13px;font-style:italic;color:#0B3A75;'>Pass rate below 50%</div>
+        <div style='font-size:14px;font-style:italic;font-weight:600;color:#0B3A75;'>Pass rate below 50%</div>
         <div style='@{inner_white}padding:7px;margin-top:2px;'>@{badge_asp}</div></td>
       <td style='width:20%;@{card_salmon}'>
         <div style='@{card_title}'>Content Health Quality</div>
@@ -207,33 +207,33 @@ view: +fct_course {
     html: <table style='@{row_table}'><tr>
       <td style='width:16%;@{card_green}'>
         <div style='@{card_title}'>Course Supply</div>
-        <div style='@{inner_white}font-size:17px;color:#0B3A75;line-height:1.6;'>{{ value }}<br>Courses</div></td>
+        <div style='@{inner_white}font-size:19px;font-weight:600;color:#0B3A75;line-height:1.5;'>{{ value }}<br>Courses</div></td>
       <td style='@{arrow_td}'><img src='@{asset_base}/arrow_green.png' style='width:30px;height:26px;display:inline-block;' alt=''></td>
       <td style='width:16%;@{card_green}'>
         <div style='@{card_title}'>Course Completion</div>
         <table style='@{inner_white}width:100%;border-collapse:collapse;'><tr>
-          <td style='font-size:17px;color:#0B3A75;line-height:1.6;text-align:center;'>{{ fct_course.completions._rendered_value }}<br>Completions</td>
-          <td style='font-size:17px;color:#0B3A75;line-height:1.6;text-align:center;'>{{ fct_course.completion_rate._rendered_value }}<br>Rate</td>
+          <td style='font-size:19px;font-weight:600;color:#0B3A75;line-height:1.5;text-align:center;'>{{ fct_course.completions._rendered_value }}<br>Completions</td>
+          <td style='font-size:19px;font-weight:600;color:#0B3A75;line-height:1.5;text-align:center;'>{{ fct_course.completion_rate._rendered_value }}<br>Rate</td>
         </tr></table></td>
       <td style='@{arrow_td}'><img src='@{asset_base}/arrow_green.png' style='width:30px;height:26px;display:inline-block;' alt=''></td>
       <td style='width:16%;@{card_green}'>
         <div style='@{card_title}'>End-of-Course Assessment</div>
         <table style='@{inner_white}width:100%;border-collapse:collapse;'><tr>
-          <td style='font-size:17px;color:#0B3A75;line-height:1.6;text-align:center;'>{{ fct_course.eoc_coverage._rendered_value }}<br>Coverage</td>
-          <td style='font-size:17px;color:#0B3A75;line-height:1.6;text-align:center;'>{{ fct_course.pass_rate._rendered_value }}<br>Pass Rate</td>
+          <td style='font-size:19px;font-weight:600;color:#0B3A75;line-height:1.5;text-align:center;'>{{ fct_course.eoc_coverage._rendered_value }}<br>Coverage</td>
+          <td style='font-size:19px;font-weight:600;color:#0B3A75;line-height:1.5;text-align:center;'>{{ fct_course.pass_rate._rendered_value }}<br>Pass Rate</td>
         </tr></table></td>
       <td style='@{arrow_td}'><img src='@{asset_base}/arrow_green.png' style='width:30px;height:26px;display:inline-block;' alt=''></td>
       <td style='width:16%;@{card_cream}'>
         <div style='@{card_title}'>Competency Assessment</div>
-        <div style='@{inner_white}font-size:16px;color:#0B3A75;line-height:1.6;'>Under development<br>@{badge_asp}</div></td>
+        <div style='@{inner_white}font-size:16px;font-weight:600;color:#0B3A75;line-height:1.5;'>Under development<br>@{badge_asp}</div></td>
       <td style='@{arrow_td}'><img src='@{asset_base}/arrow_amber.png' style='width:30px;height:26px;display:inline-block;' alt=''></td>
       <td style='width:16%;@{card_grey}'>
         <div style='@{card_title}'>Workplace Validation</div>
-        <div style='@{inner_white}font-size:15px;color:#0B3A75;line-height:1.35;'>360-degree Feedback System to be developed<br>@{badge_asp}</div></td>
+        <div style='@{inner_white}font-size:15px;font-weight:600;color:#0B3A75;line-height:1.4;'>360-degree Feedback System to be developed<br>@{badge_asp}</div></td>
       <td style='@{arrow_td}'><img src='@{asset_base}/arrow_grey.png' style='width:30px;height:26px;display:inline-block;' alt=''></td>
       <td style='width:16%;@{card_grey}'>
         <div style='@{card_title}'>Citizen Feedback / Workflow Application Systems</div>
-        <div style='@{inner_white}font-size:15px;color:#0B3A75;line-height:1.5;'>Beyond CBC mandate<br>@{badge_asp}</div></td>
+        <div style='@{inner_white}font-size:15px;font-weight:600;color:#0B3A75;line-height:1.5;'>Beyond CBC mandate<br>@{badge_asp}</div></td>
       </tr></table> ;;
   }
 }
@@ -292,7 +292,7 @@ view: +fct_cbp_assignment {
     hidden: yes
     type: count
     value_format: "[>=1000000]0.0,,\"M\";[>=1000]0.0,\"K\";0"
-    html: <div style='width:100%;box-sizing:border-box;padding:0 4px;@{font}'>
+    html: <div style='padding:4px;@{page_white}@{font}'>
       <table style='@{kpi_table}margin-bottom:14px;'><tr>
         <td style='width:76px;'><span style='display:inline-block;box-sizing:border-box;width:74px;height:74px;border-radius:50%;background:#EEEEEE;display:block;'><img src='@{asset_base}/officials.png' style='width:100%;height:100%;display:block;' alt=''></span></td>
         <td style='@{kpi_body_td}'>
