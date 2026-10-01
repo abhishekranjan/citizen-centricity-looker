@@ -46,7 +46,7 @@ view: +rpt_pillar_score {
       </tr></table>
       <table style='width:100%;border-collapse:collapse;background:#BBDEFB;margin-top:-22px;'><tr>
         <td style='width:16%;'></td>
-        <td style='text-align:center;padding:14px 8px 12px;font-size:21px;font-weight:700;color:#0B3A75;'>
+        <td style='text-align:center;padding:14px 8px 12px;font-size:21px;font-weight:700;color:#0B3A75;@{font_head}'>
           Composite Citizen Centricity Score for Capacity Building and Performance:
           <span style='font-size:28px;font-weight:400;margin-left:10px;'>{{ rendered_value }}/100</span></td>
         <td style='width:16%;text-align:right;padding-right:10px;white-space:nowrap;'>
@@ -70,7 +70,7 @@ view: +rpt_pillar_score {
       <div style='width:100%;box-sizing:border-box;padding:0 4px;@{font}'>
         <table style='width:100%;border-collapse:collapse;background:#E3F2FD;border-radius:30px 0 0 30px;'><tr>
           <td style='width:56px;'><span style='display:block;box-sizing:border-box;width:54px;height:54px;border-radius:50%;background:#ffffff;padding:2px;'>{% if value == 'Service Knowledge' %}<img src='@{asset_base}/service_knowledge.png' style='width:100%;height:100%;display:block;' alt=''>{% elsif value == 'Responsiveness' %}<img src='@{asset_base}/responsiveness.png' style='width:100%;height:100%;display:block;' alt=''>{% elsif value == 'Transparency' %}<img src='@{asset_base}/transparency.png' style='width:100%;height:100%;display:block;' alt=''>{% else %}<img src='@{asset_base}/participation.png' style='width:100%;height:100%;display:block;' alt=''>{% endif %}</span></td>
-          <td style='text-align:center;font-size:22px;font-weight:700;color:#0B3A75;'>{{ value }}</td>
+          <td style='text-align:center;font-size:22px;font-weight:700;color:#0B3A75;@{font_head}'>{{ value }}</td>
           <td style='width:30px;padding-right:8px;line-height:0;vertical-align:middle;'>{% if value == 'Participation' %}<img src='@{asset_base}/info.png' style='width:22px;height:22px;display:block;' alt='About the composite score' title='Composite score = 30% proficiency-level coverage + 40% assigned completion + 30% assessment pass rate.'>{% endif %}</td>
         </tr></table>
         <table style='width:100%;border-collapse:separate;border-spacing:8px 8px;margin-top:2px;'>
@@ -120,7 +120,7 @@ view: +rpt_pillar_score {
           <tr><td style='padding:8px 10px;'>Assigned Completion Weight</td><td style='text-align:center;'>{{ rpt_pillar_score.w_assigned_completion._rendered_value }}</td></tr>
           <tr style='background:#F7F7F7;'><td style='padding:8px 10px;'>Weights Total (must = 100%)</td><td style='text-align:center;'>{{ total }}%</td></tr>
         </table>
-        <div style='font-size:19px;font-weight:700;color:#0B3A75;margin:22px 0 12px;'>Why the weights are set at 30 / 40 / 30</div>
+        <div style='font-size:19px;font-weight:700;color:#0B3A75;margin:22px 0 12px;@{font_head}'>Why the weights are set at 30 / 40 / 30</div>
         <p style='font-size:14px;line-height:1.6;text-align:justify;'>&#8226; <b><i>Assigned Completion</i></b> carries the highest weight (40%) because it is the variable most within the control of the capacity building system. It reflects whether the ecosystem - MDOs, training institutions, and iGOT together - is successfully driving civil servants to actually learn.</p>
         <p style='font-size:14px;line-height:1.6;text-align:justify;'>&#8226; <b><i>Proficiency-Level Coverage</i></b> and <b><i>Pass Rate</i></b> are weighted equally (30% each) because both are necessary conditions. Content without completion is underutilised supply; completion without demonstrated learning is shallow engagement. One without the other is incomplete.</p>
       </div> ;;
