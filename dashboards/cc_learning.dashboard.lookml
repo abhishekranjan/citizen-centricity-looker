@@ -130,7 +130,7 @@
     size_to_fit: true
     series_labels:
       fct_user_course.primary_group: Group
-      fct_user_course.officials: Officials
+      fct_user_course.officials: Officials Enrolled
       fct_user_course.completions: Completions
     table_theme: white
     limit_displayed_rows: false
