@@ -73,7 +73,7 @@ view: +rpt_pillar_score {
         <table style='width:100%;border-collapse:collapse;background:#E3F2FD;border-radius:30px 0 0 30px;'><tr>
           <td style='width:56px;'><span style='display:block;box-sizing:border-box;width:54px;height:54px;border-radius:50%;background:#ffffff;padding:2px;'>{% if value == 'Service Knowledge' %}<img src='@{asset_base}/service_knowledge.png' style='width:100%;height:100%;display:block;' alt=''>{% elsif value == 'Responsiveness' %}<img src='@{asset_base}/responsiveness.png' style='width:100%;height:100%;display:block;' alt=''>{% elsif value == 'Transparency' %}<img src='@{asset_base}/transparency.png' style='width:100%;height:100%;display:block;' alt=''>{% else %}<img src='@{asset_base}/participation.png' style='width:100%;height:100%;display:block;' alt=''>{% endif %}</span></td>
           <td style='text-align:center;white-space:normal;font-size:22px;font-weight:700;color:#0B3A75;@{font_head}'>{{ value }}</td>
-          <td style='width:30px;padding-right:8px;line-height:0;vertical-align:middle;'>{% if value == 'Participation' %}<img src='@{asset_base}/info.png' style='width:22px;height:22px;display:block;' alt='About the composite score' title='Composite score = 30% proficiency-level coverage + 40% assigned completion + 30% assessment pass rate.'>{% endif %}</td>
+          <td style='width:30px;padding-right:8px;'></td>
         </tr></table>
         <table style='width:100%;border-collapse:separate;border-spacing:8px 8px;margin-top:2px;'>
           <tr>

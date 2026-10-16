@@ -124,7 +124,7 @@ view: cc_ui {
     html: <table style='@{qbar_table}'><tr>
       <td style='width:20%;'></td>
       <td style='@{qbar_td}'>What is the overall reach of citizen-centric capacity building?</td>
-      <td style='width:20%;text-align:right;padding-right:10px;'><a href='/dashboards/citizen_centricity::cc_course_list?theme=@{cc_theme}' target='_self' style='@{pill}'>Get more details</a></td>
+      <td style='width:20%;text-align:right;vertical-align:middle;padding:0 10px 0 0;line-height:0;'><a href='/dashboards/citizen_centricity::cc_course_list?theme=@{cc_theme}' target='_self' style='@{pill}line-height:1.3;vertical-align:middle;'>Get more details</a></td>
       </tr></table> ;;
   }
   measure: q_coverage {
