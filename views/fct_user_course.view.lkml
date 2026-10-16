@@ -33,7 +33,7 @@ view: fct_user_course {
   }
 
   measure: officials {
-    label: "Officials"
+    label: "Officials Enrolled"
     type: count_distinct
     sql: ${user_id} ;;
     value_format: "[>=1000000]0.0,,\"M\";[>=1000]0.0,\"K\";0"
