@@ -137,7 +137,7 @@ constant: go_back {
   value: "width:100%;text-align:left;padding:4px 0 4px 30px;box-sizing:border-box;background:#ffffff;font-family:Calibri,Arial,Aptos Narrow,sans-serif;"
 }
 constant: go_back_a {
-  value: "font-size:24px;font-weight:600;color:#0B3A75;text-decoration:none;"
+  value: "display:inline-block;background:#00897B;color:#ffffff;font-size:18px;font-weight:600;padding:6px 20px;border-radius:15px;text-decoration:none;"
 }
 
 # ---- Cards -------------------------------------------------------------
@@ -197,13 +197,13 @@ constant: value_box_td {
 # the Executive Summary do, instead of floating outside it to the left.
 # The band is one table row: circle icon cell + centred title cell.
 constant: kpi_band {
-  value: "width:100%;border-collapse:collapse;background:#E3F2FD;border-radius:26px 0 0 26px;margin-top:8px;"
+  value: "width:100%;border-collapse:collapse;background:#E3F2FD;border-radius:26px 0 0 26px;"
 }
 constant: kpi_band_icon_td {
-  value: "width:44px;padding:2px 0 2px 2px;vertical-align:middle;line-height:0;"
+  value: "width:48px;padding:2px 0 2px 2px;vertical-align:middle;line-height:0;"
 }
 constant: kpi_band_icon {
-  value: "display:block;box-sizing:border-box;width:42px;height:42px;border-radius:50%;background:#ffffff;padding:3px;"
+  value: "display:block;box-sizing:border-box;width:46px;height:46px;border-radius:50%;background:#ffffff;padding:3px;"
 }
 constant: kpi_band_title {
   value: "text-align:center;vertical-align:middle;color:#0B3A75;font-size:16px;font-weight:700;padding:6px 8px;line-height:1.2;font-family:Aptos Display,Calibri,Arial,sans-serif;white-space:normal;"
@@ -220,7 +220,7 @@ constant: kpi_strip {
   value: "background:#E3F2FD;text-align:center;vertical-align:middle;font-size:16px;font-weight:700;color:#0B3A75;padding:7px 6px;border-radius:3px;white-space:normal;"
 }
 constant: kpi_big {
-  value: "text-align:center;font-size:30px;font-weight:400;color:#0B3A75;padding:0;"
+  value: "text-align:center;font-size:30px;font-weight:400;color:#0B3A75;padding:4px 0;"
 }
 constant: kpi_pair {
   value: "font-size:24px;font-weight:400;color:#0B3A75;"
