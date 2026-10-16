@@ -41,7 +41,7 @@ view: cc_ui {
     html: <table style='@{hdr_table}'><tr>
       <td style='@{hdr_logo_td}'><img src='@{asset_base}/cbc_logo.png' style='@{hdr_logo}'></td>
       <td style='@{hdr_title_td}'>Key Result Area: Citizen-Centricity</td>
-      <td style='@{hdr_tabs_td}'><a href='/dashboards/citizen_centricity::cc_executive_summary?theme=@{cc_theme}' target='_self' style='@{tab_on}'>Executive Summary</a><a href='/dashboards/citizen_centricity::cc_coverage?theme=@{cc_theme}' target='_self' style='@{tab}'>Coverage</a><a href='/dashboards/citizen_centricity::cc_adoption?theme=@{cc_theme}' target='_self' style='@{tab}'>Adoption</a><a href='/dashboards/citizen_centricity::cc_learning?theme=@{cc_theme}' target='_self' style='@{tab}'>Learning</a><a href='/dashboards/citizen_centricity::cc_performance?theme=@{cc_theme}' target='_self' style='@{tab}'>Performance</a></td>
+      <td style='@{hdr_tabs_td}'><table style='@{hdr_tabs_table}'><tr><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_executive_summary?theme=@{cc_theme}' target='_self' style='@{tab_on}'>Executive Summary</a></td><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_coverage?theme=@{cc_theme}' target='_self' style='@{tab}'>Coverage</a></td><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_adoption?theme=@{cc_theme}' target='_self' style='@{tab}'>Adoption</a></td><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_learning?theme=@{cc_theme}' target='_self' style='@{tab}'>Learning</a></td><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_performance?theme=@{cc_theme}' target='_self' style='@{tab}'>Performance</a></td></tr></table></td>
       </tr></table> ;;
   }
 
@@ -51,7 +51,7 @@ view: cc_ui {
     html: <table style='@{hdr_table}'><tr>
       <td style='@{hdr_logo_td}'><img src='@{asset_base}/cbc_logo.png' style='@{hdr_logo}'></td>
       <td style='@{hdr_title_td}'>Key Result Area: Citizen-Centricity</td>
-      <td style='@{hdr_tabs_td}'><a href='/dashboards/citizen_centricity::cc_executive_summary?theme=@{cc_theme}' target='_self' style='@{tab}'>Executive Summary</a><a href='/dashboards/citizen_centricity::cc_coverage?theme=@{cc_theme}' target='_self' style='@{tab_on}'>Coverage</a><a href='/dashboards/citizen_centricity::cc_adoption?theme=@{cc_theme}' target='_self' style='@{tab}'>Adoption</a><a href='/dashboards/citizen_centricity::cc_learning?theme=@{cc_theme}' target='_self' style='@{tab}'>Learning</a><a href='/dashboards/citizen_centricity::cc_performance?theme=@{cc_theme}' target='_self' style='@{tab}'>Performance</a></td>
+      <td style='@{hdr_tabs_td}'><table style='@{hdr_tabs_table}'><tr><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_executive_summary?theme=@{cc_theme}' target='_self' style='@{tab}'>Executive Summary</a></td><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_coverage?theme=@{cc_theme}' target='_self' style='@{tab_on}'>Coverage</a></td><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_adoption?theme=@{cc_theme}' target='_self' style='@{tab}'>Adoption</a></td><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_learning?theme=@{cc_theme}' target='_self' style='@{tab}'>Learning</a></td><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_performance?theme=@{cc_theme}' target='_self' style='@{tab}'>Performance</a></td></tr></table></td>
       </tr></table> ;;
   }
 
@@ -61,7 +61,7 @@ view: cc_ui {
     html: <table style='@{hdr_table}'><tr>
       <td style='@{hdr_logo_td}'><img src='@{asset_base}/cbc_logo.png' style='@{hdr_logo}'></td>
       <td style='@{hdr_title_td}'>Key Result Area: Citizen-Centricity</td>
-      <td style='@{hdr_tabs_td}'><a href='/dashboards/citizen_centricity::cc_executive_summary?theme=@{cc_theme}' target='_self' style='@{tab}'>Executive Summary</a><a href='/dashboards/citizen_centricity::cc_coverage?theme=@{cc_theme}' target='_self' style='@{tab}'>Coverage</a><a href='/dashboards/citizen_centricity::cc_adoption?theme=@{cc_theme}' target='_self' style='@{tab_on}'>Adoption</a><a href='/dashboards/citizen_centricity::cc_learning?theme=@{cc_theme}' target='_self' style='@{tab}'>Learning</a><a href='/dashboards/citizen_centricity::cc_performance?theme=@{cc_theme}' target='_self' style='@{tab}'>Performance</a></td>
+      <td style='@{hdr_tabs_td}'><table style='@{hdr_tabs_table}'><tr><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_executive_summary?theme=@{cc_theme}' target='_self' style='@{tab}'>Executive Summary</a></td><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_coverage?theme=@{cc_theme}' target='_self' style='@{tab}'>Coverage</a></td><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_adoption?theme=@{cc_theme}' target='_self' style='@{tab_on}'>Adoption</a></td><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_learning?theme=@{cc_theme}' target='_self' style='@{tab}'>Learning</a></td><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_performance?theme=@{cc_theme}' target='_self' style='@{tab}'>Performance</a></td></tr></table></td>
       </tr></table> ;;
   }
 
@@ -71,7 +71,7 @@ view: cc_ui {
     html: <table style='@{hdr_table}'><tr>
       <td style='@{hdr_logo_td}'><img src='@{asset_base}/cbc_logo.png' style='@{hdr_logo}'></td>
       <td style='@{hdr_title_td}'>Key Result Area: Citizen-Centricity</td>
-      <td style='@{hdr_tabs_td}'><a href='/dashboards/citizen_centricity::cc_executive_summary?theme=@{cc_theme}' target='_self' style='@{tab}'>Executive Summary</a><a href='/dashboards/citizen_centricity::cc_coverage?theme=@{cc_theme}' target='_self' style='@{tab}'>Coverage</a><a href='/dashboards/citizen_centricity::cc_adoption?theme=@{cc_theme}' target='_self' style='@{tab}'>Adoption</a><a href='/dashboards/citizen_centricity::cc_learning?theme=@{cc_theme}' target='_self' style='@{tab_on}'>Learning</a><a href='/dashboards/citizen_centricity::cc_performance?theme=@{cc_theme}' target='_self' style='@{tab}'>Performance</a></td>
+      <td style='@{hdr_tabs_td}'><table style='@{hdr_tabs_table}'><tr><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_executive_summary?theme=@{cc_theme}' target='_self' style='@{tab}'>Executive Summary</a></td><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_coverage?theme=@{cc_theme}' target='_self' style='@{tab}'>Coverage</a></td><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_adoption?theme=@{cc_theme}' target='_self' style='@{tab}'>Adoption</a></td><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_learning?theme=@{cc_theme}' target='_self' style='@{tab_on}'>Learning</a></td><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_performance?theme=@{cc_theme}' target='_self' style='@{tab}'>Performance</a></td></tr></table></td>
       </tr></table> ;;
   }
 
@@ -81,7 +81,7 @@ view: cc_ui {
     html: <table style='@{hdr_table}'><tr>
       <td style='@{hdr_logo_td}'><img src='@{asset_base}/cbc_logo.png' style='@{hdr_logo}'></td>
       <td style='@{hdr_title_td}'>Key Result Area: Citizen-Centricity</td>
-      <td style='@{hdr_tabs_td}'><a href='/dashboards/citizen_centricity::cc_executive_summary?theme=@{cc_theme}' target='_self' style='@{tab}'>Executive Summary</a><a href='/dashboards/citizen_centricity::cc_coverage?theme=@{cc_theme}' target='_self' style='@{tab}'>Coverage</a><a href='/dashboards/citizen_centricity::cc_adoption?theme=@{cc_theme}' target='_self' style='@{tab}'>Adoption</a><a href='/dashboards/citizen_centricity::cc_learning?theme=@{cc_theme}' target='_self' style='@{tab}'>Learning</a><a href='/dashboards/citizen_centricity::cc_performance?theme=@{cc_theme}' target='_self' style='@{tab_on}'>Performance</a></td>
+      <td style='@{hdr_tabs_td}'><table style='@{hdr_tabs_table}'><tr><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_executive_summary?theme=@{cc_theme}' target='_self' style='@{tab}'>Executive Summary</a></td><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_coverage?theme=@{cc_theme}' target='_self' style='@{tab}'>Coverage</a></td><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_adoption?theme=@{cc_theme}' target='_self' style='@{tab}'>Adoption</a></td><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_learning?theme=@{cc_theme}' target='_self' style='@{tab}'>Learning</a></td><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_performance?theme=@{cc_theme}' target='_self' style='@{tab_on}'>Performance</a></td></tr></table></td>
       </tr></table> ;;
   }
 
@@ -92,7 +92,7 @@ view: cc_ui {
     html: <table style='@{hdr_table}'><tr>
       <td style='@{hdr_logo_td}'><img src='@{asset_base}/cbc_logo.png' style='@{hdr_logo}'></td>
       <td style='@{hdr_title_td}'>Key Result Area: Citizen-Centricity</td>
-      <td style='@{hdr_tabs_td}'><a href='/dashboards/citizen_centricity::cc_executive_summary?theme=@{cc_theme}' target='_self' style='@{tab}'>Executive Summary</a><a href='/dashboards/citizen_centricity::cc_coverage?theme=@{cc_theme}' target='_self' style='@{tab}'>Coverage</a><a href='/dashboards/citizen_centricity::cc_adoption?theme=@{cc_theme}' target='_self' style='@{tab}'>Adoption</a><a href='/dashboards/citizen_centricity::cc_learning?theme=@{cc_theme}' target='_self' style='@{tab}'>Learning</a><a href='/dashboards/citizen_centricity::cc_performance?theme=@{cc_theme}' target='_self' style='@{tab}'>Performance</a></td>
+      <td style='@{hdr_tabs_td}'><table style='@{hdr_tabs_table}'><tr><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_executive_summary?theme=@{cc_theme}' target='_self' style='@{tab}'>Executive Summary</a></td><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_coverage?theme=@{cc_theme}' target='_self' style='@{tab}'>Coverage</a></td><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_adoption?theme=@{cc_theme}' target='_self' style='@{tab}'>Adoption</a></td><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_learning?theme=@{cc_theme}' target='_self' style='@{tab}'>Learning</a></td><td style='@{hdr_tab_cell}'><a href='/dashboards/citizen_centricity::cc_performance?theme=@{cc_theme}' target='_self' style='@{tab}'>Performance</a></td></tr></table></td>
       </tr></table> ;;
   }
 
@@ -124,43 +124,43 @@ view: cc_ui {
     html: <table style='@{qbar_table}'><tr>
       <td style='width:20%;'></td>
       <td style='@{qbar_td}'>What is the overall reach of citizen-centric capacity building?</td>
-      <td style='width:20%;text-align:right;vertical-align:middle;padding:0 10px 0 0;line-height:0;'><a href='/dashboards/citizen_centricity::cc_course_list?theme=@{cc_theme}' target='_self' style='@{pill}line-height:1.3;vertical-align:middle;'>Get more details</a></td>
+      <td style='width:20%;text-align:right;vertical-align:middle;padding:0 10px 0 0;padding:0 0.694vw 0 0;line-height:0;'><a href='/dashboards/citizen_centricity::cc_course_list?theme=@{cc_theme}' target='_self' style='@{pill}line-height:1.3;vertical-align:middle;'>Get more details</a></td>
       </tr></table> ;;
   }
   measure: q_coverage {
     type: max
     sql: ${TABLE}.one ;;
-    html: <div style='@{qbar}'>What does the learning infrastructure look like?</div> ;;
+    html: <table style='@{qbar_table}'><tr><td style='@{qbar_td}'>What does the learning infrastructure look like?</td></tr></table> ;;
   }
   measure: q_adoption_mdos {
     type: max
     sql: ${TABLE}.one ;;
-    html: <div style='@{qbar}'>Are MDOs formally taking up citizen-centric learning?</div> ;;
+    html: <table style='@{qbar_table}'><tr><td style='@{qbar_td}'>Are MDOs formally taking up citizen-centric learning?</td></tr></table> ;;
   }
   measure: q_adoption_pillars {
     type: max
     sql: ${TABLE}.one ;;
-    html: <div style='@{qbar}'>Which pillars are seeing the most activity?</div> ;;
+    html: <table style='@{qbar_table}'><tr><td style='@{qbar_td}'>Which pillars are seeing the most activity?</td></tr></table> ;;
   }
   measure: q_learning {
     type: max
     sql: ${TABLE}.one ;;
-    html: <div style='@{qbar}'>Are the right officials building capacity?</div> ;;
+    html: <table style='@{qbar_table}'><tr><td style='@{qbar_td}'>Are the right officials building capacity?</td></tr></table> ;;
   }
   measure: q_perf_assessment {
     type: max
     sql: ${TABLE}.one ;;
-    html: <div style='@{qbar}'>Do assessment processes ensure meaningful evaluation and are the learners engaging?</div> ;;
+    html: <table style='@{qbar_table}'><tr><td style='@{qbar_td}'>Do assessment processes ensure meaningful evaluation and are the learners engaging?</td></tr></table> ;;
   }
   measure: q_perf_demonstrating {
     type: max
     sql: ${TABLE}.one ;;
-    html: <div style='@{qbar}'>How well are civil servants demonstrating of citizen centric learning?</div> ;;
+    html: <table style='@{qbar_table}'><tr><td style='@{qbar_td}'>How well are civil servants demonstrating of citizen centric learning?</td></tr></table> ;;
   }
   measure: q_perf_competency {
     type: max
     sql: ${TABLE}.one ;;
-    html: <div style='@{qbar}'>How far has the system progressed toward measuring actual competency?</div> ;;
+    html: <table style='@{qbar_table}'><tr><td style='@{qbar_td}'>How far has the system progressed toward measuring actual competency?</td></tr></table> ;;
   }
 
   # ===================================================================
@@ -170,14 +170,14 @@ view: cc_ui {
     type: max
     sql: ${TABLE}.one ;;
     html: <div style='@{panel}'>
-      <table style='width:100%;border-collapse:collapse;font-size:13px;color:#757575;'>
-        <tr style='text-align:left;background:#F5F5F5;'><th style='padding:5px;'>Course</th><th>Pillar</th><th>Provider</th><th>Pass Rate</th><th>Health Score</th></tr>
-        <tr><td style='padding:7px 5px;'><div style='@{sk_bar}width:80%;'></div></td><td><div style='@{sk_bar}width:60%;'></div></td><td><div style='@{sk_bar}width:70%;'></div></td><td><div style='@{sk_bar}width:40%;'></div></td><td><div style='@{sk_chip}'></div></td></tr>
-        <tr><td style='padding:7px 5px;'><div style='@{sk_bar}width:70%;'></div></td><td><div style='@{sk_bar}width:60%;'></div></td><td><div style='@{sk_bar}width:70%;'></div></td><td><div style='@{sk_bar}width:40%;'></div></td><td><div style='@{sk_chip}'></div></td></tr>
-        <tr><td style='padding:7px 5px;'><div style='@{sk_bar}width:85%;'></div></td><td><div style='@{sk_bar}width:60%;'></div></td><td><div style='@{sk_bar}width:70%;'></div></td><td><div style='@{sk_bar}width:40%;'></div></td><td><div style='@{sk_chip}'></div></td></tr>
-        <tr><td style='padding:7px 5px;'><div style='@{sk_bar}width:65%;'></div></td><td><div style='@{sk_bar}width:60%;'></div></td><td><div style='@{sk_bar}width:70%;'></div></td><td><div style='@{sk_bar}width:40%;'></div></td><td><div style='@{sk_chip}'></div></td></tr>
+      <table style='width:100%;border-collapse:collapse;font-size:13px;font-size:0.903vw;color:#757575;'>
+        <tr style='text-align:left;background:#F5F5F5;'><th style='padding:5px;padding:0.347vw;'>Course</th><th>Pillar</th><th>Provider</th><th>Pass Rate</th><th>Health Score</th></tr>
+        <tr><td style='padding:7px 5px;padding:0.486vw 0.347vw;'><div style='@{sk_bar}width:80%;'></div></td><td><div style='@{sk_bar}width:60%;'></div></td><td><div style='@{sk_bar}width:70%;'></div></td><td><div style='@{sk_bar}width:40%;'></div></td><td><div style='@{sk_chip}'></div></td></tr>
+        <tr><td style='padding:7px 5px;padding:0.486vw 0.347vw;'><div style='@{sk_bar}width:70%;'></div></td><td><div style='@{sk_bar}width:60%;'></div></td><td><div style='@{sk_bar}width:70%;'></div></td><td><div style='@{sk_bar}width:40%;'></div></td><td><div style='@{sk_chip}'></div></td></tr>
+        <tr><td style='padding:7px 5px;padding:0.486vw 0.347vw;'><div style='@{sk_bar}width:85%;'></div></td><td><div style='@{sk_bar}width:60%;'></div></td><td><div style='@{sk_bar}width:70%;'></div></td><td><div style='@{sk_bar}width:40%;'></div></td><td><div style='@{sk_chip}'></div></td></tr>
+        <tr><td style='padding:7px 5px;padding:0.486vw 0.347vw;'><div style='@{sk_bar}width:65%;'></div></td><td><div style='@{sk_bar}width:60%;'></div></td><td><div style='@{sk_bar}width:70%;'></div></td><td><div style='@{sk_bar}width:40%;'></div></td><td><div style='@{sk_chip}'></div></td></tr>
       </table>
-      <div style='font-size:12px;color:#616161;margin-top:8px;text-align:left;'>
+      <div style='font-size:12px;font-size:0.833vw;color:#616161;margin-top:8px;margin-top:0.556vw;text-align:left;'>
         <b>Health Score =</b>
         <span style='color:#43A047;'>&#9679;</span> Pass rate
         <span style='color:#1E88E5;'>&#9679;</span> Has assessment
@@ -190,18 +190,18 @@ view: cc_ui {
     type: max
     sql: ${TABLE}.one ;;
     html: <div style='@{panel}'>
-      <div style='margin:12px 0 8px 20px;text-align:left;'>
-        <span style='display:inline-block;background:#1565C0;color:#fff;border-radius:16px;padding:5px 18px;font-size:13px;font-weight:700;'>Functional Family</span>
-        <span style='display:inline-block;border:1.5px solid #90CAF9;color:#1565C0;border-radius:16px;padding:4px 18px;font-size:13px;font-weight:700;margin-left:8px;'>Gender</span>
+      <div style='margin:12px 0 8px 20px;margin:0.833vw 0 0.556vw 1.389vw;text-align:left;'>
+        <span style='display:inline-block;background:#1565C0;color:#fff;border-radius:16px;border-radius:1.111vw;padding:5px 18px;padding:0.347vw 1.25vw;font-size:13px;font-size:0.903vw;font-weight:700;'>Functional Family</span>
+        <span style='display:inline-block;border:1.5px solid #90CAF9;color:#1565C0;border-radius:16px;border-radius:1.111vw;padding:4px 18px;padding:0.278vw 1.25vw;font-size:13px;font-size:0.903vw;font-weight:700;margin-left:8px;margin-left:0.556vw;'>Gender</span>
       </div>
-      <table style='width:94%;margin-left:20px;font-size:15px;font-weight:600;color:#37474F;border-collapse:collapse;'>
-        <tr><td style='width:34%;padding:5px 0;text-align:left;'>Decision Makers</td><td><div style='@{ff_bar}'></div></td></tr>
-        <tr><td style='padding:5px 0;text-align:left;'>Frontline Staff</td><td><div style='@{ff_bar}'></div></td></tr>
-        <tr><td style='padding:5px 0;text-align:left;'>Supervisory Roles</td><td><div style='@{ff_bar}'></div></td></tr>
-        <tr><td style='padding:5px 0;text-align:left;'>Programme Leadership</td><td><div style='@{ff_bar}'></div></td></tr>
-        <tr><td style='padding:5px 0;text-align:left;'>Policy Leadership</td><td><div style='@{ff_bar}'></div></td></tr>
+      <table style='width:94%;margin-left:20px;margin-left:1.389vw;font-size:15px;font-size:1.042vw;font-weight:600;color:#37474F;border-collapse:collapse;'>
+        <tr><td style='width:34%;padding:5px 0;padding:0.347vw 0;text-align:left;'>Decision Makers</td><td><div style='@{ff_bar}'></div></td></tr>
+        <tr><td style='padding:5px 0;padding:0.347vw 0;text-align:left;'>Frontline Staff</td><td><div style='@{ff_bar}'></div></td></tr>
+        <tr><td style='padding:5px 0;padding:0.347vw 0;text-align:left;'>Supervisory Roles</td><td><div style='@{ff_bar}'></div></td></tr>
+        <tr><td style='padding:5px 0;padding:0.347vw 0;text-align:left;'>Programme Leadership</td><td><div style='@{ff_bar}'></div></td></tr>
+        <tr><td style='padding:5px 0;padding:0.347vw 0;text-align:left;'>Policy Leadership</td><td><div style='@{ff_bar}'></div></td></tr>
       </table>
-      <div style='text-align:center;font-size:14px;font-style:italic;font-weight:600;color:#757575;margin-top:10px;'>Available once functional family fields are tagged in iGOT learner profiles.</div>
+      <div style='text-align:center;font-size:14px;font-size:0.972vw;font-style:italic;font-weight:600;color:#757575;margin-top:10px;margin-top:0.694vw;'>Available once functional family fields are tagged in iGOT learner profiles.</div>
       </div> ;;
   }
 
@@ -209,15 +209,15 @@ view: cc_ui {
     type: max
     sql: ${TABLE}.one ;;
     html: <div style='@{panel}'>
-      <div style='margin:10px auto;width:88%;border:1px solid #E0E0E0;border-radius:6px;padding:10px;text-align:center;'>
-        <span style='display:inline-block;box-sizing:border-box;width:28px;height:28px;'><img src='@{asset_base}/ai_tool.png' style='width:100%;height:100%;display:block;' alt=''></span>
-        <div style='font-size:15px;font-weight:700;color:#0B3A75;margin-top:4px;@{font_head}'>iGOT AI CBP Tool</div>
-        <div style='font-size:13px;color:#616161;line-height:1.4;'>Recommends sub-themes to officials<br>building their capacity plan</div>
-        <div style='color:#BDBDBD;margin:6px 0;'>&#8595;</div>
-        <span style='display:inline-block;box-sizing:border-box;width:28px;height:28px;'><img src='@{asset_base}/flag_gap.png' style='width:100%;height:100%;display:block;' alt=''></span>
-        <div style='font-size:15px;font-weight:700;color:#0B3A75;margin-top:4px;@{font_head}'>Flag Supply Gaps</div>
-        <div style='font-size:13px;color:#616161;line-height:1.4;'>Sub-themes with high demand but fewer<br>than 5 courses flagged for action</div>
-        <div style='font-size:12px;font-style:italic;font-weight:600;color:#616161;margin-top:12px;text-align:left;'>&#128274; Available once iGOT AI CBP tool data is piped in.</div>
+      <div style='margin:10px auto;margin:0.694vw auto;width:88%;border:1px solid #E0E0E0;border-radius:6px;border-radius:0.417vw;padding:10px;padding:0.694vw;text-align:center;'>
+        <span style='display:inline-block;width:28px;width:1.944vw;height:28px;height:1.944vw;'><img src='@{asset_base}/ai_tool.png' style='width:100%;height:100%;display:block;' alt=''></span>
+        <div style='font-size:15px;font-size:1.042vw;font-weight:700;color:#0B3A75;margin-top:4px;margin-top:0.278vw;@{font_head}'>iGOT AI CBP Tool</div>
+        <div style='font-size:13px;font-size:0.903vw;color:#616161;line-height:1.4;'>Recommends sub-themes to officials<br>building their capacity plan</div>
+        <div style='color:#BDBDBD;margin:6px 0;margin:0.417vw 0;'>&#8595;</div>
+        <span style='display:inline-block;width:28px;width:1.944vw;height:28px;height:1.944vw;'><img src='@{asset_base}/flag_gap.png' style='width:100%;height:100%;display:block;' alt=''></span>
+        <div style='font-size:15px;font-size:1.042vw;font-weight:700;color:#0B3A75;margin-top:4px;margin-top:0.278vw;@{font_head}'>Flag Supply Gaps</div>
+        <div style='font-size:13px;font-size:0.903vw;color:#616161;line-height:1.4;'>Sub-themes with high demand but fewer<br>than 5 courses flagged for action</div>
+        <div style='font-size:12px;font-size:0.833vw;font-style:italic;font-weight:600;color:#616161;margin-top:12px;margin-top:0.833vw;text-align:left;'>&#128274; Available once iGOT AI CBP tool data is piped in.</div>
       </div></div> ;;
   }
 
@@ -227,26 +227,26 @@ view: cc_ui {
   measure: calc_intro {
     type: max
     sql: ${TABLE}.one ;;
-    html: <div style='width:100%;box-sizing:border-box;white-space:normal;background:#E3F2FD;color:#0B3A75;font-size:16px;font-weight:600;line-height:1.5;text-align:center;padding:9px 22px;border-radius:4px;@{font}'>
+    html: <table style='width:100%;border-collapse:collapse;'><tr><td style='white-space:normal;background:#E3F2FD;color:#0B3A75;font-size:16px;font-size:1.111vw;font-weight:600;line-height:1.5;text-align:center;padding:9px 22px;padding:0.625vw 1.528vw;border-radius:4px;border-radius:0.278vw;@{font}'>
       The composite score measures citizen-centricity learning across four pillars: Service Knowledge, Responsiveness, Transparency, and Participation.
       Each pillar is scored on three components - course supply, assigned completion, and assessment pass rate and combined using the weights below.
-      </div> ;;
+      </td></tr></table> ;;
   }
 
   measure: calc_definitions {
     type: max
     sql: ${TABLE}.one ;;
-    html: <div style='width:100%;box-sizing:border-box;white-space:normal;text-align:justify;font-size:15px;line-height:1.55;color:#212121;padding:0 14px;background:#ffffff;@{font}'>
-      <div style='font-size:19px;font-weight:700;color:#0B3A75;text-align:left;white-space:normal;@{font_head}'>&#8226; Proficiency-Level Coverage:</div>
+    html: <table style='width:100%;border-collapse:collapse;background:#ffffff;'><tr><td style='white-space:normal;text-align:justify;font-size:15px;font-size:1.042vw;line-height:1.55;color:#212121;padding:0 14px;padding:0 0.972vw;@{font}'>
+      <div style='font-size:19px;font-size:1.319vw;font-weight:700;color:#0B3A75;text-align:left;white-space:normal;@{font_head}'>&#8226; Proficiency-Level Coverage:</div>
       <div style='@{lede_italic}'>Is citizen-centric learning available at the right depth?</div>
       <p style='@{body_copy}'>This measures whether iGOT has courses mapped to each pillar across all three proficiency levels: Beginner, Intermediate, and Advanced. A pillar with content only at beginner level scores lower than one with full coverage across all levels. The score is calculated as the percentage of sub-theme &#215; proficiency level combinations that have at least one course available.</p>
-      <div style='font-size:19px;font-weight:700;color:#0B3A75;margin-top:12px;text-align:left;white-space:normal;@{font_head}'>&#8226; Assigned Completion Rate</div>
+      <div style='font-size:19px;font-size:1.319vw;font-weight:700;color:#0B3A75;margin-top:12px;margin-top:0.833vw;text-align:left;white-space:normal;@{font_head}'>&#8226; Assigned Completion Rate</div>
       <div style='@{lede_italic}'>Are civil servants engaging with the learning assigned to them?</div>
       <p style='@{body_copy}'>This is the most direct signal of behavioural engagement. An MDO may have courses available and assigned, but if completion is low, capacity building is not happening in practice. This measures the percentage of assigned learning that officials actually complete.</p>
-      <div style='font-size:19px;font-weight:700;color:#0B3A75;margin-top:12px;text-align:left;white-space:normal;@{font_head}'>&#8226; Assessment Pass Rate</div>
+      <div style='font-size:19px;font-size:1.319vw;font-weight:700;color:#0B3A75;margin-top:12px;margin-top:0.833vw;text-align:left;white-space:normal;@{font_head}'>&#8226; Assessment Pass Rate</div>
       <div style='@{lede_italic}'>Are civil servants demonstrating they have understood what they learned?</div>
       <p style='@{body_copy}'>Completion alone does not confirm learning. The pass rate adds a quality filter, indicating whether engagement translated into measurable competency acquisition. This measures the percentage of assessment attempts that result in a pass.</p>
-      </div> ;;
+      </td></tr></table> ;;
   }
 
   # ===================================================================
@@ -329,13 +329,17 @@ view: cc_ui {
   }
 
   # MDO / State toggle. The two Learning pages are separate dashboards;
-  # these links switch between them and carry the current Date Range and
-  # Group filter values across (tile must listen to both filters).
+  # these links switch between them and carry the current Date Range,
+  # Group and Pillar Group filter values across (tile must listen to all three).
   filter: date_range {
     hidden: yes
     type: date
   }
   filter: group {
+    hidden: yes
+    type: string
+  }
+  filter: pillar_group {
     hidden: yes
     type: string
   }
@@ -346,7 +350,7 @@ view: cc_ui {
     html: <table style='@{strip_table}'><tr>
       <td style='@{strip_title}'>Learning across MDOs and States</td>
       <td style='@{strip_right}'>
-        <a href='/dashboards/citizen_centricity::cc_learning?Date+Range={{ _filters["cc_ui.date_range"] | url_encode }}&Group={{ _filters["cc_ui.group"] | url_encode }}&theme=@{cc_theme}' target='_self' style='@{toggle_on}'>MDO</a><a href='/dashboards/citizen_centricity::cc_learning_state?Date+Range={{ _filters["cc_ui.date_range"] | url_encode }}&Group={{ _filters["cc_ui.group"] | url_encode }}&theme=@{cc_theme}' target='_self' style='@{toggle_off}'>State</a></td>
+        <a href='/dashboards/citizen_centricity::cc_learning?Date+Range={{ _filters["cc_ui.date_range"] | url_encode }}&Group={{ _filters["cc_ui.group"] | url_encode }}&Pillar+Group={{ _filters["cc_ui.pillar_group"] | url_encode }}&theme=@{cc_theme}' target='_self' style='@{toggle_on}'>MDO</a><a href='/dashboards/citizen_centricity::cc_learning_state?Date+Range={{ _filters["cc_ui.date_range"] | url_encode }}&Group={{ _filters["cc_ui.group"] | url_encode }}&Pillar+Group={{ _filters["cc_ui.pillar_group"] | url_encode }}&theme=@{cc_theme}' target='_self' style='@{toggle_off}'>State</a></td>
       </tr></table> ;;
   }
   measure: strip_learning_state {
@@ -355,7 +359,7 @@ view: cc_ui {
     html: <table style='@{strip_table}'><tr>
       <td style='@{strip_title}'>Learning across MDOs and States</td>
       <td style='@{strip_right}'>
-        <a href='/dashboards/citizen_centricity::cc_learning?Date+Range={{ _filters["cc_ui.date_range"] | url_encode }}&Group={{ _filters["cc_ui.group"] | url_encode }}&theme=@{cc_theme}' target='_self' style='@{toggle_off}'>MDO</a><a href='/dashboards/citizen_centricity::cc_learning_state?Date+Range={{ _filters["cc_ui.date_range"] | url_encode }}&Group={{ _filters["cc_ui.group"] | url_encode }}&theme=@{cc_theme}' target='_self' style='@{toggle_on}'>State</a></td>
+        <a href='/dashboards/citizen_centricity::cc_learning?Date+Range={{ _filters["cc_ui.date_range"] | url_encode }}&Group={{ _filters["cc_ui.group"] | url_encode }}&Pillar+Group={{ _filters["cc_ui.pillar_group"] | url_encode }}&theme=@{cc_theme}' target='_self' style='@{toggle_off}'>MDO</a><a href='/dashboards/citizen_centricity::cc_learning_state?Date+Range={{ _filters["cc_ui.date_range"] | url_encode }}&Group={{ _filters["cc_ui.group"] | url_encode }}&Pillar+Group={{ _filters["cc_ui.pillar_group"] | url_encode }}&theme=@{cc_theme}' target='_self' style='@{toggle_on}'>State</a></td>
       </tr></table> ;;
   }
 
@@ -417,6 +421,6 @@ view: cc_ui {
   measure: footer_last_updated {
     type: string
     sql: MAX(${TABLE}.last_updated) ;;
-    html: <div style='text-align:left;font-size:15px;font-weight:600;color:#455A64;padding:6px 4px;@{page_white}@{font}'>Data Last Updated: {{ value }}</div> ;;
+    html: <div style='text-align:left;font-size:15px;font-size:1.042vw;font-weight:600;color:#455A64;padding:5px 0;padding:0.347vw 0;text-indent:4px;text-indent:0.278vw;@{page_white}@{font}'>Data Last Updated: {{ value }}</div> ;;
   }
 }
