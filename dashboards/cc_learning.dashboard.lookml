@@ -29,6 +29,19 @@
     explore: fct_user_course
     listens_to_filters: []
     field: fct_user_course.primary_group
+  - name: Pillar Group
+    title: Pillar Group
+    type: field_filter
+    default_value: ''
+    allow_multiple_values: true
+    required: false
+    ui_config:
+      type: dropdown_menu
+      display: inline
+    model: citizen_centricity
+    explore: fct_user_course
+    listens_to_filters: []
+    field: fct_user_course.primary_group
   elements:
   - name: header
     title: header
@@ -193,9 +206,9 @@
   - name: strip_pillar_group
     title: strip_pillar_group
     model: citizen_centricity
-    explore: cc_ui
+    explore: fct_user_course
     fields:
-    - cc_ui.strip_pillar_group
+    - fct_user_course.strip_pillar_group_mdo
     type: single_value
     title_hidden: true
     show_single_value_title: false
@@ -207,7 +220,11 @@
     row: 9
     col: 0
     width: 12
-    height: 1
+    height: 2
+    listen:
+      Date Range: fct_user_course.completed_date
+      Group: fct_user_course.primary_group
+      Pillar Group: fct_user_course.pillar_group_pick
   - name: pillar_group
     title: Pillar wise completion of Groups
     model: citizen_centricity
@@ -228,6 +245,7 @@
     listen:
       Date Range: fct_user_course.completed_date
       Group: fct_user_course.primary_group
+      Pillar Group: fct_user_course.primary_group
     x_axis_gridlines: false
     y_axis_gridlines: false
     show_view_names: false
@@ -256,7 +274,7 @@
     x_axis_label_font_size: 12
     font_size: '12'
     title_hidden: true
-    row: 10
+    row: 11
     col: 0
     width: 12
     height: 6
@@ -281,6 +299,7 @@
     listen:
       Date Range: cc_ui.date_range
       Group: cc_ui.group
+      Pillar Group: cc_ui.pillar_group
   - name: mdo_table
     title: Learning across MDOs and States – MDO
     model: citizen_centricity
@@ -328,7 +347,7 @@
     row: 10
     col: 12
     width: 12
-    height: 6
+    height: 7
   - name: footer
     title: footer
     model: citizen_centricity
@@ -343,7 +362,7 @@
     enable_conditional_formatting: false
     conditional_formatting_include_totals: false
     conditional_formatting_include_nulls: false
-    row: 16
+    row: 17
     col: 0
     width: 24
     height: 1
