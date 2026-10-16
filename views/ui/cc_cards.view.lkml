@@ -304,7 +304,9 @@ view: +fct_cbp_assignment {
   # Tile fields: [fct_cbp_assignment.adoption_kpis, fct_cbp_assignment.completion_rate]
   measure: adoption_kpis {
     hidden: yes
-    type: count
+    # Indicator #18: DISTINCT assigned officials (was a plain row count = allocations).
+    type: count_distinct
+    sql: ${user_id} ;;
     value_format: "[>=1000000]0.0,,\"M\";[>=1000]0.0,\"K\";0"
     html: <div style='padding:4px;@{page_white}@{font}'>
       <table style='@{kpi_card}margin-bottom:14px;'><tr>
