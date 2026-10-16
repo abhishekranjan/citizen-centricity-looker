@@ -229,7 +229,7 @@
       Date Range: fct_user_course.completed_date
       Group: fct_user_course.primary_group
     x_axis_gridlines: false
-    y_axis_gridlines: true
+    y_axis_gridlines: false
     show_view_names: false
     show_y_axis_labels: false
     show_y_axis_ticks: true

@@ -105,6 +105,7 @@
     hide_row_totals: true
     size_to_fit: true
     series_labels:
+      fct_cbp_assignment.ministry: Ministry/State
       fct_cbp_assignment.completion_rate: Completion rate
     table_theme: white
     limit_displayed_rows: false
