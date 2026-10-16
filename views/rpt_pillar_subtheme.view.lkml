@@ -83,8 +83,21 @@ view: rpt_pillar_subtheme {
   }
 
   # ---- CBP adoption (page 8) – distinct counts stored at row grain ----
-  measure: state_cbps { label: "State CBPs" type: sum sql: ${TABLE}.state_cbps ;; }
-  measure: union_cbps { label: "Union CBPs" type: sum sql: ${TABLE}.union_cbps ;; }
+  # Indicator #21: number of distinct States / Centre entities (ministry column) that have
+  # been assigned any course in this pillar x theme x sub-theme. Safe to SUM only because
+  # the table grain is one row per pillar x theme x sub-theme (do not add totals).
+  measure: state_cbps {
+    label: "State CBPs"
+    description: "Distinct States assigned any course in this pillar/theme/sub-theme"
+    type: sum
+    sql: ${TABLE}.state_ministries ;;
+  }
+  measure: union_cbps {
+    label: "Union CBPs"
+    description: "Distinct Centre entities (ministries) assigned any course in this pillar/theme/sub-theme"
+    type: sum
+    sql: ${TABLE}.union_ministries ;;
+  }
   measure: state_allocations { type: sum sql: ${TABLE}.state_allocations ;; value_format_name: decimal_0 }
   measure: state_completions { type: sum sql: ${TABLE}.state_completions ;; value_format_name: decimal_0 }
   measure: union_allocations { type: sum sql: ${TABLE}.union_allocations ;; value_format_name: decimal_0 }
